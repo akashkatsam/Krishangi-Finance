@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import phone from './shadow (1).png'
+import phone from './shadow 1 (1).png'
 import user from './USER.png'
 import secure from './secure.png'
 import panel from  './panel.png'
