@@ -1,13 +1,12 @@
 import React from 'react'
 import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.png'
 import float from './floatimage.png';
 import triangle from './triangle.png'
 import './App.css'
 import profit from './header1.png'
-export default function Header() {
+export default function Header1() {
   return (
     <>
     
@@ -15,14 +14,14 @@ export default function Header() {
     <Navbar expand="lg">
     <Container>
       {/* Logo */}
-      <Link href="/">
+      <Navbar.Brand href="/">
         <img
           src={logo}
           alt="Krishangi Logo"
           height="40"
           className="d-inline-block align-top"
         />
-      </Link>
+      </Navbar.Brand>
 
       {/* Mobile Toggle Button */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,7 +29,7 @@ export default function Header() {
       {/* Navbar Links */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link to="/about">About Us</Nav.Link>
+          <Nav.Link href="/about">About Us</Nav.Link>
 
           <NavDropdown title="Services" id="services-dropdown">
           <img src={triangle}  className='img-fluid arrow'/>
@@ -219,12 +218,10 @@ export default function Header() {
       </Navbar.Collapse>
     </Container>
   </Navbar>
-  {/* <main> */}
+ <main> 
 
 
 
-
-{/* 
 <section className="banner">
   <div className="container-fluid">
     <div className="row">
@@ -254,8 +251,8 @@ export default function Header() {
     </div>
   </div>
 </section> */}
-{/* </main>
-  </main> */}
+ </main>
+
   </>
 
   )

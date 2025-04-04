@@ -11,11 +11,12 @@ import Accordion from "./Accordion";
 import Slider from './Slider'
 import Service from "./Service";
 import Footer from "./Footer";
+import Header1 from "./Header1";
 const Home = () => {
   return (
 
     <>
-    
+    <Header1/>
 
 <About/>
 

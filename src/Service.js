@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Header from "./Header";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +29,9 @@ export default function Service() {
   }, []);
 
   return (
-    <section id="our-services" ref={sectionRef} className="service-section">
+  <>
+  <Header/>
+  <section id="our-services" ref={sectionRef} className="service-section">
       <div className="container-fluid">
         <div className="row">
           {/* Service Heading */}
@@ -151,6 +154,8 @@ export default function Service() {
           {/* Add more service cards as needed */}
         </div>
       </div>
-    </section>
+    </section></>
+
+
   );
 }

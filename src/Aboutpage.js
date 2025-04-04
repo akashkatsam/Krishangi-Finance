@@ -11,6 +11,7 @@ import Footer from './Footer';
 import img2 from './Frame 16.png'
 import img5 from './circledesign.png'
 import FinancialAccordion from './FinancialAccordion';
+import Header from './Header';
 export default function Aboutpage() {
 
   const options = {
@@ -68,6 +69,7 @@ export default function Aboutpage() {
 
   return (
     <>
+    <Header/>
       <section id='form-ui'>
         <div className='formcaption'>
           <div className='container'>
