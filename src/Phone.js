@@ -14,7 +14,7 @@ const Phone = () => {
 <div className="container-fluid">
       <div className="row align-items-center">
         <div className="col-md-4 text-md-end mb-4">
-          <div className="mb-4">
+          <div className="mb-c-30">
             <img src={user} className="img-fluid iconimage"/>
             <h4>User-Friendly Interface</h4>
             <p>Each bite delivers energy, making it a guilt-free
@@ -34,18 +34,26 @@ levels.</p>
            <img src={phone}  className="img-fluid apkimage"/>
         </div>
 
-        <div className="col-md-4 text-md-start mt-4">
-          <div className="mb-4">
-          <img src={time} className="img-fluid iconimage"/>
-            <h4>Secure Transactions</h4>
-            <p>Each bite delivers energy, making it a guilt-free choice for daily snacking.</p>
+        <div className="col-md-4 text-md-end mb-4">
+          <div className="mb-c-30">
+            <img src={time} className="img-fluid iconimage"/>
+            <h4>Secure Transactions
+            </h4>
+            <p>Each bite delivers energy, making it a guilt-free choice for daily snackingoice for daily snacking.
+
+</p>
           </div>
           <div>
           <img src={panel} className="img-fluid iconimage"/>
-            <h4>Personalized Dashboard</h4>
-            <p>Enjoy less LDL (bad cholesterol) for a snack that tastes good and does good.</p>
+          <h4>Personalized Dashboard
+          </h4>
+            <p>Enjoy less LDL (bad cholesterol) for a snack that tastes good and does good.
+
+</p>
           </div>
         </div>
+
+    
       </div>
 
         <div className="androdbtn">
