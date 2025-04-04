@@ -24,7 +24,9 @@ sacrificing flavour.</p>
           <div>
           <img src={secure} className="img-fluid iconimage"/>
           <h4>Real-Time Notifications</h4>
-            <p>Enjoy less LDL (bad cholesterol) for a snack that tastes good and does good.</p>
+            <p>Enjoy less LDL (bad cholesterol) for a snack that
+tastes good and does good for your cholesterol
+levels.</p>
           </div>
         </div>
 
@@ -46,13 +48,11 @@ sacrificing flavour.</p>
         </div>
       </div>
 
-      <div className="mt-5">
         <div className="androdbtn">
             
 <img src={ios} className="img-fluid"/>   
         <img src={play} className="img-fluid"/>   
         </div>
-      </div>
     </div>
    </section>
   );

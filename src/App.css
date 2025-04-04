@@ -149,7 +149,7 @@ nav button {
 
 #phoneui h4{
   font-weight: 500;
-  font-size: 30px;
+  font-size: 36px;
   font-family: 'inter';
   color: #fff!important;
   text-align: center;
@@ -161,7 +161,7 @@ nav button {
   font-family: 'inter';
   width: 80%;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 #phoneui .iconimage{
 
@@ -171,7 +171,7 @@ display: block;
 margin-bottom: 20px;
 }
 .apkimage{
-  width: 60%;
+  width: 70%;
 }
 .androdbtn{
   margin: auto;
