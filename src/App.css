@@ -487,12 +487,10 @@ main{
     color: #fff;
     width: 95%;
     font-family: 'inter';
-    font-size: 20px;
+    font-size: 24px;
         }
         .box1{
-          background-color: #fff;
           width: 60px;
-          height: 60px;
           margin-bottom: 30px;
         }
         .servicecard svg{
@@ -527,9 +525,7 @@ main{
           font-size: 20px;
         }
         .box2{
-          background-color: #434343;
           width: 60px;
-          height: 60px;
           margin-bottom: 30px;
         }
         .servicecard1 svg{
