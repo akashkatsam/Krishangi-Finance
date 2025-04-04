@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './footerlogo.png'
 import ios from './ioslogo.png'
 import android from './android.png'
+import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <section id='footer'>
@@ -21,7 +22,7 @@ export default function Footer() {
                 <div className='footerlist'>
                   <h6>Company</h6>
                   <ul>
-                    <li>About Us</li>
+                    <li><Link to="/about">About Us</Link></li>
                     <li>Services </li>
                     <li>Investing Insights </li>
                     <li>Careers </li>

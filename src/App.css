@@ -2,14 +2,69 @@
 
 /* header */
 
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff0000; /* Red color */
+  border-radius: 10px;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0000;
+}
+
+/* Scrollbar Track Background */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Optional: Change scrollbar color for Firefox */
+* {
+  scrollbar-color: #F36A24 #FFF;
+  scrollbar-width: thin;
+}
+
+
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+body{
+  overflow-x: hidden;
+}
 nav{
-  padding-top: 25px!important;
+  padding:20px!important;
+  background: #0f2549;
+  position: sticky!important;
+  z-index: 999;
+  width: 100%;
 }
 .navbar-nav {
   background-color: #fff;
-  padding: 5px 20px;
+  padding: 5px 16px;
   border-radius: 30px;
 
+}
+.ml-20{
+  margin-left: 70px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  background: #ffffff6b!important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #fff!important;
+
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+  margin-top: 0px!important;
 }
 
 .navbar-nav a {
@@ -116,7 +171,7 @@ display: block;
 margin-bottom: 20px;
 }
 .apkimage{
-  width: 80%;
+  width: 60%;
 }
 .androdbtn{
   margin: auto;
@@ -194,6 +249,9 @@ main{
           height: 260px;
         }
 
+        #bgblue1{
+        }
+
         .caption-text h4{
           font-size: 44px;
           font-family: 'inter';
@@ -204,15 +262,76 @@ main{
 
         #bgblue button{
           background-color: transparent;
-          border: 2px solid #fff;
+          position: relative;
+          border: 2.2px solid #fff;
           border-radius: 30px;
           text-transform: uppercase;
           color: #FFF;
           FONT-SIZE: 15PX;
-          PADDING: 10PX 43PX;
+          PADDING: 13PX 66PX 13px 21px;
           FONT-FAMILY: 'Inter';
           MARGIN:30px AUTO;
           DISPLAY: BLOCK;
+        }
+
+
+        #bgblue1 button{
+          background-color: transparent;
+          position: relative;
+          border: 2.2px solid #fff;
+          border-radius: 30px;
+          text-transform: uppercase;
+          color: #FFF;
+          FONT-SIZE: 15PX;
+          PADDING: 13PX 66PX 13px 21px;
+          FONT-FAMILY: 'Inter';
+          margin:20px 30px 30px 30px;
+        }
+
+
+        .about-sliderbtn button{
+          background-color: transparent;
+          position: relative;
+          border: 2.6px solid #000;
+          border-radius: 30px;
+          text-transform: uppercase;
+          color: #000;
+          FONT-SIZE: 15PX;
+          PADDING: 13PX 66PX 13px 21px;
+          FONT-FAMILY: 'Inter';
+          margin:auto;
+          display: block;
+          font-weight: 400;
+        }
+
+
+        .investment button{
+          background-color: transparent;
+          position: relative;
+          border: 2.6px solid #000;
+          border-radius: 30px;
+          text-transform: uppercase;
+          color: #000;
+          FONT-SIZE: 15PX;
+          PADDING: 13PX 66PX 13px 21px;
+          FONT-FAMILY: 'Inter';
+          margin:30px 0px;
+          display: block;
+          font-weight: 400;
+        }
+
+
+        .boxform button{
+          background-color: transparent;
+          position: relative;
+          border: 2.2px solid #000;
+          border-radius: 30px;
+          text-transform: uppercase;
+          color: #000;
+          FONT-SIZE: 15PX;
+          PADDING: 10PX 80PX 10px 21px;
+          FONT-FAMILY: 'Inter';
+          margin:20px 30px 30px 30px;
         }
 
         .accordion-collapse {
@@ -265,16 +384,16 @@ main{
           background: #e85c17;
           padding: 40px 20px;
         }
-        .owl-carousel.owl-drag .owl-item {
+       .why-krishangi-section .owl-carousel.owl-drag .owl-item {
           margin-top: 20px;
         }
         
-        .custom-carousel .owl-stage-outer {
-          height:270px;
+       .why-krishangi-section .custom-carousel .owl-stage-outer {
+          height:273px;
           overflow-y: visible !important; /* Ensures active item is not cut off */
         }
         
-        .owl-item {
+       .why-krishangi-section .owl-item {
           transition: all 0.5s ease-in-out;
           transform: scale(0.7);
           filter: blur(1px);
@@ -283,7 +402,7 @@ main{
           align-items: center;
         }
         
-        .owl-carousel .center {
+      .why-krishangi-section  .owl-carousel .center {
           transform: scale(1.2) !important; /* Increase size of active item */
           filter: blur(0) !important;
         }
@@ -393,7 +512,7 @@ main{
           background-color: #F6F6F6;
           background-position: right;
           margin-bottom: 30px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;          }
+              }
 
         .servicecard1 h2{
           font-family: 'inter';
@@ -423,7 +542,8 @@ main{
           padding: 20px;
         }
         .serviceheading h4{
-          color: #434343;
+          width: 80%;
+          color: #1C3764;
           font-family: 'inter';
           font-size: 55px;
           font-weight: 700;
@@ -497,9 +617,269 @@ font-weight: 200;
         .copyrighttext{
           margin-bottom: 0px;
         }
+        .arrowbtn{
+          background: linear-gradient(180deg, rgba(243,106,36,1) 23%, rgba(220,86,17,1) 68%);
+          position: absolute;
+          float: right;
+          width: 80px;
+          right: -35px;
+          top: 2px;
+          padding: 8px;
+          border-radius: 20px;
+        }
+        .arrowbtn svg{
+          width: 16px;
+        }
+        #form-ui{
+          background-color: #0F2549;
+          padding: 60px 140px;
+        }
+        .boxform{
+          background-color: #fff;
+          border-radius:30px;
+          padding: 30px 40px;
+        }
+        .form-left img{
+          width: 90%;
+          display: block;
+        }
+        .headingabout h3{
+          color: #fff;
+          font-size: 64px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 600;
+          font-family: 'inter';
+          margin-bottom: 40px;
+        }
+        input{
+          border-radius: 20px!important;
+          border: 1px solid #4E4E4E!important;
+          margin-bottom: 20px;
+          color: #A2A2A3;
+          font-size: 14px;
+          padding: 10px 20px!important;
+          font-family:'inter';
+
+        }
+        .form-right p{
+          font-size: 12px;
+          color: #58595B;
+          font-family: 'inter';
+        }
+        .form-right h4{
+          font-size: 22px;
+          font-family: 'Inter';
+          margin-bottom: 30px;
+        }
+        .animatetext h4{
+          font-size: 60px;
+          color: #fff;
+          font-family: 'inter';
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 60px;
+          margin-bottom:40px;
+          font-weight: 600;
+        }
+.dotsimg
+        {
+          float: right;
+          width: 66px;
+      }
+        .animatetext p{
+          color: #fff;
+          font-size: 48px;
+          line-height: 70px;
+          font-family: 'inter';
+          text-transform: capitalize;
+          font-weight: 500;
+        }
 
 
+#about-slider{
+  padding:40px 0px 40px 30px;
+  background: linear-gradient(180deg, rgba(229,228,228,1) 0%, rgba(252,251,252,1) 50%, rgba(229,228,228,1) 100%);
 
+}
+.headingslider h4{
+  color: #434343;
+  width:100%;
+  font-size: 64px;
+  font-family: 'inter';
+  font-weight: 600;
+}
+.separator-20{
+  padding: 20px;
+}
+.serviceheading span{
+      color: #F36A24;
+}
+.sliderbox{
+  background:linear-gradient(186deg, rgba(243,106,36,1) 0%, rgba(220,86,17,1) 100%);
+  border-radius: 10px;
+}.serviceheading span{
+      color: #F36A24;
+}
+.leftslider{
+  padding: 20px 30px;
+}
+.leftslider h4 {
+  color: #fff;
+  font-family: 'Inter';
+  margin-bottom: 30px;
+  margin-top: 34px;
+  DISPLAY: FLEX;
+  font-weight: 600;
+  ALIGN-ITEMS: CENTER;
+
+}
+.leftslider p{
+  color: #fff;
+  font-weight: 200;
+  font-family: 'inter';
+  font-size: 47px;
+  line-height: 54px;
+  margin-bottom: 50px;
+}
+.rightslider{
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+}
+.leftslider h6{
+  border: 2px solid #fff;
+  border-radius: 45px; 
+     width: fit-content;  
+       font-size: 24px;  
+         color: #fff;  
+           padding: 10px;
+           font-weight: 700;
+}
+
+.rightslider img{
+  width: 80%;
+  height: 100%;
+}
+
+#investment{
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.rightgroup h5{
+  font-size: 22px;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+.rightgroup li{
+font-size: 18px;
+width: 90%;
+font-family: 'Inter';
+font-weight: 300;
+}
+.topright h5{
+  font-size: 33px;
+  font-weight: bold;
+  font-family: 'Inter';
+
+}
+.lineorange{
+  height: 2px;
+  background-color: #F36A24;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.bgblue{
+  background-color: #0F2549;
+  width: 98%;
+  height: 100%;
+}
+.megamenu{
+  width: 700px;
+}
+.arrow{
+  position: absolute;
+  top: -11px;
+  left: 81px;
+}
+.dropdown-menu{
+  margin-left: -45px;
+    margin-top: 4px;
+    border-top: 3px solid #df5914;
+    border-radius: 0px!important;
+}
+.services-dropdown{
+  border-top: 2px solid #F36A24;
+}
+
+.megalink h5{
+  font-size: 16px;
+  color: #434343;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.megalink p{
+  font-size: 14px;
+  color: #757575;
+}
+
+#accordionservice{
+  padding: 40px;
+  background: linear-gradient(186deg, rgba(243,106,36,1) 0%, rgba(220,86,17,1) 100%);
+}
+#accordionservice h3{
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  width: 70%;
+  font-family: 'Inter';
+  margin-bottom: 20px;
+  margin: auto;
+
+}
+
+#accordionservice p
+{
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 200;
+  font-family: 'Inter';
+  margin-bottom: 30px;
+}
+.accordion-header,#accordionservice .accordion-header ,#accordionservice .collapsed {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+#accordionservice .collapsed
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#accordionservice .accordion-header{
+  background-color: #FFA06F;
+}
+#accordionservice .accordion-item{
+  border: 0px;
+  border-radius: 10px;
+}
+#accordionservice .accordion-body{
+  background-color:#ffa06f;
+  color: #fff;
+}
+#accordionservice .collapsed{
+  background-color: #ffa06f;
+
+}
+#accordionservice .accordion-button 
+{
+  color: #fff;
+  font-size: 19px;
+  font-family: 'Inter'
+}
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 15px;
@@ -595,15 +975,18 @@ font-weight: 200;
   padding: 30px 15px;
 }
 
-.owl-carousel .owl-stage-outer{
+.why-krishangi-section .owl-carousel .owl-stage-outer{
       overflow-y: inherit;
 }
-.owl-carousel .center {
+.why-krishangi-section.owl-carousel .center {
   transform: scale(1) !important;
 }
-.custom-carousel .owl-stage-outer {
+.why-krishangi-section .custom-carousel .owl-stage-outer {
   height:auto;
 
+}
+#form-ui{
+  padding: 30px 15px;
 }
       }
 
