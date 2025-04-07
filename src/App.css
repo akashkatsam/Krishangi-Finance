@@ -1002,6 +1002,9 @@ font-weight: 300;
   font-weight: 600;
   font-family: 'Inter';;
 }
+.pt-10{
+  padding: 10px;
+}
 .headingabout span{
   color: #df5914;
 }
