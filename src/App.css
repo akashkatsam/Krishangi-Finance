@@ -525,9 +525,6 @@ main{
 
   
         .servicecard1{
-         
-
-
           background-image: url('./Mask group (1).png');          background-size: contain;
           border-radius: 10px;
           background-repeat: no-repeat;
@@ -545,7 +542,7 @@ main{
 
               .servicecard1 {
                 transition: background-color 0.5s ease, color 0.3s ease;
-                background-image: url('./white tree (1).png');
+                background-image: url('./Mask\ group\ \(1\).png');
 
                 color: black; /* Default text color */
                 background-color: white; /* Default background */
@@ -555,6 +552,8 @@ main{
               .servicecard1:hover {
                 background-color: #ef6620;
                 color: white;
+                background-image: url('./white tree (1).png');
+
               }
               
               .servicecard1:hover h2,
@@ -585,13 +584,31 @@ main{
           width: 60px;
           margin-bottom: 30px;
         }
-        .servicecard1 svg{
-          position: absolute;     /* Add this */
-          bottom: 30px;           /* 30px from bottom */
-          right: 40px;            /* Align with padding on the right */
+        .servicecard1 svg {
+          position: absolute;
+          bottom: 30px;
+          right: 40px;
           fill: #000;
           color: #000;
+          transition: transform 0.3s ease;
         }
+        
+        .servicecard1 svg:hover {
+          animation: slideLeftAndBack 0.6s ease;
+        }
+
+        @keyframes slideLeftAndBack {
+          0% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(-10px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+        
         .serviceheading{
           padding: 20px;
         }
