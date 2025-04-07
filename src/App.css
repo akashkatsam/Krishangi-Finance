@@ -900,7 +900,7 @@ font-weight: 300;
 
 
 .breadcrumb {
-  height: 535px;
+  height: 430px;
   background-image: url('./breadcumb.png'); /* Just for visibility */
   display: flex;
   align-items: center;
