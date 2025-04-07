@@ -44,7 +44,7 @@ export default function Contact() {
       <div className='col-md-12'>
 
         <div className='aboutcontent'>
-        <p>With a deep commitment to transparency and trust, we simplify complex financial decisions, ensuring your wealth works for you. Our approach blends expert insights with customized strategies, empowering you to achieve financial stability, growth, and peace of mind at every stage of life.
+        <p className='bottomcontent'>With a deep commitment to transparency and trust, we simplify complex financial decisions, ensuring your wealth works for you. Our approach blends expert insights with customized strategies, empowering you to achieve financial stability, growth, and peace of mind at every stage of life.
         </p>
       </div>
       </div>

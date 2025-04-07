@@ -1005,6 +1005,9 @@ font-weight: 300;
 .pt-10{
   padding: 10px;
 }
+.aboutcontent .bottomcontent{
+  margin-top: 10px!important;
+}
 .headingabout span{
   color: #df5914;
 }
