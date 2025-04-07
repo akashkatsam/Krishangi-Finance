@@ -900,12 +900,13 @@ font-weight: 300;
 
 
 .breadcrumb {
-  height: 430px;
-  background-image: url('./breadcumb.png'); /* Just for visibility */
-  display: flex;
+  height: 435px;
+  background-image: url('./banner-laef.png'); /* Just for visibility */
   align-items: center;
   justify-content: center; /* Optional: center horizontally too */
   text-align: center;margin-bottom: 0px;
+  background-size: cover;
+  background-position: right;
 }
 
 .breadcrumb-content h1 {
