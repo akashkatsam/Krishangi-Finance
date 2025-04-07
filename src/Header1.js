@@ -219,7 +219,7 @@ export default function Header1() {
         </Nav>
 
         {/* Login Button */}
-        <Button className="rounded-pill px-4">
+        <Button >
           Log in
         </Button>
       </Navbar.Collapse>

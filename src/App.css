@@ -142,7 +142,6 @@ nav button {
   font-family: 'inter' !important;
   border-radius: 30px;
   padding: 10px 26px !important;
-  margin-top: 15px;
 }
 
 /* phoneui */
@@ -486,11 +485,11 @@ main{
           padding: 40px 60px;
         }
         .servicecard{
-          background-image: url('./with-leaf.png');
-          background-size: cover;
+          background-image: url('./white tree (1).png');
+          background-size: contain;
           border-radius: 10px;
           background-repeat: no-repeat;
-          height: 400px!important;
+          height: 420px!important;
           padding: 40px;
           background-color: #ef6620;
           background-position: right;
@@ -515,22 +514,59 @@ main{
           margin-bottom: 30px;
         }
         .servicecard svg{
-          float: right;
-          margin-bottom: 30px;
+
+          position: absolute;     /* Add this */
+          bottom: 30px;           /* 30px from bottom */
+          right: 40px;            /* Align with padding on the right */
+          fill: #fff;
+          color: #000;
         }
 
 
-
+  
         .servicecard1{
-          background-image: url('./leaf.png');
-          background-size: cover;
+         
+
+
+          background-image: url('./Mask group (1).png');          background-size: contain;
           border-radius: 10px;
           background-repeat: no-repeat;
-          height: 400px!important;
+          height: 420px!important;
           padding: 40px;
-          background-color: #F6F6F6;
+          background-color: #ef6620;
           background-position: right;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+              }
+
+              .servicecard1:hover{
+                background-color: #ef6620;
+              }
+
+              .servicecard1 {
+                transition: background-color 0.5s ease, color 0.3s ease;
+                background-image: url('./white tree (1).png');
+
+                color: black; /* Default text color */
+                background-color: white; /* Default background */
+                
+              }
+              
+              .servicecard1:hover {
+                background-color: #ef6620;
+                color: white;
+              }
+              
+              .servicecard1:hover h2,
+              .servicecard1:hover p,
+              .servicecard1:hover svg path {
+                color: white;
+                fill: white; /* This changes the SVG arrow to white */
+              }
+
+              .servicecard1:hover img {
+                filter: invert(1);
+                transition: filter 0.1s ease;
               }
 
         .servicecard1 h2{
@@ -550,8 +586,9 @@ main{
           margin-bottom: 30px;
         }
         .servicecard1 svg{
-          float: right;
-          margin-bottom: 30px;
+          position: absolute;     /* Add this */
+          bottom: 30px;           /* 30px from bottom */
+          right: 40px;            /* Align with padding on the right */
           fill: #000;
           color: #000;
         }
@@ -814,7 +851,13 @@ font-weight: 300;
   height: 100%;
 }
 .megamenu{
-  width: 700px;
+  width: 720px;
+}
+
+.megamenu img{
+  width: 55px;
+  margin: auto;
+  display: block;
 }
 .arrow{
   position: absolute;
@@ -824,7 +867,7 @@ font-weight: 300;
 .dropdown-menu{
   margin-left: -45px;
     margin-top: 4px;
-    border-top: 3px solid #df5914;
+    border-top: 4px solid #df5914;
     border-radius: 0px!important;
 }
 .services-dropdown{
