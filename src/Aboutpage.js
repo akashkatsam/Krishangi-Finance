@@ -39,6 +39,8 @@ export default function Contact() {
       </video>
       </div>
 
+
+<div className='pt-10'></div>
       <div className='col-md-12'>
 
         <div className='aboutcontent'>
