@@ -12,10 +12,10 @@ export default function Header() {
     <>
     
 {/* <main> */}
-    <Navbar expand="lg">
+<Navbar expand="lg">
     <Container>
       {/* Logo */}
-      <Link href="/">
+      <Link to="/">
         <img
           src={logo}
           alt="Krishangi Logo"
@@ -30,7 +30,7 @@ export default function Header() {
       {/* Navbar Links */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link to="/about">About Us</Nav.Link>
+          <Link to="/about" className="nav-link">About Us</Link>
 
           <NavDropdown title="Services" id="services-dropdown">
           <img src={triangle}  className='img-fluid arrow'/>
@@ -68,7 +68,7 @@ export default function Header() {
                         </div>
                         <div className='col-md-9'>
                         <div className='megalink'>
-                        <h5>Portfolio Management <br></br>Servicesss</h5>
+                        <h5>Portfolio Management <br></br>Services</h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
                         </div>
@@ -207,9 +207,15 @@ export default function Header() {
             </div>
           
           </NavDropdown>
-          <Nav.Link href="/insights">Investing Insights</Nav.Link>
-          <Nav.Link href="/careers">Careers</Nav.Link>
-          <Nav.Link to="/contact-us">Contact Us</Nav.Link>
+          <Link to="/contact-us" className="nav-link">
+          Investmenting Insides
+          </Link>
+          <Link to="/carrer" className="nav-link">
+          Career
+          </Link>
+          <Link to="/contact-us" className="nav-link">
+          Contact Us
+          </Link>
         </Nav>
 
         {/* Login Button */}

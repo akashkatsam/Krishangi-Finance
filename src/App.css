@@ -89,7 +89,7 @@ nav button {
 #aboutstats {
   padding: 70px 80px;
   background-color: #E5E4E4;
-  background-image: url('./bggrey.png');
+  background-image: url('./greybg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position:bottom;
@@ -932,13 +932,16 @@ font-weight: 300;
   font-family: 'inter';
   color: #434343;
 }
-#formcard p{
-
-  width: 80%;
+  #formcard p {
+    width: 80%;
     font-size: 18px;
     font-family: 'Inter';
+    margin-bottom: 40px;
 }
 
+#formcard input{
+  margin-bottom: 25px;
+}
 .detailcard{
   padding: 20px 25px; 
   background-color: #EFEEEE;
@@ -1004,6 +1007,13 @@ font-weight: 300;
 }
 .headingabout img{
   margin-top: -5px;
+}
+
+
+.consultant img{
+  position: relative;
+  margin-top: -38px;
+  margin-bottom: 20px;
 }
         @media only screen and (max-width: 600px) {
           #aboutstats {

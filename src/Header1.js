@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 import logo from './logo.png'
 import float from './floatimage.png';
 import triangle from './triangle.png'
@@ -14,14 +15,14 @@ export default function Header1() {
     <Navbar expand="lg">
     <Container>
       {/* Logo */}
-      <Navbar.Brand href="/">
+      <Link to="/">
         <img
           src={logo}
           alt="Krishangi Logo"
           height="40"
           className="d-inline-block align-top"
         />
-      </Navbar.Brand>
+      </Link>
 
       {/* Mobile Toggle Button */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,7 +30,7 @@ export default function Header1() {
       {/* Navbar Links */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Us</Nav.Link>
+          <Link to="/about" className="nav-link">About Us</Link>
 
           <NavDropdown title="Services" id="services-dropdown">
           <img src={triangle}  className='img-fluid arrow'/>
@@ -206,9 +207,15 @@ export default function Header1() {
             </div>
           
           </NavDropdown>
-          <Nav.Link href="/insights">Investing Insights</Nav.Link>
-          <Nav.Link href="/careers">Careers</Nav.Link>
-          <Nav.Link to="/contact-us">Contact Us</Nav.Link>
+          <Link to="/contact-us" className="nav-link">
+          Investmenting Insides
+          </Link>
+          <Link to="/carrer" className="nav-link">
+          Career
+          </Link>
+          <Link to="/contact-us" className="nav-link">
+          Contact Us
+          </Link>
         </Nav>
 
         {/* Login Button */}
