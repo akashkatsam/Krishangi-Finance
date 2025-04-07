@@ -10,6 +10,7 @@ import loan from './icon/Money Bag Rupee.png'
 import well from './icon/To Do.png'
 import service from './icon/Services.png'
 import porfit from './icon/Profitabilitywhite.png'
+import icon from './krishangiicon.png'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Service() {
@@ -43,7 +44,7 @@ export default function Service() {
           {/* Service Heading */}
           <div className="col-md-4">
             <div className="serviceheading">
-              <h4><span>Our
+              <h4> <img src={icon} className="img-fluid" /> <span>Our
                 </span> Services</h4>
               <p>
                 At Krishangi Finance, we provide expert financial solutions tailored to your needs,

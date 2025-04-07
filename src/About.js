@@ -1,6 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import "bootstrap/dist/css/bootstrap.min.css";
+import icon from './krishangiicon.png'
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
       <div className="row">
         <div className="col-md-6">
          <div className="counterleft">
-         <h2>Krishangi Finance</h2>
+         <h2> <img src={icon} className="img-fluid" />  Krishangi Finance</h2>
           <p>
             Krishangi Finance is a financial solutions firm dedicated to helping
             individuals and businesses achieve long-term financial security. We
