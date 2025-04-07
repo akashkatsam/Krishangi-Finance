@@ -89,6 +89,10 @@ nav button {
 #aboutstats {
   padding: 70px 80px;
   background-color: #E5E4E4;
+  background-image: url('./bggrey.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:bottom;
 }
 
 .counter h3 {
@@ -288,7 +292,20 @@ main{
           margin:20px 30px 30px 30px;
         }
 
-
+        .contactbtn button{
+          background-color: transparent;
+          position: relative;
+          border: 2.6px solid #000;
+          border-radius: 30px;
+          text-transform: uppercase;
+          color: #000;
+          FONT-SIZE: 15PX;
+          PADDING: 13PX 66PX 13px 21px;
+          FONT-FAMILY: 'Inter';
+          margin: 40px auto 0px ;
+          display: block;
+          font-weight: 500;
+        }
         .about-sliderbtn button{
           background-color: transparent;
           position: relative;
@@ -879,6 +896,113 @@ font-weight: 300;
   color: #fff;
   font-size: 19px;
   font-family: 'Inter'
+}
+
+
+.breadcrumb {
+  height: 400px;
+  background-image: url('./breadcumb.png'); /* Just for visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional: center horizontally too */
+  text-align: center;margin-bottom: 0px;
+}
+
+.breadcrumb-content h1 {
+  /* You can add additional styling here */
+  font-size: 64px!important;
+  text-transform: uppercase;
+  font-family: 'inter';
+  font-weight: 600;
+  color: #fff;
+}
+
+
+.breadcrumb-content p{
+  color: #fff;
+  font-family: 'inter';
+  font-weight: 200;
+  font-size: 20px;
+}
+
+#formcard h3{
+  font-size: 36px;
+  font-weight:600;
+  font-family: 'inter';
+  color: #434343;
+}
+#formcard p{
+
+  width: 80%;
+    font-size: 18px;
+    font-family: 'Inter';
+}
+
+.detailcard{
+  padding: 20px 25px; 
+  background-color: #EFEEEE;
+  border-radius: 10px;
+  display: flex;
+    vertical-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.detailcard img{
+  height: 40px;
+}
+.detailcard p{
+  margin-bottom: 0px;
+    font-size: 18px;
+    font-family: 'Inter';
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+.breadcrumb-content  span{
+  color: #F36A24;
+}
+
+#contactpage{
+  padding: 20px;
+}
+
+.leftcontact{
+  background-color: #EFEEEE;
+  border-radius: 10px;
+  padding:  50px;
+}
+
+#aboutpage{
+  padding: 70px 50px;
+}
+
+#aboutpage video{
+  border-radius: 10px;
+  width: 85%;
+  margin: auto;
+  display: block;
+}
+.aboutcontent p{
+  color: #4B4B4B;
+  font-size: 24px;
+  font-family: 'inter';
+  width: 92%;
+
+}
+
+.headingabout h4{
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Inter';;
+}
+.headingabout span{
+  color: #df5914;
+}
+.headingabout img{
+  margin-top: -5px;
 }
         @media only screen and (max-width: 600px) {
           #aboutstats {

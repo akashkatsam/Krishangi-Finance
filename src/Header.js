@@ -68,7 +68,7 @@ export default function Header() {
                         </div>
                         <div className='col-md-9'>
                         <div className='megalink'>
-                        <h5>Portfolio Management <br></br>Services</h5>
+                        <h5>Portfolio Management <br></br>Servicesss</h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
                         </div>
@@ -209,7 +209,7 @@ export default function Header() {
           </NavDropdown>
           <Nav.Link href="/insights">Investing Insights</Nav.Link>
           <Nav.Link href="/careers">Careers</Nav.Link>
-          <Nav.Link href="/contact">Contact Us</Nav.Link>
+          <Nav.Link to="/contact-us">Contact Us</Nav.Link>
         </Nav>
 
         {/* Login Button */}

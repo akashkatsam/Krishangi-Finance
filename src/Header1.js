@@ -29,7 +29,7 @@ export default function Header1() {
       {/* Navbar Links */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link href="/about">About Us</Nav.Link>
+          <Nav.Link to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Us</Nav.Link>
 
           <NavDropdown title="Services" id="services-dropdown">
           <img src={triangle}  className='img-fluid arrow'/>
@@ -208,7 +208,7 @@ export default function Header1() {
           </NavDropdown>
           <Nav.Link href="/insights">Investing Insights</Nav.Link>
           <Nav.Link href="/careers">Careers</Nav.Link>
-          <Nav.Link href="/contact">Contact Us</Nav.Link>
+          <Nav.Link to="/contact-us">Contact Us</Nav.Link>
         </Nav>
 
         {/* Login Button */}

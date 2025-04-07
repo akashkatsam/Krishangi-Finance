@@ -1,254 +1,69 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
-import OwlCarousel from "react-owl-carousel3";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import hold from './holdmoney.png'
-import about from './format.png';
-import Footer from './Footer';
-import img2 from './Frame 16.png'
-import img5 from './circledesign.png'
-import FinancialAccordion from './FinancialAccordion';
-import Header from './Header';
-export default function Aboutpage() {
-
-  const options = {
-    items: 2,            
-    loop: false,          
-    margin: 20,
-    dots:false,
-    startPosition: 0,    
-    autoplay: true,     
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 1.5,  
-      },
-    },
-  };
-
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const paragraphs = document.querySelectorAll('.animatetext p');
-    paragraphs.forEach((p) => {
-      const words = p.innerText.split(' ').map((word) => {
-        return `<span class="word" style="color: gray;">${word}</span>`;
-      }).join(' ');
-
-      p.innerHTML = words;
-      gsap.fromTo(
-        p.querySelectorAll('.word'),
-        {
-          color: '#9390905e', // Initial color is gray
-        },
-        {
-          opacity: 1, 
-          color: 'white', 
-          duration: 1.2, 
-          stagger: 0.15, 
-          ease: 'power2.out', 
-          scrollTrigger: {
-            trigger: p,
-            start: 'top 90%',
-            end: 'bottom top',
-            scrub: 1, 
-            markers: false, 
-          },
-        }
-      );
-    });
-  }, []);
-
+import React from 'react'
+import Header from './Header'
+import krishangiicon  from './krishangiicon.png'
+import Footer from './Footer'
+import map from './map.png'
+import mail from './mail.png'
+import phone from './phone.png'
+import video from './video.mp4'
+export default function Contact() {
   return (
     <>
+    
     <Header/>
-      <section id='form-ui'>
-        <div className='formcaption'>
-          <div className='container'>
-            <div className='headingabout'>
-              <h3>Smart Financial Planning for<br></br> a Secure Future</h3>
-              <div className='boxform'>
-                <div className='row'>
-                  <div className='col-md-7'>
-                    <div className='form-left'>
-                      <img src={about} className='img-fluid' />
-                    </div>
-                  </div>
-                  <div className='col-md-5 align-self-center'>
-                    <div className='form-right'>
-                      <h4>Enter Your Details</h4>
-                      <div className='form-group'>
-                        <input type='text' className='form-control' id='Name' placeholder='Name' />
-                      </div>
-                      <div className='form-group'>
-                        <input type='text' className='form-control' id='Mobile' placeholder='Mobile No.' />
-                      </div>
-                      <div className='form-group'>
-                        <input type='email' className='form-control' id='Email' placeholder='Email Address' />
-                      </div>
-                      <p>
-                        Tata AIA Life Insurance Company Limited will send you updates on new products, services, insurance solutions, existing policy or related information and/or process your information in accordance with
-                      </p>
-                      <button>
-                        Submit
-                        <div className='arrowbtn'>
-                          <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                            <path
-                              d='M23.5 2C23.5 1.17157 22.8284 0.5 22 0.5H8.5C7.67157 0.5 7 1.17157 7 2C7 2.82843 7.67157 3.5 8.5 3.5L20.5 3.5L20.5 15.5C20.5 16.3284 21.1716 17 22 17C22.8284 17 23.5 16.3284 23.5 15.5V2ZM3.06066 23.0607L23.0607 3.06066L20.9393 0.93934L0.93934 20.9393L3.06066 23.0607Z'
-                              fill='white'
-                            />
-                          </svg>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="breadcrumb">
+  <div class="breadcrumb-content">
+ <h1><img src={krishangiicon} className='img-fluid' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
+  </div>
+</div>
 
-            <div className='animatetext'>
-              <h4>Financial Planning</h4>
-              <p>
-                At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
-                Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
-              </p>
-            </div>
-          </div>
+
+<section id='aboutpage'>
+  <div className='container-fluid'>
+    <div className='headingabout'>
+      <h4><img src={krishangiicon}  className='img-fluid' /> <span>Krishangi</span> Finance</h4>
+    </div>
+    <div className='row'>
+      <div className='col-md-6'>
+        <div className='aboutcontent'>
+          <p>At Krishangi Finance, we believe that financial success begins with a clear plan. Our expertise lies in financial goal planning and wealth management, helping individuals and businesses create structured, long-term strategies tailored to their unique aspirations. Whether you're planning for future security, growing your investments, or managing risks, we provide personalized financial solutions that align with your goals and lifestyle.</p>
         </div>
-      </section>
+      </div>
+      <div className='col-md-6'>
+      <video width="100%"  autoPlay
+        muted
+        loop
+        playsInline>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      </div>
+
+      <div className='col-md-12'>
+
+        <div className='aboutcontent'>
+        <p>With a deep commitment to transparency and trust, we simplify complex financial decisions, ensuring your wealth works for you. Our approach blends expert insights with customized strategies, empowering you to achieve financial stability, growth, and peace of mind at every stage of life.
+        </p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-      <section id='about-slider'>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-6'>
-              <div className='headingslider'>
-                <h4>Why Does Financial Planning Matters?</h4>
-              </div>
-            </div>
-            <div className='col-6 align-self-center'>
-              <div className='about-sliderbtn'>
-                <button>
-                  Fill the form
-                  <div className='arrowbtn'>
-                    <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path
-                        d='M23.5 2C23.5 1.17157 22.8284 0.5 22 0.5H8.5C7.67157 0.5 7 1.17157 7 2C7 2.82843 7.67157 3.5 8.5 3.5L20.5 3.5L20.5 15.5C20.5 16.3284 21.1716 17 22 17C22.8284 17 23.5 16.3284 23.5 15.5V2ZM3.06066 23.0607L23.0607 3.06066L20.9393 0.93934L0.93934 20.9393L3.06066 23.0607Z'
-                        fill='white'
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
+
+<section id='foundermessage'>
+
+  <div className='container'>
+    
+  </div>
+
+</section>
 
 
-            <div className='separator-20'></div>
-            <OwlCarousel className="owl-theme custom-carousel  ml-20" {...options}>
-              <div className='sildercard'>
-                <div className='sliderbox'>
-                  <div className='row'>
-                    <div className='col-md-6'>
-                      <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
-                      </div>
-                    </div>
-                    <div className='col-md-6'>
-                      <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
-                      </div>
-                    </div>
 
-
-                  </div>
-                </div>
-              </div>
-              <div className='sildercard'>
-                <div className='sliderbox'>
-                  <div className='row'>
-                    <div className='col-md-6'>
-                      <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
-                      </div>
-                    </div>
-                    <div className='col-md-6'>
-                      <div className='rightslider'>
-                        <img src={img2} className='img-fluid' />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='sildercard'>
-                <div className='sliderbox'>
-                  <div className='row'>
-                    <div className='col-md-6'>
-                      <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
-                      </div>
-                    </div>
-                    <div className='col-md-6'>
-                      <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </OwlCarousel>
-          </div>
-        </div>
-      </section>
-
-      <section className='bgwhite' id='investment'>
-        <div className='row'>
-          <div className='col-6'>
-            <div className='bgblue'></div>
-          </div>
-          <div className='col-6'>
-            <div className='topright'>
-              <h5>124k  <span><img src={img5} className='img-fluid dotsimg'/></span></h5> 
-              <div className='lineorange'></div>
-            </div>
-            <div className='rightgroup'>
-              <h5>Financial </h5>
-              <li>Grow your assets with a structured investment
-                approach.</li>
-                <li>Grow your assets
-                approach.</li>
-                <li>Grow your assets with a structured investment
-                approach.</li>
-              <div className='investment'>
-                <button>
-                  fill the form
-                  <div className='arrowbtn'>
-                    <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path
-                        d='M23.5 2C23.5 1.17157 22.8284 0.5 22 0.5H8.5C7.67157 0.5 7 1.17157 7 2C7 2.82843 7.67157 3.5 8.5 3.5L20.5 3.5L20.5 15.5C20.5 16.3284 21.1716 17 22 17C22.8284 17 23.5 16.3284 23.5 15.5V2ZM3.06066 23.0607L23.0607 3.06066L20.9393 0.93934L0.93934 20.9393L3.06066 23.0607Z'
-                        fill='white'
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FinancialAccordion/>
-      <Footer />
+<Footer/>
     </>
-  );
+  )
 }
