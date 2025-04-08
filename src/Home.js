@@ -21,8 +21,9 @@ const Home = () => {
 <About/>
 
 <Service/>
-<Phone/>
 <Slider/>
+<Phone/>
+
 <Accordion/>
 <Fiance/>
 <Footer/>
