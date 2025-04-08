@@ -478,11 +478,12 @@ main{
         }
 
        .text-why {
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 20px;
-        width: 90%;
+        width: 78%;
         font-family: 'Inter';
-        font-weight: 200;
+        font-weight: 400;
+        line-height: 30px;
     
         }
         .mb-c-30{
