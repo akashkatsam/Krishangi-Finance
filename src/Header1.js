@@ -32,181 +32,29 @@ export default function Header1() {
         <Nav className="mx-auto">
           <Link to="/about" className="nav-link">About Us</Link>
 
-          <NavDropdown title="Services" id="services-dropdown">
-          <img src={triangle}  className='img-fluid arrow'/>
+          <li className="nav-item dropdown custom-dropdown">
+  <a href="#" className="nav-link dropdown-toggle">
+    Services <img src={triangle} className="img-fluid arrow" />
+  </a>
+  <div className="megamenu dropdown-menu">
+    <div className="row">
+      {/* your columns here */}
+      <div className="col-md-6">
+        <a className="dropdown-item" href="/service1">
+          <div className="megalink">Financial Planning</div>
+        </a>
+        {/* other items */}
+      </div>
+      <div className="col-md-6">
+        <a className="dropdown-item" href="/service2">
+          <div className="megalink">Life Insurance</div>
+        </a>
+        {/* other items */}
+      </div>
+    </div>
+  </div>
+</li>
 
-            <div className='megamenu'>
-                <div className='row'>
-                    <div className='col-md-6'>
-                    <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Financal Planning </h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-                      <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Portfolio Management <br></br>Services</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Alternative Investment<br></br> Funds</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Mutual Funds</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-                    
-                     
-
-
-                    </div>
-                    <div className='col-md-6'>
-                    <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>General Insurance</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-                      <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Loan</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Will & Estate Planning</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Life Insurance</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-                    
-                     
-
-
-                    </div>
-                </div>
-            </div>
-          
-          </NavDropdown>
           <Link to="/contact-us" className="nav-link">
           Investmenting Insides
           </Link>

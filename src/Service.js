@@ -9,7 +9,7 @@ import heart from './icon/Heart with Pulse.png'
 import loan from './icon/Money Bag Rupee.png'
 import well from './icon/To Do.png'
 import service from './icon/Services.png'
-import porfit from './icon/Profitabilitywhite.png'
+import porfit from './Profitability (3).png'
 import icon from './krishangiicon.png'
 import test from  './white tree.png'
 gsap.registerPlugin(ScrollTrigger);

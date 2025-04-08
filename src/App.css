@@ -533,7 +533,6 @@ main{
           background-color: #ef6620;
           background-position: right;
           margin-bottom: 20px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
               }
 
               .servicecard1:hover{
@@ -545,7 +544,7 @@ main{
                 background-image: url('./Mask\ group\ \(1\).png');
 
                 color: black; /* Default text color */
-                background-color: white; /* Default background */
+                background-color: #f6f6f6; /* Default background */
                 
               }
               
@@ -1081,6 +1080,42 @@ font-weight: 300;
   margin-top: -38px;
   margin-bottom: 20px;
 }
+
+
+.custom-dropdown {
+  position: relative;
+}
+
+.megamenu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  background: #fff;
+  padding: 20px;
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown:hover .megamenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.custom-dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 15px;
