@@ -6,6 +6,8 @@ import map from './map.png'
 import mail from './mail.png'
 import phone from './phone.png'
 import video from './video.mp4'
+import ceo from './CEO.png'
+
 export default function Contact() {
   return (
     <>
@@ -13,7 +15,7 @@ export default function Contact() {
     <Header/>
     <div class="breadcrumb">
   <div class="breadcrumb-content">
- <h1><img src={krishangiicon} className='img-fluid' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
+ <h1><img src={krishangiicon} className='img-fluid iconkrishangi' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
   </div>
 </div>
 
@@ -55,14 +57,32 @@ export default function Contact() {
 
 
 
-<section id='foundermessage'>
 
-  <div className='container'>
-    
-  </div>
 
-</section>
+ 
+<section id="foundermessage">
+      <div className="container-fluid">
+      <div className='headingabout'>
+      <h4><img src={krishangiicon}  className='img-fluid' /> <span>Meet our </span> Director</h4>
+    </div>
+        <div className="row">
+          <div className="col-md-5">
 
+            <img src={ceo} className='img-fluid founderimg' />
+          </div>
+          <div className="col-md-7">
+            <div className="founderright">
+              <div className="foundertext">
+                <h4>Sachin Agrawal</h4>
+                <p>Sachin Agrawal, a seasoned financial goal planner with over 20 years of expertise in financial planning and wealth management. With a deep passion for guiding individuals toward financial security, he specializes in investment management, retirement planning, tax strategies, and risk management. His approach is rooted in understanding each client’s unique financial landscape and crafting personalized, strategic plans that ensure long-term growth and stability.</p>
+                <p>  Sachin Agrawal believes that financial planning isn’t just about numbers, but it’s about empowering lives. By working closely with clients from diverse backgrounds, he provides clear, customized financial roadmaps that help them achieve their goals with confidence. His unwavering commitment to transparency, trust, and client success defines the foundation of Krishangi Finance</p>
+              </div>
+            </div>
+          </div>
+
+          </div></div> 
+      
+      </section>
 
 
 <Footer/>

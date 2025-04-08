@@ -46,30 +46,44 @@ const FinancialAccordion = () => {
       <div className="container">
         <h3>Our Approach to Financial Planning</h3>
         <p>At Krishangi Finance, we take a personalized approach <br></br>to financial planning:</p>
-        <div className="accordion" id="faqAccordion">
-          {faqs.map((faq) => (
-            <div className="accordion-item" key={faq.id}>
-              <h2 className="accordion-header">
-                <button
-                  className={`accordion-button ${openId === faq.id ? "" : "collapsed"}`}
-                  type="button"
-                  onClick={() => toggleAccordion(faq.id)}
-                >
-                  {faq.question}
-                </button>
-              </h2>
-              <div
-                className={`accordion-collapse ${openId === faq.id ? "show" : ""}`}
-                style={{
-                  maxHeight: openId === faq.id ? "500px" : "0",
-                  overflow: "hidden",
-                  transition: "max-height 1s ease-in-out",
-                }}
-              >
-                <div className="accordion-body">{faq.answer}</div>
-              </div>
-            </div>
-          ))}
+        
+
+        <div className="contentcard">
+          <h4>1. Understanding Your Goals
+          </h4>
+          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
+          </p>
+        </div>
+
+        <div className="contentcard">
+          <h4>1. Understanding Your Goals
+          </h4>
+          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
+          </p>
+        </div>
+
+
+        <div className="contentcard">
+          <h4>1. Understanding Your Goals
+          </h4>
+          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
+          </p>
+        </div>
+
+
+
+        <div className="contentcard">
+          <h4>1. Understanding Your Goals
+          </h4>
+          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
+          </p>
+        </div>
+
+        <div className="contentcard">
+          <h4>1. Understanding Your Goals
+          </h4>
+          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
+          </p>
         </div>
       </div>
     </section>

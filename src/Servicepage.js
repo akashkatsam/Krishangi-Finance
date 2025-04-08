@@ -6,12 +6,13 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hold from './holdmoney.png'
-import about from './format.png';
+import about from './aboutimg.png';
 import Footer from './Footer';
 import img2 from './Frame 16.png'
 import img5 from './circledesign.png'
 import FinancialAccordion from './FinancialAccordion';
 import Header from './Header';
+import krishangiicon from './krishangiicon.png';
 export default function Servicepage() {
 
   const options = {
@@ -23,7 +24,7 @@ export default function Servicepage() {
     autoplay: true,     
     responsive: {
       0: {
-        items: 1,
+        items: 1.2,
       },
       600: {
         items: 2,
@@ -74,7 +75,7 @@ export default function Servicepage() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3>Smart Financial Planning for<br></br> a Secure Future</h3>
+              <h3><img src={krishangiicon}  className='img-fluid' /> Smart <span>Financial Planning</span> for<br></br> a Secure Future</h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -129,27 +130,13 @@ export default function Servicepage() {
       <section id='about-slider'>
         <div className='container-fluid'>
           <div className='row'>
-            <div className='col-6'>
+            <div className='col-12'>
               <div className='headingslider'>
-                <h4>Why Does Financial Planning Matters?</h4>
+                <h4>Why Does Financial Planning<br></br> Matters?</h4>
+                <p></p>
               </div>
             </div>
-            <div className='col-6 align-self-center'>
-              <div className='about-sliderbtn'>
-                <button>
-                  Fill the form
-                  <div className='arrowbtn'>
-                    <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path
-                        d='M23.5 2C23.5 1.17157 22.8284 0.5 22 0.5H8.5C7.67157 0.5 7 1.17157 7 2C7 2.82843 7.67157 3.5 8.5 3.5L20.5 3.5L20.5 15.5C20.5 16.3284 21.1716 17 22 17C22.8284 17 23.5 16.3284 23.5 15.5V2ZM3.06066 23.0607L23.0607 3.06066L20.9393 0.93934L0.93934 20.9393L3.06066 23.0607Z'
-                        fill='white'
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
-
+       
 
             <div className='separator-20'></div>
             <OwlCarousel className="owl-theme custom-carousel  ml-20" {...options}>
@@ -207,42 +194,6 @@ export default function Servicepage() {
                 </div>
               </div>
             </OwlCarousel>
-          </div>
-        </div>
-      </section>
-
-      <section className='bgwhite' id='investment'>
-        <div className='row'>
-          <div className='col-6'>
-            <div className='bgblue'></div>
-          </div>
-          <div className='col-6'>
-            <div className='topright'>
-              <h5>124k  <span><img src={img5} className='img-fluid dotsimg'/></span></h5> 
-              <div className='lineorange'></div>
-            </div>
-            <div className='rightgroup'>
-              <h5>Financial </h5>
-              <li>Grow your assets with a structured investment
-                approach.</li>
-                <li>Grow your assets
-                approach.</li>
-                <li>Grow your assets with a structured investment
-                approach.</li>
-              <div className='investment'>
-                <button>
-                  fill the form
-                  <div className='arrowbtn'>
-                    <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path
-                        d='M23.5 2C23.5 1.17157 22.8284 0.5 22 0.5H8.5C7.67157 0.5 7 1.17157 7 2C7 2.82843 7.67157 3.5 8.5 3.5L20.5 3.5L20.5 15.5C20.5 16.3284 21.1716 17 22 17C22.8284 17 23.5 16.3284 23.5 15.5V2ZM3.06066 23.0607L23.0607 3.06066L20.9393 0.93934L0.93934 20.9393L3.06066 23.0607Z'
-                        fill='white'
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>

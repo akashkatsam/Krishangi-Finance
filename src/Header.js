@@ -7,6 +7,15 @@ import float from './floatimage.png';
 import triangle from './triangle.png'
 import './App.css'
 import profit from './header1.png'
+import icon2 from './headericon/2.png'
+import icon3 from './headericon/3.png'
+import icon4 from './headericon/4.png'
+import icon5 from './headericon/5.png'
+import icon6 from './headericon/6.png'
+import icon7 from './headericon/7.png'
+import icon8 from './headericon/8.png'
+import { NavLink } from 'react-router-dom';
+
 export default function Header() {
   return (
     <>
@@ -30,197 +39,207 @@ export default function Header() {
       {/* Navbar Links */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Link to="/about" className="nav-link">About Us</Link>
 
-          <NavDropdown title="Services" id="services-dropdown">
-          <img src={triangle}  className='img-fluid arrow'/>
+        <NavLink
+  to="/about"
+  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+>
+About Us</NavLink>
 
-            <div className='megamenu'>
-                <div className='row'>
-                    <div className='col-md-6'>
-                    <NavDropdown.Item href="/service1"><div className='megalink'>
+          <li className="nav-item dropdown custom-dropdown">
+  <NavLink to="/service" className={({ isActive }) => isActive ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'}>
+    Services 
+    &nbsp;<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989593 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989593 0.403806 0.696699 0.696699C0.403806 0.989592 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z" fill="#2D2D2D"/>
+</svg>
+
+  </NavLink>
+  <div className="megamenu dropdown-menu">
+    <div className="row">
+      <div className='col-md-6'>
                         <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
+                       
+                        <div className='col-md-9 align-self-center'>
                         <div className='megalink'>
                         <h5>Financal Planning </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
                         </div>
                         </div>
-                        </div></NavDropdown.Item>
+                        <div className='sep-10'></div>
 
-
-                      <NavDropdown.Item href="/service1"><div className='megalink'>
                         <div className='row'>
                         <div className='col-md-3'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
+                              <img src={icon2} className='img-fluid'/>
                             </div>
                           </div>
                         </div>
-                        <div className='col-md-9'>
+                        <div className='col-md-9 align-self-center'>
                         <div className='megalink'>
-                        <h5>Portfolio Management <br></br>Services</h5>
+                        <h5>Portfolio Management Services </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
                         </div>
                         </div>
-                        </div></NavDropdown.Item>
+
+                        <div className='sep-10'></div>
 
 
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
                         <div className='row'>
                         <div className='col-md-3'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
+                              <img src={icon3} className='img-fluid'/>
                             </div>
                           </div>
                         </div>
-                        <div className='col-md-9'>
+                        <div className='col-md-9 align-self-center'>
                         <div className='megalink'>
-                        <h5>Alternative Investment<br></br> Funds</h5>
+                        <h5>Alternative Investment Funds </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
                         </div>
                         </div>
-                        </div></NavDropdown.Item>
 
+                        <div className='sep-10'></div>
 
-
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
                         <div className='row'>
                         <div className='col-md-3'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
+                              <img src={icon4} className='img-fluid'/>
                             </div>
                           </div>
                         </div>
-                        <div className='col-md-9'>
+                        <div className='col-md-9 align-self-center'>
                         <div className='megalink'>
-                        <h5>Mutual Funds</h5>
+                        <h5>Mutual Funds </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
                         </div>
                         </div>
-                        </div></NavDropdown.Item>
 
+                        
+
+                        </div>
+
+
+
+                        <div className='col-md-6'>
+                        <div className='row'>
+                        <div className='col-md-3'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon4} className='img-fluid'/>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                        <div className='megalink'>
+                        <h5>General Insurance </h5>
+                        <p>Krishangi Finance is a financial </p>
+                        </div>
+                        </div>
+                        </div>
+                        <div className='sep-10'></div>
+
+                        <div className='row'>
+                        <div className='col-md-3'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon6} className='img-fluid'/>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                        <div className='megalink'>
+                        <h5>Loans </h5>
+                        <p>Krishangi Finance is a financial </p>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div className='sep-10'></div>
+
+
+                        <div className='row'>
+                        <div className='col-md-3'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon7} className='img-fluid'/>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                        <div className='megalink'>
+                        <h5>Will & Estate Planning </h5>
+                        <p>Krishangi Finance is a financial </p>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div className='sep-10'></div>
+
+                        <div className='row'>
+                        <div className='col-md-3'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon8} className='img-fluid'/>
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                        <div className='megalink'>
+                        <h5>Life Insurance </h5>
+                        <p>Krishangi Finance is a financial </p>
+                        </div>
+                        </div>
+                        </div>
+
+
+                        
+
+                        </div>
+
+
+                     
                     
                      
 
 
-                    </div>
-                    <div className='col-md-6'>
-                    <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>General Insurance</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
 
+        {/* other items */}
+    </div>
+  </div>
+</li>
 
-                      <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Loan</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
+        
 
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Will & Estate Planning</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-
-
-
-                        <NavDropdown.Item href="/service1"><div className='megalink'>
-                        <div className='row'>
-                        <div className='col-md-3'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={profit} className='img-fluid'/>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9'>
-                        <div className='megalink'>
-                        <h5>Life Insurance</h5>
-                        <p>Krishangi Finance is a financial </p>
-                        </div>
-                        </div>
-                        </div>
-                        </div></NavDropdown.Item>
-
-                    
-                     
-
-
-                    </div>
-                </div>
-            </div>
-          
-          </NavDropdown>
-          <Link to="/contact-us" className="nav-link">
-          Investmenting Insides
-          </Link>
-          <Link to="/carrer" className="nav-link">
-          Career
-          </Link>
-          <Link to="/contact-us" className="nav-link">
-          Contact Us
-          </Link>
+          <NavLink
+  to="/investment-inside"
+  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+>
+Investmenting Insides
+</NavLink>
+          <NavLink
+  to="/career"
+  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+>
+  Career
+</NavLink>
+          <NavLink
+  to="/contact-us"
+  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+>
+  Contact Us
+</NavLink>
         </Nav>
 
         {/* Login Button */}
-        <Button className="rounded-pill px-4">
-          Log in
+        <Button >
+          Portfolio Login
         </Button>
       </Navbar.Collapse>
     </Container>

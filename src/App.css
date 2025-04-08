@@ -173,8 +173,17 @@ margin: auto;
 display: block;
 margin-bottom: 20px;
 }
+.active{
+  color: #F26923!important;
+}
 .apkimage{
-  width: 70%;
+  position: absolute;
+  height:590px;
+}
+#phoneui video{
+  height: 550px !important;
+  width: 340px;
+  border-radius: 100px;
 }
 .androdbtn{
   margin: auto;
@@ -182,7 +191,7 @@ margin-bottom: 20px;
   text-align: center;
 }
 .androdbtn img{
-  margin-left: 20px;
+  margin: 0px 30px;
   
 }
 /* banner */
@@ -200,7 +209,7 @@ main{
   text-transform: uppercase;
   font-family: 'inter';
   padding-top: 140px;
-  padding-left: 30px;
+  padding-left: 50px;
 
 }
 .rightside-banner img{
@@ -650,7 +659,7 @@ main{
 
         }
         .footerimg {
-          width: 155px;
+          width: 165px;
           margin: auto;
           display: block;
         }
@@ -738,9 +747,14 @@ font-weight: 200;
           font-family: 'inter';
         }
         .form-right h4{
-          font-size: 22px;
+          font-size: 22px!important;
           font-family: 'Inter';
           margin-bottom: 30px;
+          text-align: left!important;
+          margin-bottom: 30px!important;
+        }
+        .orange{
+          color: #df5914!important;
         }
         .animatetext h4{
           font-size: 60px;
@@ -769,15 +783,16 @@ font-weight: 200;
 
 #about-slider{
   padding:40px 0px 40px 30px;
-  background: linear-gradient(180deg, rgba(229,228,228,1) 0%, rgba(252,251,252,1) 50%, rgba(229,228,228,1) 100%);
+  background: linear-gradient(180deg, rgba(243,106,36,1) 23%, rgba(220,86,17,1) 68%);
 
 }
 .headingslider h4{
-  color: #434343;
+  color: #fff;
   width:100%;
-  font-size: 64px;
+  font-size: 54px;
   font-family: 'inter';
   font-weight: 600;
+  text-align: center;
 }
 .separator-20{
   padding: 20px;
@@ -786,7 +801,7 @@ font-weight: 200;
       color: #F36A24;
 }
 .sliderbox{
-  background:linear-gradient(186deg, rgba(243,106,36,1) 0%, rgba(220,86,17,1) 100%);
+  background:#F8F8F8;
   border-radius: 10px;
 }.serviceheading span{
       color: #F36A24;
@@ -795,7 +810,7 @@ font-weight: 200;
   padding: 20px 30px;
 }
 .leftslider h4 {
-  color: #fff;
+  color: #0F2549;
   font-family: 'Inter';
   margin-bottom: 30px;
   margin-top: 34px;
@@ -805,7 +820,7 @@ font-weight: 200;
 
 }
 .leftslider p{
-  color: #fff;
+  color: #202020;
   font-weight: 200;
   font-family: 'inter';
   font-size: 47px;
@@ -818,11 +833,11 @@ font-weight: 200;
   height: 100%;
 }
 .leftslider h6{
-  border: 2px solid #fff;
+  border: 2px solid #0F2549;
   border-radius: 45px; 
      width: fit-content;  
        font-size: 24px;  
-         color: #fff;  
+         color: #0F2549;  
            padding: 10px;
            font-weight: 700;
 }
@@ -881,7 +896,7 @@ font-weight: 300;
   left: 81px;
 }
 .dropdown-menu{
-  margin-left: -45px;
+  margin-left: -115px;
     margin-top: 4px;
     border-top: 4px solid #df5914;
     border-radius: 0px!important;
@@ -891,7 +906,7 @@ font-weight: 300;
 }
 
 .megalink h5{
-  font-size: 16px;
+  font-size: 15px;
   color: #434343;
   font-weight: 600;
   margin-bottom: 0px;
@@ -901,29 +916,46 @@ font-weight: 300;
   color: #757575;
 }
 
+.counterleft span{
+  color: #F36A24;
+}
 #accordionservice{
-  padding: 40px;
-  background: linear-gradient(186deg, rgba(243,106,36,1) 0%, rgba(220,86,17,1) 100%);
+  padding: 40px 80px; 
+  background:#EFEEEE;
 }
 #accordionservice h3{
-  color: #fff;
+  color: #2E2E2E;
   text-align: center;
-  font-size: 64px;
-  width: 70%;
+  font-size: 54px;
+  width: 60%;
   font-family: 'Inter';
   margin-bottom: 20px;
   margin: auto;
+  font-weight: 600;
 
 }
 
-#accordionservice p
-{
-  color: #fff;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 200;
-  font-family: 'Inter';
-  margin-bottom: 30px;
+
+.contentcard{
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contentcard h4{
+  font-size: 32px;
+  font-family: 'inter';
+  font-weight: 500;
+  color: #434343;
+}
+.contentcard p{
+  color: #4B4B4B;
+  font-size: 20px;
+  text-align: left!important;
+  margin-bottom: 0px;
+  font-family: 'inter';
+  margin-top: 15px;
+
 }
 .accordion-header,#accordionservice .accordion-header ,#accordionservice .collapsed {
   border-top-left-radius: 10px;
@@ -983,6 +1015,7 @@ font-weight: 300;
   font-family: 'inter';
   font-weight: 200;
   font-size: 20px;
+  
 }
 
 #formcard h3{
@@ -1037,6 +1070,7 @@ font-weight: 300;
 
 #aboutpage{
   padding: 70px 50px;
+  background-color: #EFEEEE;
 }
 
 #aboutpage video{
@@ -1086,12 +1120,33 @@ font-weight: 300;
   position: relative;
 }
 
+.megamenu .navbar-nav a {
+  margin-left: 0px;
+}
+.megalink h5{
+  font-size: 15px;
+  font-weight: 600!important;
+  font-family: 'inter';
+}
+.megalink p{
+margin-bottom: 0px;
+font-size: 14px!important;
+font-weight: 400!important;
+font-family: 'inter';
+}
+
+.sep-10{
+  margin: 30px;
+}
+.dropdown-toggle::after{
+  display: none;
+}
 .megamenu {
   display: block;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 710px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -1116,10 +1171,91 @@ font-weight: 300;
   transform: rotate(180deg);
 }
 
+#foundermessage{
+  padding:50px;
+}
+
+.foundertext h4{
+  font-size: 40px;
+  color: #434343;
+  font-family: 'inter';
+  margin-bottom: 30px;
+}
+
+.foundertext p{
+
+  font-size: 20px;
+  color: #434343;
+  font-family: 'inter';
+  margin-bottom: 20px;
+}
+.founderimg{
+  width: 80%;
+  margin: auto;
+  display:block;
+}
+.sociallink{
+  display: flex;
+}
+.sociallink li{
+
+  margin-right: 40px;
+}
+.btn-theme {
+  transition: background 0.7s ease; /* smooth background transition only */
+}
+
+.btn-theme:hover {
+  color: #fff;
+  background: linear-gradient(119deg, rgba(243, 106, 36, 1) 23%, rgb(214 86 21) 68%);
+}
+
+
+
+.frame-container {
+  position: relative;
+  width: 380px; /* adjust based on your image size */
+}
+
+.frame-container img {
+  width: 100%;
+  display: block;
+  z-index: 999;
+  position: relative;
+}
+
+.video-on-frame {
+  position: absolute;
+  top: 12px;
+  left: 63px;
+  width: 254px;
+  height: 502px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-on-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 15px;
           }
+          .founderimg {
+            width: 95%;
+            margin:30px auto;
+            display: block;
+        }
+        .foundertext h4{
+          font-size: 26px;
+        }
+        .headingabout img{
+          width: 28px;
+        }
           .counter h3 {
             font-size: 42px;
             line-height: 29px;
@@ -1127,8 +1263,26 @@ font-weight: 300;
           .counter p{
             font-size: 13px;
           }
+          .apkimage {
+            width: 40%;
+            position: absolute;
+          }
+          .text-why{
+            width: 100%;
+          }
           .counterleft p{
             width: 100%;
+          }
+          .why-krishangi-section{
+            padding: 30px 15px;
+          }
+
+          .why-krishangi-section .custom-carousel .owl-stage-outer {
+            height: 240px;
+          }
+          .card{
+            padding: 20px;
+            border-radius: 10px;
           }
           #our-services{
             padding: 20px 15px;
@@ -1165,10 +1319,10 @@ font-weight: 300;
             line-height: 41px;
         }
         main {
-          height: 85vh;
+          height: 75vh;
         }
         #phoneui{
-          padding: 20px 15px;
+          padding: 30px 15px;
         }
         .counterleft h2 {
           font-size: 24px;
@@ -1185,6 +1339,7 @@ font-weight: 300;
 .btn{
   margin-bottom: 30px;
 }
+
 .androdbtn{
   display: flex;
 }
@@ -1224,6 +1379,139 @@ font-weight: 300;
 #form-ui{
   padding: 30px 15px;
 }
-      }
 
-        
+#contactpage
+{
+  padding: 20px 15px;
+} 
+.leftcontact{
+  padding:15px;
+}  
+#formcard h3 {
+  font-size: 22px;
+}
+#formcard p{
+  font-size: 16px;
+  margin-top: 15px;
+  width: 100%;
+}
+.detailcard p {
+  font-size: 13px;
+}
+.detailcard {
+  padding: 12px 18px;
+}
+
+.breadcrumb-content h1 {
+  font-size: 35px!important;
+}
+.breadcrumb-content p {
+  font-size: 16px!important;
+}
+.breadcrumb{
+  height: 320px;
+  padding: 20px;
+}
+#aboutpage{
+  padding: 30px 15px;
+}
+.aboutcontent p{
+  width: 100%;
+  font-size: 16px!important;
+}
+.headingabout h4{
+  font-size: 34px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.footerlinkstop
+{
+  padding: 10px 15px
+}
+.footertop h2{
+  font-size: 16px;
+}
+.footertop img{
+  margin-top: 15px;
+}
+.copyright{
+  padding: 14px 20px;
+  font-size: 12px;
+}
+#aboutpage video{
+  width: 100%;
+}
+#foundermessage{
+  padding: 30px 10px;
+}
+.rightside-banner img{
+  width: 100%;
+}
+.mb-c-30{
+  margin-bottom: 20px;
+}
+#phoneui p{
+  width: 95%;
+  margin-bottom:30px;
+}
+.ml-20{
+  margin-left: 0px;
+}
+#about-slider{
+  padding: 30px 0px 30px 15px;
+}
+.headingabout h3 {
+  font-size: 32px;
+}
+.form-left img{
+  width: 100%;
+}
+.boxform{
+  padding: 25px 15px;
+}
+.form-left img{
+  margin-bottom: 20px;
+}
+.animatetext h4{
+  font-size: 32px;
+}
+.animatetext p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 34px;
+}
+.headingslider h4{
+  font-size: 28px;
+}
+#accordionservice{
+  padding: 30px 15px;
+}
+#accordionservice h3{
+  width: 96%;
+  font-size: 28px;
+}
+.contentcard h4 {
+  font-size: 22px;
+}
+.contentcard p{
+  font-size: 12px;
+}
+
+.leftslider p{
+  font-size: 30px;
+  line-height: 39px;
+  margin-bottom: 15px;
+}
+.leftslider h4 {
+  margin-top:20px;
+  margin-bottom:20px;
+
+}
+.consultant img {
+  position: relative;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
+       
+        }

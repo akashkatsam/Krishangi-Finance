@@ -29,7 +29,6 @@ export default function Service() {
           trigger: sectionRef.current,
           start: "top 50%", // Animation starts when section enters the viewport
           end: "bottom 50%", // Ends when leaving viewport
-          toggleActions: "play reverse play reverse", // Play on enter, reverse on leave
         },
       });
     }, sectionRef);
@@ -48,8 +47,12 @@ export default function Service() {
               <h4> <img src={icon} className="img-fluid" /> <span>Our
                 </span> Services</h4>
               <p>
-                At Krishangi Finance, we provide expert financial solutions tailored to your needs,
-                ensuring stability and growth.
+              At Krishangi Finance, we provide expert 
+financial solutions tailored to your needs, 
+ensuring stability and growth. Our 
+services are designed to simplify wealth 
+management and secure your financial 
+future.
               </p>
             </div>
           </div>
