@@ -47,7 +47,7 @@ export default function Contact() {
       <div className="breadcrumb">
         <div className="breadcrumb-content">
           <h1 ref={headingRef}>
-            <img src={krishangiicon} className='img-fluid iconkrishangi' /> Get in touch <span>with us</span>
+            <img src={krishangiicon} className='img-fluid abstracticon' /> Get in touch <span>with us</span>
           </h1>
           <p ref={subheadingRef}>
             At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result<br />
