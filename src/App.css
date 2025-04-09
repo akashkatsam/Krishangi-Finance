@@ -1494,7 +1494,13 @@ font-family: 'inter';
   padding: 20px;
 }
 #aboutpage{
-  padding: 30px 15px;
+  padding: 30px 10px;
+}
+#aboutpage video{
+  margin: 10px auto 15px auto;
+}
+.pt-10{
+  display: none;
 }
 .aboutcontent p{
   width: 100%;
@@ -1502,9 +1508,9 @@ font-family: 'inter';
   line-height: 25px;
 }
 .headingabout h4{
-  font-size: 30px;
-  text-align: left;
-  margin-bottom: 10px;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .footerlinkstop
 {
