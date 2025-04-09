@@ -1315,12 +1315,13 @@ font-family: 'inter';
           }
           .left-content-banner h5 {
             color: #fff;
-            font-size: 31px;
+            font-size: 34px;
             text-transform: uppercase;
             font-family: 'inter';
             padding-top: 54px;
             padding-left: 9px;
             line-height: 41px;
+            font-weight: 600;
         }
         main {
           height: 75vh;
