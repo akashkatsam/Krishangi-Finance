@@ -16,7 +16,7 @@ export default function Footer() {
             </Link>     &nbsp; &nbsp;  <Link to="https://play.google.com/store/apps/details?id=com.mobileappz.krishfinance&hl=en_IN" target='_blank'><img src={android} className='img-fluid' /></Link> </h2></div> </div>
 <div className='sep-30'></div>
             <div className='row'>
-              <div className='col'>
+              <div className='col mobilehide'>
                 <img src={logo} className='img-fluid footerimg'/>
               </div>
               <div className='col'>

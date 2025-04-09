@@ -5,23 +5,24 @@ import OwlCarousel from "react-owl-carousel3";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import hold from './holdmoney.png'
-import about from './aboutimg.png';
-import Footer from './Footer';
-import img2 from './Frame 16.png'
-import img5 from './circledesign.png'
-import FinancialAccordion from './FinancialAccordion';
-import Header from './Header';
-import krishangiicon from './krishangiicon.png';
-export default function Servicepage() {
+import hold from '../holdmoney.png'
+import about from '../aboutimg.png';
+import img2 from '../Frame 16.png'
+import img5 from '../circledesign.png'
+import Footer from '../Footer';
+import MutalFundAccordion from './MutalFundAccordion';
+import Header from '../Header';
+import krishangiicon from '../krishangiicon.png';
+import Fiance from '../Fiance';
+import Accordion from './Accordion';
+export default function MutalFund() {
 
   const options = {
-    items: 2,            
-    loop: false,          
-    margin: 20,
+    center: true,
+    items:2,
+    loop:true,
     dots:false,
-    startPosition: 0,    
-    autoplay: true,     
+    margin:30,
     responsive: {
       0: {
         items: 1.2,
@@ -30,10 +31,11 @@ export default function Servicepage() {
         items: 2,
       },
       1000: {
-        items: 1.5,  
+        items: 2
       },
     },
   };
+  
 
 
   useEffect(() => {
@@ -75,7 +77,7 @@ export default function Servicepage() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3><img src={krishangiicon}  className='img-fluid' /> Smart <span>Financial Planning</span> for<br></br> a Secure Future</h3>
+              <h3><img src={krishangiicon}  className='img-fluid' /> Your Easiest Step into Smart Investing : <span>Mutual Funds</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -128,7 +130,7 @@ export default function Servicepage() {
 
 
       <section id='about-slider'>
-        <div className='container-fluid'>
+        <div className='container-fluidm p-0'>
           <div className='row'>
             <div className='col-12'>
               <div className='headingslider'>
@@ -139,7 +141,7 @@ export default function Servicepage() {
        
 
             <div className='separator-20'></div>
-            <OwlCarousel className="owl-theme custom-carousel  ml-20" {...options}>
+            <OwlCarousel className="owl-theme custom-carousel" {...options}>
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
@@ -197,8 +199,9 @@ export default function Servicepage() {
           </div>
         </div>
       </section>
-
-      <FinancialAccordion/>
+      <MutalFundAccordion/>
+      <Fiance/>
+      <Accordion/>
       <Footer />
     </>
   );

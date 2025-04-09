@@ -7,6 +7,7 @@ import float from './floatimage.png';
 import triangle from './triangle.png'
 import './App.css'
 import profit from './header1.png'
+
 import icon2 from './headericon/2.png'
 import icon3 from './headericon/3.png'
 import icon4 from './headericon/4.png'
@@ -59,17 +60,28 @@ About Us</NavLink>
       <div className='col-md-6'>
                         <div className='row'>
                        
+                        <div className='col-md-3 align-self-center'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={profit} className='img-fluid'/>
+                            </div>
+                          </div>
+                        </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/financial-planning"> 
+
                         <div className='megalink'>
                         <h5>Financal Planning </h5>
                         <p>Krishangi Finance is a financial </p>
+
+                        </div>
+                        </Link>
                         </div>
                         </div>
-                        </div>
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon2} className='img-fluid'/>
@@ -77,18 +89,22 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/portfolio-management-services"> 
+
                         <div className='megalink'>
+                          
                         <h5>Portfolio Management Services </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon3} className='img-fluid'/>
@@ -96,17 +112,22 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+
+                          <Link to="/alternative-investment-funds">
                         <div className='megalink'>
                         <h5>Alternative Investment Funds </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
+
+                        
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon4} className='img-fluid'/>
@@ -114,10 +135,13 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/mutual-fund"> 
+
                         <div className='megalink'>
                         <h5>Mutual Funds </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
                         </div>
                         </div>
 
@@ -129,7 +153,7 @@ About Us</NavLink>
 
                         <div className='col-md-6'>
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon4} className='img-fluid'/>
@@ -137,16 +161,19 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                          <Link to="/general-insurance">
                         <div className='megalink'>
                         <h5>General Insurance </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
+
                         </div>
                         </div>
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                      <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon6} className='img-fluid'/>
@@ -154,18 +181,21 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/loan"> 
+
                         <div className='megalink'>
                         <h5>Loans </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon7} className='img-fluid'/>
@@ -173,17 +203,18 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/will-estate-planning"> 
                         <div className='megalink'>
                         <h5>Will & Estate Planning </h5>
                         <p>Krishangi Finance is a financial </p>
-                        </div>
+                        </div></Link>
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon8} className='img-fluid'/>
@@ -191,10 +222,14 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/life-insurnace"> 
+
                         <div className='megalink'>
                         <h5>Life Insurance </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
+
                         </div>
                         </div>
 

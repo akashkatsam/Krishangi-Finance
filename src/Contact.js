@@ -62,7 +62,8 @@ export default function Contact() {
             <div className='col-md-6 order-sm-2 order-md-1 order-lg-1'>
               <div className='leftcontact' ref={formCardRef}>
                 <div id='formcard'>
-                  <h3>Have Questions? We’re just a Message Away!</h3>
+                  <h3>Need guidance? Our experts are here to assist.
+</h3>
                   <p>Fill out the form below, and one of our team members will get back to you shortly.</p>
                   <div className='mt-4'>
                     <div className='form-group'>

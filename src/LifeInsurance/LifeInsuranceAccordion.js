@@ -33,7 +33,7 @@ const faqs = [
   },
 ];
 
-const FinancialAccordion = () => {
+const LifeInsuranceAccordion = () => {
   const [openId, setOpenId] = useState(faqs[0].id); // Initialize with first FAQ ID
 
   const toggleAccordion = (id) => {
@@ -43,53 +43,71 @@ const FinancialAccordion = () => {
 
   return (
     <section id="accordionservice">
-      <div className="container">
-        <h3>Our Approach to Financial Planning</h3>
-        <p>At Krishangi Finance, we take a personalized approach <br></br>to financial planning:</p>
+    <div className="container">
+      <h3>Our Life Insurance Solutions</h3>
+      <p className="paraaccordian">At Krishangi Finance, we offer a range of tailored life insurance plans 
+
+ <br></br> to fit your unique needs:</p>
+      
+
+      
+
+      <div className="contentcard">
+        <h4>1.  Term Life Insurance
+        </h4>
+        <p>High coverage at an affordable premium.
+Ensures your family’s financial well-being during unforeseen events.
+</p>
+
+
+
         
 
-        <div className="contentcard">
-          <h4>1. Understanding Your Goals
-          </h4>
-          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
-          </p>
-        </div>
-
-        <div className="contentcard">
-          <h4>1. Understanding Your Goals
-          </h4>
-          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
-          </p>
-        </div>
-
-
-        <div className="contentcard">
-          <h4> 2. Creating a Tailored Financial Plan
-
-          </h4>
-          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
-          </p>
-        </div>
-
-
-
-        <div className="contentcard">
-          <h4>3. Implementing Smart Financial Strategies
-          </h4>
-          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
-          </p>
-        </div>
-
-        <div className="contentcard">
-          <h4>4. Continuous Monitoring & Adjustments
-          </h4>
-          <p>Your financial journey evolves, and so should your plan. We provide ongoing support, reviewing and adjusting your financial strategy to keep you on track.
-
-          </p>
-        </div>
+      </div><div className="contentcard">
+        <h4>2.  Whole Life Insurance
+        </h4>
+        <p>Lifetime coverage with a savings component.
+Helps build wealth while securing your family’s future.
+        </p>
       </div>
-    </section>
+
+
+      <div className="contentcard">
+        <h4> 3.  Endowment & Investment Plans
+
+        </h4>
+        <p>Combines life cover with investment benefits.
+Helps in wealth creation for future financial goals.
+        </p>
+      </div>
+
+
+
+      <div className="contentcard">
+        <h4>4. Child Protection Plans
+        </h4>
+        <p>Secures your child’s education and future needs.
+Ensures financial stability even in case of unexpected events.
+
+
+        </p>
+      </div>
+
+      
+    </div>
+      <div className="contentcard">
+        <h4>5. Retirement & Pension Plans
+
+        </h4>
+        <p>Guaranteed income for post-retirement years.
+Ensures financial independence and a stress-free future.
+
+        </p>
+      </div>
+
+      
+  </section>
   );
 };
 
-export default FinancialAccordion;
+export default LifeInsuranceAccordion;

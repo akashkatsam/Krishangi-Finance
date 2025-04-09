@@ -43,7 +43,7 @@ export default function Header1() {
     <>
     
 {/* <main> */}
-    <Navbar expand="lg">
+<Navbar expand="lg">
     <Container>
       {/* Logo */}
       <Link to="/">
@@ -69,7 +69,7 @@ export default function Header1() {
 About Us</NavLink>
 
           <li className="nav-item dropdown custom-dropdown">
-  <NavLink to="#" className={({ isActive }) => isActive ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'}>
+  <NavLink to="/service" className={({ isActive }) => isActive ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'}>
     Services 
     &nbsp;<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989593 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989593 0.403806 0.696699 0.696699C0.403806 0.989592 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z" fill="#2D2D2D"/>
@@ -81,17 +81,28 @@ About Us</NavLink>
       <div className='col-md-6'>
                         <div className='row'>
                        
+                        <div className='col-md-3 align-self-center'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={profit} className='img-fluid'/>
+                            </div>
+                          </div>
+                        </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/financial-planning"> 
+
                         <div className='megalink'>
                         <h5>Financal Planning </h5>
                         <p>Krishangi Finance is a financial </p>
+
+                        </div>
+                        </Link>
                         </div>
                         </div>
-                        </div>
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon2} className='img-fluid'/>
@@ -99,18 +110,22 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/portfolio-management-services"> 
+
                         <div className='megalink'>
+                          
                         <h5>Portfolio Management Services </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon3} className='img-fluid'/>
@@ -118,17 +133,22 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+
+                          <Link to="/alternative-investment-funds">
                         <div className='megalink'>
                         <h5>Alternative Investment Funds </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
+
+                        
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon4} className='img-fluid'/>
@@ -136,10 +156,13 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/mutual-fund"> 
+
                         <div className='megalink'>
                         <h5>Mutual Funds </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
                         </div>
                         </div>
 
@@ -151,7 +174,7 @@ About Us</NavLink>
 
                         <div className='col-md-6'>
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon4} className='img-fluid'/>
@@ -159,16 +182,19 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                          <Link to="/general-insurance">
                         <div className='megalink'>
                         <h5>General Insurance </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
+
                         </div>
                         </div>
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                      <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon6} className='img-fluid'/>
@@ -176,18 +202,21 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/loan"> 
+
                         <div className='megalink'>
                         <h5>Loans </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon7} className='img-fluid'/>
@@ -195,17 +224,18 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/will-estate-planning"> 
                         <div className='megalink'>
                         <h5>Will & Estate Planning </h5>
                         <p>Krishangi Finance is a financial </p>
-                        </div>
+                        </div></Link>
                         </div>
                         </div>
 
-                        <div className='sep-10'></div>
+                        
 
                         <div className='row'>
-                        <div className='col-md-3'>
+                        <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
                               <img src={icon8} className='img-fluid'/>
@@ -213,10 +243,14 @@ About Us</NavLink>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
+                        <Link to="/life-insurnace"> 
+
                         <div className='megalink'>
                         <h5>Life Insurance </h5>
                         <p>Krishangi Finance is a financial </p>
                         </div>
+                        </Link>
+
                         </div>
                         </div>
 
