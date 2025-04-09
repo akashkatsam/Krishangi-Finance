@@ -22,15 +22,14 @@ export default function Header() {
     <>
     
 {/* <main> */}
-<Navbar expand="lg">
+<Navbar className='stickynav' expand="lg">
     <Container>
       {/* Logo */}
       <Link to="/">
         <img
           src={logo}
           alt="Krishangi Logo"
-          height="40"
-          className="d-inline-block align-top"
+          className="d-inline-block align-top logoKF"
         />
       </Link>
 

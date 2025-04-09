@@ -50,8 +50,7 @@ export default function Header1() {
         <img
           src={logo}
           alt="Krishangi Logo"
-          height="40"
-          className="d-inline-block align-top"
+          className="d-inline-block align-top logoKF"
         />
       </Link>
 

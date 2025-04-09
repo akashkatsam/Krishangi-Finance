@@ -15,6 +15,8 @@ import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
 import Fiance from '../Fiance';
 import Accordion from '../Accordion';
+import icon from '../krishangiicon.png'
+import s1 from './1.png'
 export default function Financalplanning() {
 
   const options = {
@@ -22,8 +24,12 @@ export default function Financalplanning() {
     items:2,
     loop:true,
     dots:false,
-    margin:15,
+    margin:18,
     startTransition:0,
+       autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut',
     responsive: {
       0: {
         items: 1.2,
@@ -119,7 +125,7 @@ export default function Financalplanning() {
             </div>
 
             <div className='animatetext'>
-              <h4>Financial Planning</h4>
+              <h4><img src={icon} className="img-fluid abstracticon"/> Financial <span>Planning</span></h4>
               <p>
                 At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
                 Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
@@ -154,7 +160,7 @@ export default function Financalplanning() {
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s1} className='img-fluid' />
                       </div>
                     </div>
 
@@ -167,7 +173,7 @@ export default function Financalplanning() {
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
+                        <h4><h6>02.</h6>&nbsp;&nbsp;&nbsp;Secure Your Future</h4>
                         <p>Grow your assets with a structured investment approach.</p>
                       </div>
                     </div>

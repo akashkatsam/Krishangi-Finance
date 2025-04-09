@@ -42,5 +42,16 @@
     -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+<script>
+  gsap.from('.some-element', {
+  scrollTrigger: {
+    trigger: '.some-element',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    scrub: true,
+  },
+  y: 100,
+  opacity: 0,
+});
+</script>
 </html>

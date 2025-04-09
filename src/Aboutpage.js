@@ -15,7 +15,7 @@ export default function Contact() {
     <Header/>
     <div class="breadcrumb">
   <div class="breadcrumb-content">
- <h1><img src={krishangiicon} className='img-fluid abstracticon' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
+ <h1><img src={krishangiicon} className='img-fluid iconkrishangi' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
   </div>
 </div>
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import icon from '../krishangiicon.png'
 const faqs = [
   {
     id: 1,
@@ -44,7 +44,7 @@ const FinancialAccordion = () => {
   return (
     <section id="accordionservice">
       <div className="container">
-        <h3>Our Approach to Financial Planning</h3>
+        <h3><img src={icon} className="img-fluid abstracticon"/> Our Approach to Financial Planning</h3>
         <p className="paraaccordian">At Krishangi Finance, we take a personalized approach <br></br>to financial planning:</p>
         
 

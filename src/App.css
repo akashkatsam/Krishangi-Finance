@@ -8,6 +8,10 @@
   width: 2px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
   background: #ff0000; /* Red color */
@@ -70,6 +74,7 @@ nav{
 .navbar-toggler-icon{
   background-image: url('./hambugur.png');
 }
+
 
 
 .animatetext span{
@@ -388,7 +393,10 @@ main{
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
 
-
+.orangebox{
+  width: 30px!important;
+  margin-bottom: 20px;
+}
         #accordian{
           padding: 60px 100px;
         }
@@ -413,6 +421,9 @@ main{
           font-weight: 500!important;
           border-top-left-radius: 20px!important;
           border-top-right-radius: 20px!important;
+
+          border-bottom-left-radius: 20px!important;
+          border-bottom-right-radius: 20px!important;
         }
         .accordion-button:focus ,.accordion-button:not(.collapsed){
           box-shadow: none;
@@ -425,11 +436,11 @@ main{
           padding: 40px 20px;
         }
        .why-krishangi-section .owl-carousel.owl-drag .owl-item {
-          margin-top: 20px;
+          margin-top: 25px;
         }
         
        .why-krishangi-section .custom-carousel .owl-stage-outer {
-          height:273px;
+          height:330px;
           overflow-y: visible !important; /* Ensures active item is not cut off */
         }
         
@@ -568,7 +579,6 @@ main{
               .servicecard1 {
                 transition: background-color 0.5s ease, color 0.3s ease;
                 background-image: url('./Mask\ group\ \(1\).png');
-
                 color: black; /* Default text color */
                 background-color: #f6f6f6; /* Default background */
                 
@@ -1070,13 +1080,13 @@ font-weight: 300;
     align-items: center;
 }
 .detailcard img{
-  height: 40px;
+  height: 26px;
 }
 .detailcard p{
   margin-bottom: 0px;
     font-size: 18px;
     font-family: 'Inter';
-    margin-left: 20px;
+    margin-left:10px;
     font-weight: 500;
 
 }
@@ -1108,10 +1118,16 @@ font-weight: 300;
 .aboutcontent p{
   color: #4B4B4B;
   font-size: 24px;
-  font-family: 'inter';
+  font-family: 'inter';line-height: 35px;
   width: 96%;
 
 }
+/* Optional: smooth transitions */
+.aboutcontent,
+.foundertext {
+  transition: all 0.6s ease-in-out;
+}
+
 
 .headingabout h4{
   font-size: 52px;
@@ -1265,23 +1281,35 @@ font-family: 'inter';
   height: 100%;
   object-fit: cover;
 }
-
+.logoKF{
+  height: 40PX;
+}
 
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 15px;
           }
-        
+          .foundertext p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+          .logoKF{
+            height: 28PX;
+          }
+        .custom-dropdown{
+          display: none;
+        }
           .mobilehide{
             display: none;
           }
           .founderimg {
-            width: 95%;
-            margin:30px auto;
+            width: 100%;
+            margin:20px auto;
             display: block;
         }
         .foundertext h4{
           font-size: 26px;
+          margin-bottom: 15px;
         }
         .headingabout img, .abstracticon{
           width: 28px;
@@ -1294,9 +1322,10 @@ font-family: 'inter';
           .counter p{
             font-size: 13px;
           }
-          .apkimage {
+          .apkimage ,#phoneui video{
             width: 100%;
             position: absolute;
+            display: none;
           }
           .text-why{
             width: 100%;
@@ -1319,14 +1348,14 @@ font-family: 'inter';
             border-radius: 10px;
           }
           #our-services{
-            padding: 20px 15px;
+            padding: 30px 15px;
           }
           .serviceheading{
             padding: 0px;
           }
           .serviceheading h4 {
             font-size: 30px;
-            margin-bottom: 10px;
+            margin-bottom: 24px;
           }
           .serviceheading p{
             margin-bottom: 20px;
@@ -1341,7 +1370,10 @@ font-family: 'inter';
             font-size: 18px;
           }
           .servicecard,.servicecard1 {
-            height: 320px!important;
+            height: 280px!important;
+          }
+          .box2{
+            width: 50px;
           }
           .left-content-banner h5 {
             color: #fff;
@@ -1390,10 +1422,12 @@ font-family: 'inter';
   margin-bottom: 20px;
 }
 #accordian{
-  padding: 30px 15px;
+  padding: 30px 10px;
 }
 #accordian h3{
   font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 .caption-text h4 {
   font-size: 22px;
@@ -1456,9 +1490,10 @@ font-family: 'inter';
 .aboutcontent p{
   width: 100%;
   font-size: 16px!important;
+  line-height: 25px;
 }
 .headingabout h4{
-  font-size: 34px;
+  font-size: 30px;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -1468,6 +1503,7 @@ font-family: 'inter';
 }
 .footertop h2{
   font-size: 16px;
+  line-height: 24px;
 }
 .footertop img{
   margin-top: 15px;
@@ -1504,6 +1540,7 @@ font-family: 'inter';
 }
 .boxform{
   padding: 25px 15px;
+  border-radius: 10px;
 }
 .form-left img{
   margin-bottom: 20px;
@@ -1523,19 +1560,31 @@ font-family: 'inter';
   padding: 30px 15px;
 }
 #accordionservice h3{
-  width: 96%;
+  width: 100%;
   font-size: 28px;
 }
+#accordionservice .paraaccordian {
+  font-size: 12px;
+  margin: 18px 0px;
+
+}
+.contentcard {
+  border-radius: 10px;
+  padding: 18px 16px;
+}
+
+
 .contentcard h4 {
-  font-size: 22px;
+  font-size: 20px;
 }
 .contentcard p{
   font-size: 12px;
+  margin-top: 15px;
 }
 
 .leftslider p{
-  font-size: 30px;
-  line-height: 39px;
+  font-size: 20px;
+  line-height: 25px;
   margin-bottom: 15px;
 }
 .leftslider h4 {
