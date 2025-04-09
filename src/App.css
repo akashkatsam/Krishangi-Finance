@@ -73,6 +73,7 @@ nav{
 
 .navbar-toggler-icon{
   background-image: url('./hambugur.png');
+  width: 100%;
 }
 
 
@@ -81,9 +82,9 @@ nav{
   color: #df5914;
 }
 .navbar-toggler {
-  border-radius: 100px;
-    height: 52px;
-    width: 53px;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
 }
 
 .navbar-nav a {
@@ -1298,7 +1299,7 @@ font-family: 'inter';
   margin-bottom: 10px;
 }
           .logoKF{
-            height: 35px;
+            height: 32px;
           }
         .custom-dropdown{
           display: none;
@@ -1381,13 +1382,16 @@ font-family: 'inter';
           }
           .left-content-banner h5 {
             color: #fff;
-            font-size: 34px;
+            font-size: 30px;
             text-transform: uppercase;
             font-family: 'inter';
             padding-top: 20px;
             padding-left: 9px;
-            line-height: 41px;
+            line-height: 35px;
             font-weight: 600;
+        }
+        .navbar{
+          padding:15px 0px!important;
         }
         main {
           height: auto;
@@ -1549,7 +1553,7 @@ font-family: 'inter';
 }
 .rightside-banner img{
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .mb-c-30{
   margin-bottom: 20px;
