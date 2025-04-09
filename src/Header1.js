@@ -276,7 +276,7 @@ Investmenting Insides
           <div className="col-md-6">
             <div className="left-content-banner">
               <h5 ref={headingRef}>
-               <img src={iconkrishangi} className='img-fluid' /> Creating Wealth Through Financial Goal Planning
+               <img src={iconkrishangi} className='img-fluid abstracticon' /> Creating Wealth Through Financial Goal Planning
               </h5>
               <div id="bgblue1" ref={buttonRef}>
                 <button>

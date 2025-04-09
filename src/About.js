@@ -11,7 +11,7 @@ const About = () => {
       <div className="row">
         <div className="col-md-6">
          <div className="counterleft">
-         <h2> <img src={icon} className="img-fluid" />  <span>Krishangi</span> Finance</h2>
+         <h2> <img src={icon} className="img-fluid abstracticon"  />  <span>Krishangi</span> Finance</h2>
           <p>
             Krishangi Finance is a financial solutions firm dedicated to helping
             individuals and businesses achieve long-term financial security. We

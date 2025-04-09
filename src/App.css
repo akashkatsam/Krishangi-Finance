@@ -1257,7 +1257,7 @@ font-family: 'inter';
         .foundertext h4{
           font-size: 26px;
         }
-        .headingabout img{
+        .headingabout img, .abstracticon{
           width: 28px;
         }
           .counter h3 {
@@ -1389,7 +1389,7 @@ font-family: 'inter';
   padding: 20px 5px;
 } 
 .leftcontact{
-  padding:15px;
+  padding:20px 15px;
 }  
 #formcard h3 {
   font-size: 22px;

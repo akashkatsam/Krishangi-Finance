@@ -44,7 +44,7 @@ export default function Service() {
           {/* Service Heading */}
           <div className="col-md-4">
             <div className="serviceheading">
-              <h4> <img src={icon} className="img-fluid" /> <span>Our
+              <h4> <img src={icon} className="img-fluid abstracticon" /> <span>Our
                 </span> Services</h4>
               <p>
               At Krishangi Finance, we provide expert 

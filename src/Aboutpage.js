@@ -15,7 +15,7 @@ export default function Contact() {
     <Header/>
     <div class="breadcrumb">
   <div class="breadcrumb-content">
- <h1><img src={krishangiicon} className='img-fluid iconkrishangi' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
+ <h1><img src={krishangiicon} className='img-fluid abstracticon' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
   </div>
 </div>
 
@@ -23,7 +23,7 @@ export default function Contact() {
 <section id='aboutpage'>
   <div className='container-fluid'>
     <div className='headingabout'>
-      <h4><img src={krishangiicon}  className='img-fluid' /> <span>Krishangi</span> Finance</h4>
+      <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> <span>Krishangi</span> Finance</h4>
     </div>
     <div className='row'>
       <div className='col-md-6'>
