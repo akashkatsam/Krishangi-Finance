@@ -1288,7 +1288,7 @@ font-family: 'inter';
 
         @media only screen and (max-width: 600px) {
           #aboutstats {
-            padding: 30px 15px;
+            padding: 30px 10px;
           }
           .navbar-nav{
             border-radius: 10px;
@@ -1298,7 +1298,7 @@ font-family: 'inter';
   margin-bottom: 10px;
 }
           .logoKF{
-            height: 28PX;
+            height: 35px;
           }
         .custom-dropdown{
           display: none;
@@ -1341,7 +1341,7 @@ font-family: 'inter';
             width: 100%;
           }
           .why-krishangi-section{
-            padding: 30px 15px;
+            padding: 30px 10px;
           }
 
           .why-krishangi-section .custom-carousel .owl-stage-outer {
@@ -1352,7 +1352,7 @@ font-family: 'inter';
             border-radius: 10px;
           }
           #our-services{
-            padding: 30px 15px;
+            padding: 30px 10px;
           }
           .serviceheading{
             padding: 0px;
@@ -1396,8 +1396,8 @@ font-family: 'inter';
           padding: 30px 15px;
         }
         .counterleft h2 {
-          font-size: 30px;
-          margin-bottom: 0px;
+          font-size: 28px;
+          margin-bottom: 15px;
         }
         #phoneui h4 {
   font-size: 22px;
@@ -1408,6 +1408,7 @@ font-family: 'inter';
   font-weight: 400;
 }
 .btn{
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -1477,9 +1478,13 @@ font-family: 'inter';
 }
 
 .breadcrumb-content h1 {
-  font-size: 35px!important;
-  width: 96%;
+  font-size: 33px!important;
+  width: 98%;
   line-height: 45px;
+  font-weight: 700;
+}
+.iconkrishangi{
+  width: 28px;
 }
 .breadcrumb-content p {
   font-size: 15px!important;
