@@ -44,7 +44,7 @@ const Phone = () => {
       <div className="container-fluid">
         <div className="row align-items-center text-center text-md-start">
           {/* LEFT COLUMN */}
-          <div className="col-md-4 order-2 order-md-1 mb-4 fade-up">
+          <div className="col-md-4 order-2 order-md-1 fade-up">
             <div className="mb-4">
               <img src={user} alt="User Interface" className="img-fluid iconimage mb-2" />
               <h4>User-Friendly Interface</h4>

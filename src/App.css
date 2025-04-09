@@ -82,9 +82,10 @@ nav{
 }
 .navbar-toggler {
   border-radius: 100px;
-    height: 60px;
-    width: 60px;
+    height: 52px;
+    width: 53px;
 }
+
 .navbar-nav a {
   color: #2d2d2d;
   margin-left: 18px;
@@ -1289,6 +1290,9 @@ font-family: 'inter';
           #aboutstats {
             padding: 30px 15px;
           }
+          .navbar-nav{
+            border-radius: 10px;
+          }
           .foundertext p {
   font-size: 16px;
   margin-bottom: 10px;
@@ -1344,7 +1348,7 @@ font-family: 'inter';
             height: 240px;
           }
           .card{
-            padding: 20px;
+            padding: 20px 10px;
             border-radius: 10px;
           }
           #our-services{
@@ -1386,7 +1390,7 @@ font-family: 'inter';
             font-weight: 600;
         }
         main {
-          height: 75vh;
+          height: auto;
         }
         #phoneui{
           padding: 30px 15px;
@@ -1443,7 +1447,7 @@ font-family: 'inter';
   transform: scale(1) !important;
 }
 .why-krishangi-section .custom-carousel .owl-stage-outer {
-  height:auto;
+  height:300px;
 
 }
 #form-ui{
@@ -1520,6 +1524,7 @@ font-family: 'inter';
 }
 .rightside-banner img{
   width: 100%;
+  margin-bottom: 30px;
 }
 .mb-c-30{
   margin-bottom: 20px;

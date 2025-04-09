@@ -19,7 +19,7 @@ const Slider = () => {
     smartSpeed: 1000,
     responsive: {
       0: {
-        items: 1,
+        items: 1.2,
       },
       600: {
         items: 2,
