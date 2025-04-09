@@ -1409,6 +1409,7 @@ font-family: 'inter';
 
 .breadcrumb-content h1 {
   font-size: 35px!important;
+  line-height: 45px;
 }
 .breadcrumb-content p {
   font-size: 15px!important;
