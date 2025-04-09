@@ -1268,11 +1268,14 @@ font-family: 'inter';
             font-size: 13px;
           }
           .apkimage {
-            width: 40%;
+            width: 100%;
             position: absolute;
           }
           .text-why{
             width: 100%;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 300;
           }
           .counterleft p{
             width: 100%;
@@ -1295,7 +1298,7 @@ font-family: 'inter';
             padding: 0px;
           }
           .serviceheading h4 {
-            font-size: 24px;
+            font-size: 30px;
             margin-bottom: 10px;
           }
           .serviceheading p{
@@ -1356,7 +1359,7 @@ font-family: 'inter';
 }
 
 .why-krishangi-section h2{
-  font-size: 26px;
+  font-size:30px;
 }
 #accordian{
   padding: 30px 15px;
