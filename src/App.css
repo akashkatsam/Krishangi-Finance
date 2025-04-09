@@ -486,6 +486,7 @@ main{
         line-height: 30px;
     
         }
+       
         .mb-c-30{
           margin-bottom: 100px;
         }
@@ -939,13 +940,13 @@ font-weight: 300;
 
 
 .contentcard{
-  padding: 20px;
+  padding: 16px 30px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 20px;
 }
 .contentcard h4{
-  font-size: 32px;
+  font-size: 30px;
   font-family: 'inter';
   font-weight: 500;
   color: #434343;
@@ -957,6 +958,7 @@ font-weight: 300;
   margin-bottom: 0px;
   font-family: 'inter';
   margin-top: 15px;
+  font-weight: 300;
 
 }
 .accordion-header,#accordionservice .accordion-header ,#accordionservice .collapsed {
@@ -1408,7 +1410,7 @@ font-family: 'inter';
   font-size: 35px!important;
 }
 .breadcrumb-content p {
-  font-size: 16px!important;
+  font-size: 15px!important;
 }
 .breadcrumb{
   height: 320px;

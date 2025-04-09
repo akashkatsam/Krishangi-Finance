@@ -64,7 +64,8 @@ const FinancialAccordion = () => {
 
 
         <div className="contentcard">
-          <h4>1. Understanding Your Goals
+          <h4> 2. Creating a Tailored Financial Plan
+
           </h4>
           <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
           </p>
@@ -73,16 +74,17 @@ const FinancialAccordion = () => {
 
 
         <div className="contentcard">
-          <h4>1. Understanding Your Goals
+          <h4>3. Implementing Smart Financial Strategies
           </h4>
           <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
           </p>
         </div>
 
         <div className="contentcard">
-          <h4>1. Understanding Your Goals
+          <h4>4. Continuous Monitoring & Adjustments
           </h4>
-          <p>We start by analyzing your financial situation, income, expenses, and future aspirations to create a customized strategy that aligns with your needs.
+          <p>Your financial journey evolves, and so should your plan. We provide ongoing support, reviewing and adjusting your financial strategy to keep you on track.
+
           </p>
         </div>
       </div>

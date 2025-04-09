@@ -39,7 +39,6 @@ const Phone = () => {
                    <source src={video} type="video/mp4" />
                    Your browser does not support the video tag.
                  </video>
-                 
           </div>
 
           <div className="col-md-4 text-md-end mb-4">
