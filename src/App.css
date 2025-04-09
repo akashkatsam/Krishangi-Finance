@@ -1384,7 +1384,7 @@ font-family: 'inter';
             font-size: 34px;
             text-transform: uppercase;
             font-family: 'inter';
-            padding-top: 40px;
+            padding-top: 20px;
             padding-left: 9px;
             line-height: 41px;
             font-weight: 600;
@@ -1512,6 +1512,20 @@ font-family: 'inter';
   text-align: left;
   margin-bottom: 15px;
 }
+
+#bgblue1 button {
+  background-color: transparent;
+  position: relative;
+  border: 2.2px solid #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #FFF;
+  FONT-SIZE: 12PX;
+  PADDING: 7PX 51PX 11px 15px;
+  FONT-FAMILY: 'Inter';
+  margin: 11px 16px 7px 12px;
+}
+
 .footerlinkstop
 {
   padding: 10px 15px
