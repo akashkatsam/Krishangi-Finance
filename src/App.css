@@ -25,6 +25,9 @@
 .form-control:focus{
   box-shadow: none!important;
 }
+.accordion-item{
+  border-radius: 20px!important;
+}
 
 html {
   scroll-behavior: smooth;
@@ -1417,6 +1420,41 @@ font-family: 'inter';
           .navbar-nav{
             border-radius: 10px;
           }
+
+          #insights{
+            padding: 20px 10px;
+          }
+          .insightcard img{
+            margin-bottom: 20px;
+            border-radius: 20px;
+          }
+          .sign img{
+            width: 100%;
+          }
+          .navbar-nav{
+            position: absolute!important;
+            width: 95%;
+            margin-top: 20px;
+          }
+          nav .btn{
+            display: none;
+          }
+          #insights h4{
+            width: 100%;
+            color: #1C3764;
+            font-family: 'inter';
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 24px;
+          }
+          #insights span{
+            color: #f26923;
+          }
+          #insightcard img{
+            border-radius: 20px;
+          }
+
           .foundertext p {
   font-size: 16px;
   margin-bottom: 10px;
