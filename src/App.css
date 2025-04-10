@@ -1432,12 +1432,19 @@ font-family: 'inter';
             width: 100%;
           }
           .navbar-nav{
-            position: absolute!important;
-            width: 95%;
+            width: 100%;
             margin-top: 20px;
           }
           nav .btn{
             display: none;
+          }
+          .collapsing {
+            transition: height 0.4s ease;
+          }
+          
+          .collapse.show {
+            display: block !important;
+            transition: height 0.4s ease;
           }
           #insights h4{
             width: 100%;
