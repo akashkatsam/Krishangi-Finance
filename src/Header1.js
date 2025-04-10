@@ -306,7 +306,7 @@ Investmenting Insides
  <section className="banner">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 align-self-center">
             <div className="left-content-banner">
               <h5 ref={headingRef}>
                <img src={iconkrishangi} className='img-fluid abstracticon' /> Creating Wealth Through Financial Goal Planning
@@ -332,7 +332,7 @@ Investmenting Insides
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 align-self-center">
             <div className="rightside-banner">
               <img src={float} className="img-fluid" alt="Banner float" />
             </div>
