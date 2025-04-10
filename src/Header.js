@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useRef,useEffect,useState} from 'react'
+import gsap from 'gsap';
 import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import { Link,useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,7 +8,7 @@ import float from './floatimage.png';
 import triangle from './triangle.png'
 import './App.css'
 import profit from './header1.png'
-
+import logo2 from './logoorange.png'
 import icon2 from './headericon/2.png'
 import icon3 from './headericon/3.png'
 import icon4 from './headericon/4.png'
@@ -18,6 +19,12 @@ import icon8 from './headericon/8.png'
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
+  const navRef = useRef(null);
+  const lastScrollY = useRef(window.scrollY);
+  const [hidden, setHidden] = useState(false);
+  const [blur, setBlur] = useState(false);
+
+
 
   const location = useLocation();
   
@@ -41,7 +48,8 @@ export default function Header() {
     <>
     
 {/* <main> */}
-<Navbar className='stickynav' expand="lg">
+<Navbar ref={navRef}       className={`stickynav ${hidden ? 'hide' : ''} ${blur ? 'blur' : ''}`}
+ expand="lg">
     <Container>
       {/* Logo */}
       <Link to="/">
@@ -49,6 +57,12 @@ export default function Header() {
           src={logo}
           alt="Krishangi Logo"
           className="d-inline-block align-top logoKF"
+        />
+        
+<img
+          src={logo2}
+          alt="Krishangi Logo"
+          className="d-inline-block align-top logoKF2"
         />
       </Link>
 
@@ -280,7 +294,7 @@ About Us</NavLink>
   to="/investment-inside"
   className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 >
-Investmenting Insides
+Investing Insights
 </NavLink>
           <NavLink
   to="/career"

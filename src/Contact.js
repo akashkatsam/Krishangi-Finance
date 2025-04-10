@@ -16,6 +16,8 @@ export default function Contact() {
   const subheadingRef = useRef(null)
 
   useEffect(() => {
+
+
     // Heading animation
     gsap.fromTo(headingRef.current,
       { opacity: 0, y: 30 },

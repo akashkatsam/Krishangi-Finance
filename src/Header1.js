@@ -17,7 +17,7 @@ import icon7 from './headericon/7.png'
 import icon8 from './headericon/8.png'
 import iconkrishangi from './krishangiicon.png'
 import { NavLink } from 'react-router-dom';
-
+import logo2 from './logoorange.png'
 export default function Header1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -56,6 +56,12 @@ export default function Header1() {
           src={logo}
           alt="Krishangi Logo"
           className="d-inline-block align-top logoKF"
+        />
+
+<img
+          src={logo2}
+          alt="Krishangi Logo"
+          className="d-inline-block align-top logoKF2"
         />
       </Link>
 
@@ -281,7 +287,7 @@ About Us</NavLink>
   to="/investment-inside"
   className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
 >
-Investmenting Insides
+Investing Insights
 </NavLink>
           <NavLink
   to="/career"
@@ -382,3 +388,6 @@ Investmenting Insides
 
   )
 }
+
+
+
