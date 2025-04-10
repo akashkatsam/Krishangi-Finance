@@ -45,7 +45,7 @@ export default function Blog() {
     <>
       <Header />
 
-      <div className="breadcrumb">
+      <div className="breadcrumb breadcrumb1 ">
         <div className="breadcrumb-content">
           <h1 ref={headingRef}>
             <img src={krishangiicon} className='img-fluid abstracticon' /> News & <span>Media</span>

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
 import OwlCarousel from "react-owl-carousel3";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -15,6 +15,13 @@ import krishangiicon from '../krishangiicon.png';
 import Accordion from './Accordion';
 export default function Career() {
 
+  
+  
+    const formCardRef = useRef(null)
+    const rightContactRef = useRef(null)
+    const headingRef = useRef(null)
+    const subheadingRef = useRef(null)
+  
   const options = {
     items: 2,            
     loop: false,          
@@ -37,6 +44,11 @@ export default function Career() {
 
 
   useEffect(() => {
+  gsap.fromTo(subheadingRef.current,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.2 }
+    )
+    
     gsap.registerPlugin(ScrollTrigger);
     const paragraphs = document.querySelectorAll('.animatetext p');
     paragraphs.forEach((p) => {
@@ -80,7 +92,7 @@ export default function Career() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3><img src={krishangiicon}  className='img-fluid' /> Join Our Business <span>Partner Network</span></h3>
+              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Join Our Business <span>Partner Network</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
