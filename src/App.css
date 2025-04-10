@@ -108,7 +108,7 @@ nav button {
 /* counrer */
 #aboutstats {
   padding: 70px 80px;
-  background-color: #E5E4E4;
+  background: linear-gradient(90deg, rgba(229,228,228,1) 0%, rgba(252,251,252,1) 43%, rgba(229,228,228,1) 100%);
   background-image: url('./greybg.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,6 +138,7 @@ nav button {
   font-size: 55px;
   line-height: 63px;
   font-family: 'inter';
+  color: #1C3764;
   margin-bottom: 30px;
 
 }
