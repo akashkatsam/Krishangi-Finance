@@ -223,7 +223,6 @@ main{
   background-image: url('./website-bg (2).jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
 }
 
 .left-content-banner h5{
@@ -236,9 +235,10 @@ main{
 
 }
 .rightside-banner img{
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: block  ;
+  margin-bottom:50px;
 }
 
         .custom-button {
