@@ -895,10 +895,12 @@ font-weight: 200;
   color: #0F2549;
   font-family: 'Inter';
   margin-bottom: 30px;
-  margin-top:15px;
+  margin-top: 15px;
   DISPLAY: FLEX;
   font-weight: 600;
+  white-space: nowrap;
   ALIGN-ITEMS: CENTER;
+  font-size: 22px;
 
 }
 .sliderorange span{
@@ -1028,18 +1030,18 @@ font-weight: 300;
   margin-bottom: 20px;
 }
 .contentcard h4{
-  font-size: 30px;
+  font-size: 28px;
   font-family: 'inter';
   font-weight: 500;
   color: #434343;
 }
 .contentcard p{
   color: #4B4B4B;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left!important;
   margin-bottom: 0px;
   font-family: 'inter';
-  margin-top: 15px;
+  margin-top: 10px;
   font-weight: 300;
 
 }
@@ -1416,9 +1418,15 @@ font-family: 'inter';
 .navbar-expand-lg{
   display: block;
 }
+.custom-navbar{
+  display: none;
+}
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 10px;
+          }
+          .custom-navbar{
+            display: block;
           }
           .navbar-expand-lg{
             display: none;
@@ -1489,8 +1497,7 @@ font-family: 'inter';
             top: 100%;
             left: 0;
             right: 0;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
+            background-color:#fff;
             display: flex;
             flex-direction: column;
             max-height: 0;

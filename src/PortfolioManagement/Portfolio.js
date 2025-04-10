@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
 import OwlCarousel from "react-owl-carousel3";
@@ -15,14 +15,28 @@ import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
 import Fiance from '../Fiance';
 import Accordion from './Accordion';
+
+import s1 from './1.png'
+import s2 from './2.png'
+import s3 from './3.png'
 export default function Portfolio() {
+      const formCardRef = useRef(null)
+      const rightContactRef = useRef(null)
+      const headingRef = useRef(null)
+      const subheadingRef = useRef(null)
+  
 
   const options = {
     center: true,
-    items:2,
-    loop:true,
-    dots:false,
-    margin:30,
+    items: 2,
+    loop: true,
+    dots: false,
+    margin: 15,
+    autoplay: true,
+    autoplayTimeout:1000,
+    autoplayHoverPause: true,
+    animateOut: '', // remove animation
+    smartSpeed: 1000, // increase this for slower transition
     responsive: {
       0: {
         items: 1.2,
@@ -35,10 +49,15 @@ export default function Portfolio() {
       },
     },
   };
-  
 
 
   useEffect(() => {
+
+         gsap.fromTo(subheadingRef.current,
+              { opacity: 0, y: 30 },
+              { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.2 }
+            )
+    
     gsap.registerPlugin(ScrollTrigger);
     const paragraphs = document.querySelectorAll('.animatetext p');
     paragraphs.forEach((p) => {
@@ -77,7 +96,7 @@ export default function Portfolio() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3><img src={krishangiicon}  className='img-fluid' /> Your Wealth Deserves <span>Professional PMS</span></h3>
+              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Your Wealth Deserves <span>Professional PMS</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -135,7 +154,7 @@ export default function Portfolio() {
           <div className='row'>
             <div className='col-12'>
               <div className='headingslider'>
-                <h4>Why Does Financial Planning<br></br> Matters?</h4>
+                <h4>Why Portfolio Management <br></br>Matters?</h4>
                 <p></p>
               </div>
             </div>
@@ -148,13 +167,26 @@ export default function Portfolio() {
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>01</h6>
+                          </div>
+                          <div className='col-8 p-0'>
+                       <div className='sliderorange'>
+                       <h4><span>Diversified </span>&nbsp; Investments</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Reduce volatility by balancing asset allocation.
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s1} className='img-fluid' />
                       </div>
                     </div>
 
@@ -162,44 +194,84 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>02</h6>
+                          </div>
+                          <div className='col-8 p-0'>
+                       <div className='sliderorange'>
+                       <h4><span>Consistent</span>&nbsp;Growth</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p> Strategic investments tailored for long-term wealth creation.
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={img2} className='img-fluid' />
+                        <img src={s2} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>03</h6>
+                          </div>
+                          <div className='col-8 p-0'>
+                       <div className='sliderorange'>
+                       <h4><span>Risk </span>&nbsp;Optimization</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Active monitoring to mitigate the impact of market volatility.s
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s3} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
+
             </OwlCarousel>
           </div>
         </div>
       </section>
+
 
       <PortfolioAccordion/>
       <Fiance/>
