@@ -1,4 +1,4 @@
-import React, { startTransition, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
 import OwlCarousel from "react-owl-carousel3";
@@ -23,17 +23,22 @@ import s4 from './4.png'
 import s5 from './5.png'
 export default function Financalplanning() {
 
+    const formCardRef = useRef(null)
+    const rightContactRef = useRef(null)
+    const headingRef = useRef(null)
+    const subheadingRef = useRef(null)
+
   const options = {
     center: true,
-    items:2,
-    loop:true,
-    dots:false,
-    margin:18,
-    startTransition:0,
-       autoplay: true,
-    autoplayTimeout: 3000,
+    items: 2,
+    loop: true,
+    dots: false,
+    margin: 15,
+    autoplay: true,
+    autoplayTimeout:1000,
     autoplayHoverPause: true,
-    animateOut: 'fadeOut',
+    animateOut: '', // remove animation
+    smartSpeed: 1000, // increase this for slower transition
     responsive: {
       0: {
         items: 1.2,
@@ -50,6 +55,13 @@ export default function Financalplanning() {
 
 
   useEffect(() => {
+
+     gsap.fromTo(subheadingRef.current,
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.2 }
+        )
+
+
     gsap.registerPlugin(ScrollTrigger);
     const paragraphs = document.querySelectorAll('.animatetext p');
     paragraphs.forEach((p) => {
@@ -88,7 +100,7 @@ export default function Financalplanning() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3><img src={krishangiicon}  className='img-fluid' /> Secure  Future with Smart<span> Financial Planning</span></h3>
+              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Secure  Future with Smart<span> Financial Planning</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -210,6 +222,112 @@ export default function Financalplanning() {
                     <div className='col-md-6'>
                       <div className='rightslider'>
                         <img src={s2} className='img-fluid' />
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className='sildercard'>
+                <div className='sliderbox'>
+                  <div className='row'>
+                    <div className='col-md-6'>
+                      <div className='leftslider'>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>03</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Volatility </span>&nbsp;Control</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Protect yourself from unforeseen financial challenges.                       </p>
+                      </div>
+                    </div>
+                    <div className='col-md-6'>
+                      <div className='rightslider'>
+                        <img src={s3} className='img-fluid' />
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div className='sildercard'>
+                <div className='sliderbox'>
+                  <div className='row'>
+                    <div className='col-md-6'>
+                      <div className='leftslider'>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>04</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Life</span>&nbsp;Goal</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p> Be prepared for homeownership, education, retirement, and more.
+                        </p>
+                      </div>
+                    </div>
+                    <div className='col-md-6'>
+                      <div className='rightslider'>
+                        <img src={s4} className='img-fluid' />
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div className='sildercard'>
+                <div className='sliderbox'>
+                  <div className='row'>
+                    <div className='col-md-6'>
+                      <div className='leftslider'>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>05</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Optimize  </span>&nbsp;Savings</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Maximize returns while minimizing risks.
+                        </p>
+                      </div>
+                    </div>
+                    <div className='col-md-6'>
+                      <div className='rightslider'>
+                        <img src={s5} className='img-fluid' />
                       </div>
                     </div>
 

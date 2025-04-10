@@ -15,14 +15,22 @@ import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
 import Accordion from './Accordion';
 import Fiance from '../Fiance';
+
+import s1 from './1.png'
+import s2 from './2.png'
+import s3 from './3.png'
 export default function AlternativeInvestmentFunds() {
 
   const options = {
     center: true,
-    items:2,
-    loop:true,
-    dots:false,
-    margin:30,
+    items: 2,
+    loop: true,
+    dots: false,
+    margin: 18,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    animateOut: 'fadeOut',
     responsive: {
       0: {
         items: 1.2,
@@ -129,12 +137,18 @@ export default function AlternativeInvestmentFunds() {
       </section>
 
 
+    
+
+
+
+
+
       <section id='about-slider'>
         <div className='container-fluidm p-0'>
           <div className='row'>
             <div className='col-12'>
               <div className='headingslider'>
-                <h4>Why Does Financial Planning<br></br> Matters?</h4>
+                <h4>Why Consider Alternative <br></br> Investment Funds?</h4>
                 <p></p>
               </div>
             </div>
@@ -147,13 +161,26 @@ export default function AlternativeInvestmentFunds() {
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>01</h6>
+                          </div>
+                          <div className='col-8 p-0'>
+                       <div className='sliderorange'>
+                       <h4><span>Higher</span>&nbsp; Potential</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p> Access to exclusive investment avenues with higher growth possibilities.
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s1} className='img-fluid' />
                       </div>
                     </div>
 
@@ -161,44 +188,86 @@ export default function AlternativeInvestmentFunds() {
                   </div>
                 </div>
               </div>
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>02</h6>
+                          </div>
+                          <div className='col-8 p-0'>
+                       <div className='sliderorange'>
+                       <h4><span>Portfolio </span>&nbsp;Diversification</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p> Reducing risks by investing beyond traditional asset classes.
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={img2} className='img-fluid' />
+                        <img src={s2} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>03</h6>
+                          </div>
+                          <div className='col-8 p-0'>
+                       <div className='sliderorange'>
+                       <h4><span>Expert</span>&nbsp;Managed</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Professionally curated strategies for maximum efficiency.
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s3} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
+
             </OwlCarousel>
           </div>
         </div>
       </section>
+
+
+
       <AlternativeInvestmentFundsAccordion/>
       <Fiance/>
 

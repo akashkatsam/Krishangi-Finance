@@ -53,5 +53,28 @@
   y: 100,
   opacity: 0,
 });
+
+
+
+</script>
+
+  <script>
+  const card = document.querySelector('.servicecard1');
+
+  card.addEventListener('mouseenter', () => {
+    card.classList.add('hovered');
+    setTimeout(() => {
+      card.style.backgroundImage = "url('./white tree (1).png')";
+    }, 1000); // delay of 1 second
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.classList.remove('hovered');
+    setTimeout(() => {
+      card.style.backgroundImage = "url('./tree (1).png')";
+    }, 1000);
+  });
+</script>
+
 </script>
 </html>

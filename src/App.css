@@ -30,7 +30,7 @@ html {
 
 /* Optional: Change scrollbar color for Firefox */
 * {
-  scrollbar-color: #F36A24 #FFF;
+  scrollbar-color: #f26923 #FFF;
   scrollbar-width: thin;
 }
 
@@ -79,7 +79,7 @@ nav{
 
 
 .animatetext span{
-  color: #ff7f3d;
+  color: #f26923;
 }
 .navbar-toggler {
     border-radius: 100px;
@@ -222,7 +222,7 @@ main{
   background-image: url('./website-bg (2).jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 
 .left-content-banner h5{
@@ -521,7 +521,7 @@ main{
 
         /*  service*/
         #our-services{
-          padding: 40px 60px;
+          padding: 40px 70px;
         }
         .servicecard{
           background-image: url('./white tree (1).png');
@@ -580,7 +580,7 @@ main{
 
               .servicecard1 {
                 transition: background-color 0.5s ease, color 0.3s ease;
-                background-image: url('./Mask\ group\ \(1\).png');
+                background-image: url('./tree (1).png');
                 color: black; /* Default text color */
                 background-color: #f6f6f6; /* Default background */
                 
@@ -784,7 +784,7 @@ font-weight: 200;
           margin-bottom: 30px!important;
         }
         .orange{
-          color: #ff7f3d!important;
+          color: #f26923!important;
         }
         .animatetext h4{
           font-size: 60px;
@@ -828,23 +828,44 @@ font-weight: 200;
   padding: 20px;
 }
 .serviceheading span{
-      color: #F36A24;
+      color: #f26923;
 }
 .sliderbox{
   background:#F8F8F8;
   border-radius: 10px;
 }.serviceheading span{
-      color: #F36A24;
+      color: #f26923;
 }
 .leftslider{
-  padding: 20px 20px 20px 30px;
+  padding: 20px 10px 20px 30px;
 }
+
+.consultant {
+  display: flex;
+  align-items: center; /* vertically centers items */
+}
+
+.consultant-text {
+  margin-right: 48px;
+  text-align: left;
+  position: absolute;
+  width: 56%;
+  color: #fff;
+  font-family: 'inter';
+  font-size: 37px;
+  font-weight: 500;
+  z-index: 999;
+  left: 20px;
+  line-height: 43px;
+}
+
+
 #accordionservice .paraaccordian{
   text-align: center;
   font-size: 22px;
   font-family: 'Inter';
   margin: 20px 0px 30px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .leftslider h4 {
   color: #0F2549;
@@ -857,13 +878,13 @@ font-weight: 200;
 
 }
 .sliderorange span{
-  color: #F36A24;
+  color: #f26923;
 }
 .leftslider p{
   color: #202020;
   font-weight: 200;
   font-family: 'inter';
-  font-size: 39px;
+  font-size: 35px;
   line-height: 54px;
   margin-bottom: 50px;
 }
@@ -911,7 +932,7 @@ font-weight: 300;
 }
 .lineorange{
   height: 2px;
-  background-color: #F36A24;
+  background-color: #f26923;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -938,11 +959,11 @@ font-weight: 300;
 .dropdown-menu{
   margin-left: -115px;
     margin-top: 4px;
-    border-top: 4px solid #ff7f3d;
+    border-top: 4px solid #f26923;
     border-radius: 0px!important;
 }
 .services-dropdown{
-  border-top: 2px solid #F36A24;
+  border-top: 2px solid #f26923;
 }
 
 .megalink h5{
@@ -957,7 +978,7 @@ font-weight: 300;
 }
 
 .counterleft span{
-  color: #F36A24;
+  color: #f26923;
 }
 #accordionservice{
   padding: 40px 80px; 
@@ -1108,7 +1129,7 @@ font-weight: 300;
 
 }
 .breadcrumb-content  span{
-  color: #F36A24;
+  color: #f26923;
 }
 
 #contactpage{
@@ -1123,7 +1144,7 @@ font-weight: 300;
 }
 
 #aboutpage{
-  padding: 70px 50px;
+  padding: 70px 50px 70PX 70px;
   background-color: #EFEEEE;
 }
 
@@ -1150,10 +1171,11 @@ font-weight: 300;
 .headingabout h4{
   font-size: 52px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   text-transform: capitalize;
   font-weight: 600;
-  font-family: 'Inter';;
+  font-family: 'Inter';
+  color: #1C3764;
 }
 .pt-10{
   padding: 10px;
@@ -1162,7 +1184,13 @@ font-weight: 300;
   margin-top: 10px!important;
 }
 .headingabout span{
-  color: #ff7f3d;
+  color: #f26923;
+}
+.designation{
+  font-size: 16px!important;
+  font-family: 'inter';
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 .headingabout img{
   margin-top: -5px;
@@ -1239,15 +1267,21 @@ font-family: 'inter';
   font-size: 40px;
   color: #434343;
   font-family: 'inter';
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .foundertext p{
 
-  font-size: 20px;
+  font-size: 19px;
   color: #434343;
   font-family: 'inter';
-  margin-bottom: 20px;
+  margin-bottom:15px;
+}
+.sign img{
+  width: 350px;
+}
+.leftslider h6{
+font-family: 'inter';
 }
 .founderimg{
   width: 80%;

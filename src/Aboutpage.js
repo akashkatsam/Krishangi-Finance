@@ -9,6 +9,7 @@ import mail from './mail.png'
 import phone from './phone.png'
 import video from './video.mp4'
 import ceo from './CEO.png'
+import sign from './sign.png'
 
 export default function Contact() {
 
@@ -59,7 +60,7 @@ export default function Contact() {
 <section id='aboutpage'>
   <div className='container-fluid'>
     <div className='headingabout'>
-      <h4 ref={headingRef}><img src={krishangiicon}  className='img-fluid abstracticon' /> <span>Krishangi</span> Finance</h4>
+      <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> <span>Krishangi</span> Finance</h4>
     </div>
     <div className='row'>
       <div className='col-md-6'>
@@ -110,8 +111,13 @@ export default function Contact() {
             <div className="founderright">
               <div className="foundertext">
                 <h4>Sachin Agrawal</h4>
+                <p className='designation'>CEO, Krishangi Finance</p>
                 <p>Sachin Agrawal, a seasoned financial goal planner with over 20 years of expertise in financial planning and wealth management. With a deep passion for guiding individuals toward financial security, he specializes in investment management, retirement planning, tax strategies, and risk management. His approach is rooted in understanding each client’s unique financial landscape and crafting personalized, strategic plans that ensure long-term growth and stability.</p>
                 <p>  Sachin Agrawal believes that financial planning isn’t just about numbers, but it’s about empowering lives. By working closely with clients from diverse backgrounds, he provides clear, customized financial roadmaps that help them achieve their goals with confidence. His unwavering commitment to transparency, trust, and client success defines the foundation of Krishangi Finance</p>
+
+                <div className='sign'>
+                  <img src={sign}  className='imgp-fluid'/>
+                </div>
               </div>
             </div>
           </div>

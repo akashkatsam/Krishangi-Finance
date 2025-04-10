@@ -121,7 +121,7 @@ export default function Career() {
             </div>
 
             <div className='animatetext'>
-              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Career</span></h4>
+              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Join </span>Us</h4>
               <p>
               At Krishangi Finance, we offer more than just opportunities — we create pathways for growth. Whether you're a financial advisor, insurance consultant, investment expert, or simply passionate about wealth management, our Business Partner Network opens the door to meaningful success.
 Join us to empower more

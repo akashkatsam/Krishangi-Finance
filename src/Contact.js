@@ -95,9 +95,14 @@ export default function Contact() {
 
             <div className='col-md-6 order-sm-1 order-md-2 order-lg-2'>
               <div className='rightcontact' ref={rightContactRef}>
-                <div className='consultant'>
-                  <img src={consutlant} className='img-fluid mb-0' />
-                </div>
+              <div className='consultant d-flex align-items-center'>
+  <div className='consultant-text'>
+    <p>Need guidance? Our experts are here to assist.
+    </p>
+  </div>
+  <img src={consutlant} className='img-fluid mb-0' />
+</div>
+
                 <div className='detailcard'>
                   <img src={phone} className='img-fluid' />
                   <p>+91 91115-77221, +91 98260-72100</p>
