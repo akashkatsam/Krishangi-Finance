@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef ,useState} from 'react';
 import gsap from 'gsap';
 import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,6 +19,11 @@ import iconkrishangi from './krishangiicon.png'
 import { NavLink } from 'react-router-dom';
 
 export default function Header1() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
 
   const headingRef = useRef(null);
@@ -299,6 +304,35 @@ Investmenting Insides
       </Navbar.Collapse>
     </Container>
   </Navbar>
+
+
+  <nav className="custom-navbar">
+      <div className="custom-navbar-container">
+        <div className="custom-brand">
+        <Link to="/">
+        <img
+          src={logo}
+          alt="Krishangi Logo"
+          className="d-inline-block align-top logoKF"
+        />
+      </Link>
+        </div>
+        <button className="custom-toggler" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <span className="custom-icon close-icon">&#10005;</span> // X icon
+          ) : (
+            <span className="custom-icon hamburger-icon">&#9776;</span> // ☰ icon
+          )}
+        </button>
+      </div>
+
+      <div className={`custom-menu ${isMenuOpen ? "open" : ""}`}>
+        <a href="#" className="custom-nav-link">Home</a>
+        <a href="#" className="custom-nav-link">About</a>
+        <a href="#" className="custom-nav-link">Services</a>
+        <a href="#" className="custom-nav-link">Contact</a>
+      </div>
+    </nav>
  <main> 
 
 
@@ -342,6 +376,8 @@ Investmenting Insides
     </section>
  </main>
 
+
+ 
   </>
 
   )

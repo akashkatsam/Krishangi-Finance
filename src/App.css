@@ -1413,9 +1413,15 @@ font-family: 'inter';
 #blogsection{
   padding: 20px 40px;
 }
+.navbar-expand-lg{
+  display: block;
+}
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 10px;
+          }
+          .navbar-expand-lg{
+            display: none;
           }
           .navbar-nav{
             border-radius: 10px;
@@ -1441,6 +1447,76 @@ font-family: 'inter';
           .collapsing {
             transition: height 0.4s ease;
           }
+          
+
+          .custom-navbar {
+            position: relative;
+            z-index: 1000;
+          }
+          
+          .custom-navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+          }
+          nav{
+          padding: 15px!important;
+          }
+          
+          .custom-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+          
+          .custom-toggler {
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 3;height: 47px;
+            width: 47px;
+            border-radius: 100px;
+          }
+          
+          .custom-icon {
+            font-size: 2rem;
+            color: #333;
+          }
+          
+          .custom-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            display: flex;
+            flex-direction: column;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+            z-index: 1;
+          }
+          
+          .custom-menu.open {
+            max-height: 400px; /* adjust based on content */
+          }
+          
+          .custom-nav-link {
+            padding: 1rem;
+            text-decoration: none;
+            color: #333;
+            border-top: 1px solid #ccc;
+            transition: #fff;
+            font-size: 22px;
+            font-family: 'Inter';
+          }
+          
+          .custom-nav-link:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+          }
+
           
           .collapse.show {
             display: block !important;
