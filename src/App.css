@@ -44,7 +44,7 @@ body{
   overflow-x: hidden;
 }
 nav{
-  padding:20px!important;
+  padding: 30PX 15px!important;
   background: #0f2549;
   position: sticky!important;
   z-index: 999;
