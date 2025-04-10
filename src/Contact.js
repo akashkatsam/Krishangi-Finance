@@ -5,7 +5,7 @@ import krishangiicon from './krishangiicon.png'
 import Footer from './Footer'
 import map from './map.png'
 import mail from './mail.png'
-import phone from './phone.png'
+import phone from './bxs_phone-call (1).png'
 import consutlant from './consultant.png'
 import Header1 from './Header1'
 
@@ -96,7 +96,7 @@ export default function Contact() {
             <div className='col-md-6 order-sm-1 order-md-2 order-lg-2'>
               <div className='rightcontact' ref={rightContactRef}>
                 <div className='consultant'>
-                  <img src={consutlant} className='img-fluid' />
+                  <img src={consutlant} className='img-fluid mb-0' />
                 </div>
                 <div className='detailcard'>
                   <img src={phone} className='img-fluid' />

@@ -79,7 +79,7 @@ nav{
 
 
 .animatetext span{
-  color: #df5914;
+  color: #ff7f3d;
 }
 .navbar-toggler {
     border-radius: 100px;
@@ -162,7 +162,7 @@ nav button {
   font-family: 'inter' !important;
   border-radius: 30px;
   padding: 10px 26px !important;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 /* phoneui */
@@ -319,7 +319,7 @@ main{
           FONT-SIZE: 15PX;
           PADDING: 13PX 66PX 13px 21px;
           FONT-FAMILY: 'Inter';
-          margin:20px 30px 30px 30px;
+          margin:20px 30px 30px 50px;
         }
 
         .contactbtn button{
@@ -784,7 +784,7 @@ font-weight: 200;
           margin-bottom: 30px!important;
         }
         .orange{
-          color: #df5914!important;
+          color: #ff7f3d!important;
         }
         .animatetext h4{
           font-size: 60px;
@@ -843,18 +843,21 @@ font-weight: 200;
   text-align: center;
   font-size: 22px;
   font-family: 'Inter';
-  margin: 30px 0px;
+  margin: 20px 0px 30px;
   font-weight: 500;
 }
 .leftslider h4 {
   color: #0F2549;
   font-family: 'Inter';
   margin-bottom: 30px;
-  margin-top: 34px;
+  margin-top:15px;
   DISPLAY: FLEX;
   font-weight: 600;
   ALIGN-ITEMS: CENTER;
 
+}
+.sliderorange span{
+  color: #F36A24;
 }
 .leftslider p{
   color: #202020;
@@ -935,7 +938,7 @@ font-weight: 300;
 .dropdown-menu{
   margin-left: -115px;
     margin-top: 4px;
-    border-top: 4px solid #df5914;
+    border-top: 4px solid #ff7f3d;
     border-radius: 0px!important;
 }
 .services-dropdown{
@@ -986,6 +989,18 @@ font-weight: 300;
   color: #434343;
 }
 .contentcard p{
+  color: #4B4B4B;
+  font-size: 20px;
+  text-align: left!important;
+  margin-bottom: 0px;
+  font-family: 'inter';
+  margin-top: 15px;
+  font-weight: 300;
+
+}
+
+
+.contentcard ul li{
   color: #4B4B4B;
   font-size: 20px;
   text-align: left!important;
@@ -1078,7 +1093,7 @@ font-weight: 300;
   border-radius: 10px;
   display: flex;
     vertical-align: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
     align-items: center;
 }
 .detailcard img{
@@ -1103,6 +1118,7 @@ font-weight: 300;
 .leftcontact{
   background-color: #EFEEEE;
   border-radius: 10px;
+  height: 100%;
   padding:  50px;
 }
 
@@ -1146,7 +1162,7 @@ font-weight: 300;
   margin-top: 10px!important;
 }
 .headingabout span{
-  color: #df5914;
+  color: #ff7f3d;
 }
 .headingabout img{
   margin-top: -5px;
@@ -1287,6 +1303,9 @@ font-family: 'inter';
   height: 40PX;
 }
 
+#blogsection{
+  padding: 20px 40px;
+}
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 10px;

@@ -119,10 +119,9 @@ export default function LifeInsurance() {
             </div>
 
             <div className='animatetext'>
-              <h4>Financial Planning</h4>
+            <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> Life <span>Insurance</span></h4>
               <p>
-                At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
-                Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
+              Life is uncertain, but your family’s financial stability doesn’t have to be. With Krishangi Finance’s Life Insurance solutions, you can safeguard your loved ones from financial hardships and ensure their future is secure. Our personalized approach helps you choose the right plan.
               </p>
             </div>
           </div>

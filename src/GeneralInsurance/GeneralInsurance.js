@@ -79,7 +79,7 @@ export default function GeneralInsurance() {
             <div className='headingabout'>
 
           
-              <h3><img src={krishangiicon}  className='img-fluid' /><span>  General Insurance</span>  That Shields  from the Unexpected</h3>
+              <h3><img src={krishangiicon}  className='img-fluid abstracticon' /><span>  General Insurance</span>  That Shields  from the Unexpected</h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -120,10 +120,9 @@ export default function GeneralInsurance() {
             </div>
 
             <div className='animatetext'>
-              <h4>Financial Planning</h4>
+            <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> General  <span>Insurance</span></h4>
               <p>
-                At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
-                Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
+              Life is unpredictable, but your financial well-being doesn’t have to be. At Krishangi Finance, we provide comprehensive General Insurance solutions to protect your health, assets, business, and lifestyle from unforeseen risks. Whether it’s covering your home, vehicle, or business, our customized insurance plans ensure peace of mind.
               </p>
             </div>
           </div>

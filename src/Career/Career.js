@@ -12,6 +12,7 @@ import img2 from '../Frame 16.png'
 import img5 from '../circledesign.png'
 import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
+import Accordion from './Accordion';
 export default function Career() {
 
   const options = {
@@ -65,7 +66,12 @@ export default function Career() {
         }
       );
     });
+
+
+    
   }, []);
+
+  
 
   return (
     <>
@@ -74,7 +80,7 @@ export default function Career() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3><img src={krishangiicon}  className='img-fluid' /> Smart <span>Financial Planning</span> for<br></br> a Secure Future</h3>
+              <h3><img src={krishangiicon}  className='img-fluid' /> Join Our Business <span>Partner Network</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -115,10 +121,11 @@ export default function Career() {
             </div>
 
             <div className='animatetext'>
-              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/> Financial <span className='orange'>Planning</span></h4>
+              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Career</span></h4>
               <p>
-                At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
-                Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
+              At Krishangi Finance, we offer more than just opportunities — we create pathways for growth. Whether you're a financial advisor, insurance consultant, investment expert, or simply passionate about wealth management, our Business Partner Network opens the door to meaningful success.
+Join us to empower more
+
               </p>
             </div>
           </div>
@@ -128,6 +135,7 @@ export default function Career() {
 
    
       {/* <FinancialAccordion/> */}
+      <Accordion/>
       <Footer />
     </>
   );

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+
 import Header from './Header'
 import krishangiicon  from './krishangiicon.png'
 import Footer from './Footer'
@@ -9,13 +11,47 @@ import video from './video.mp4'
 import ceo from './CEO.png'
 
 export default function Contact() {
+
+
+
+  const formCardRef = useRef(null)
+  const rightContactRef = useRef(null)
+  const headingRef = useRef(null)
+  const subheadingRef = useRef(null)
+
+  useEffect(() => {
+    // Heading animation
+    gsap.fromTo(headingRef.current,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+    )
+
+    // Subheading <p> animation
+    gsap.fromTo(subheadingRef.current,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.2 }
+    )
+
+    // Left form card
+    gsap.fromTo(formCardRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.4 }
+    )
+
+    // Right side content
+    gsap.fromTo(rightContactRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.6 }
+    )
+  }, [])
+
   return (
     <>
     
     <Header/>
     <div class="breadcrumb">
   <div class="breadcrumb-content">
- <h1><img src={krishangiicon} className='img-fluid iconkrishangi' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
+ <h1 ref={headingRef}><img src={krishangiicon} className='img-fluid iconkrishangi' /> Your Trusted Partner in<br></br> <span>Financial Growth</span></h1>
   </div>
 </div>
 
@@ -23,7 +59,7 @@ export default function Contact() {
 <section id='aboutpage'>
   <div className='container-fluid'>
     <div className='headingabout'>
-      <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> <span>Krishangi</span> Finance</h4>
+      <h4 ref={headingRef}><img src={krishangiicon}  className='img-fluid abstracticon' /> <span>Krishangi</span> Finance</h4>
     </div>
     <div className='row'>
       <div className='col-md-6'>

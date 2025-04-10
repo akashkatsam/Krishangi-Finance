@@ -77,7 +77,7 @@ export default function MutalFund() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3><img src={krishangiicon}  className='img-fluid' /> Your Easiest Step into Smart Investing : <span>Mutual Funds</span></h3>
+              <h3><img src={krishangiicon}  className='img-fluid abstracticon' /> Your Easiest Step into Smart Investing : <span>Mutual Funds</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -118,7 +118,7 @@ export default function MutalFund() {
             </div>
 
             <div className='animatetext'>
-              <h4>Financial Planning</h4>
+              <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> Mutual <span>Funds</span></h4>
               <p>
                 At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
                 Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
