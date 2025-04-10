@@ -8,7 +8,7 @@ import mail from '../mail.png'
 import phone from '../phone.png'
 import consutlant from '../consultant.png'
 import Header1 from '../Header1'
-
+import icon from '../krishangiicon.png'
 export default function Blog() {
   const formCardRef = useRef(null)
   const rightContactRef = useRef(null)
@@ -58,14 +58,50 @@ export default function Blog() {
       </div>
 
    
-<section id='blogsection'>
-    <div className='container-fluid'>
-        <div className='row'>
-            <div className='col-md-6'></div>
-            <div className='col-md-6'></div>
 
-        </div>
-    </div>
+      <section id="insights">
+
+
+<h4> <img src={icon} className="img-fluid abstracticon" /> <span>Insights
+</span>  for our clients
+</h4>
+<div className="container">
+<div className="row">
+
+<div className="col-md-6">
+<div className="insightcardblog">
+<img src="https://dummyimage.com/600x400/000/fff" className="img-fluid"/>
+<div className='blogcaption'>
+<h4>Financial Goal Planning: Step-by-Step Guide for Working Professionals
+</h4>
+<p>10 April 2025</p>
+</div>
+</div>
+</div>
+
+<div className="col-md-6">
+<div className="insightcardblog">
+<img src="https://dummyimage.com/600x400/000/fff" className="img-fluid w-100"/>
+<div className='blogcaption'>
+<h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
+</h4>
+<p>10 April 2025</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div>
+
+
+</div>
+</div>
+
+</div>
 </section>
 
       <Footer />
