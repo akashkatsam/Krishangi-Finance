@@ -1,7 +1,7 @@
 
 
 import React, { useState } from "react";
-
+import icon from '../krishangiicon.png'
 const faqs = [
   {
     id: 1,
@@ -46,7 +46,9 @@ const PortfolioAccordion = () => {
   return (
     <section id="accordionservice">
     <div className="container">
-      <h3>Our Portfolio Management Approach</h3>
+
+      <h3><img src={icon} className="img-fluid abstracticon"/> Our <span className="highlight">Portfolio Management</span> Approach </h3>
+
       <p className="paraaccordian">At Krishangi Finance, we follow a structured, client-centric approach  <br></br>to maximize investment potential:</p>
 
 

@@ -3,34 +3,28 @@ import React, { useState } from "react";
 const faqs = [
   {
     id: 1,
-    question: "What is Life Insurance?",
+    question: "Who can be a Sub-Broker?",
     answer:
-      "Life insurance provides financial protection to your family by offering a lump sum payout in case of your unfortunate demise.",
+      "Anyone with an interest in finance, sales experience, or a passion to grow in the financial industry can become a sub-broker with Krishangi Finance.",
   },
   {
     id: 2,
-    question: "Why should I get Life Insurance?",
+    question: "What are the benefits of becoming a Sub-Broker?",
     answer:
-      "It ensures your loved ones are financially secure, covering expenses like loans, education, and daily living costs.",
+      "Enjoy high earning potential, training support, and access to a wide range of financial products under a trusted brand name.",
   },
   {
     id: 3,
-    question: "What’s the best age to buy life insurance?",
+    question: "Is prior experience necessary to become a sub-broker?",
     answer:
-      "The earlier, the better. Buying young means lower premiums and higher coverage—plus, you lock in benefits early.",
+      "No, prior experience is not mandatory.",
   },
   {
     id: 4,
-    question: "Do I get any returns from a term plan?",
+    question: "How much can I earn as a sub-broker?",
     answer:
-      "Standard-term plans don’t offer maturity returns. However, return-of-premium options are available at higher premiums.",
-  },
-  {
-    id: 5,
-    question: "Can life insurance help with tax savings?",
-    answer:
-      "Yes. Premiums paid qualify for tax deductions under Section 80C, and death/maturity benefits are usually tax-free under Section 10(10D) of the Income Tax Act.",
-  },
+      "Your income depends on your performance and client base.",
+  }
 ];
 
 const Accordion = () => {

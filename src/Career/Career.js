@@ -92,7 +92,7 @@ export default function Career() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Join Our Business <span>Partner Network</span></h3>
+              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Become Our <span>Sub Broker</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -101,9 +101,11 @@ export default function Career() {
                     </div>
                   </div>
                   <div className='col-md-5 align-self-center'>
-                    <div className='form-right'>
-                      <h4>Enter Your Details</h4>
-                      <div className='form-group'>
+                    <div className='form-right careerform'>
+<center>
+<h3 className='text-center'>Fill in your details & Join our <br></br><span className='highlight'>Business Partner Network Today</span></h3>
+
+</center><div className='form-group'>
                         <input type='text' className='form-control' id='Name' placeholder='Name' />
                       </div>
                       <div className='form-group'>
@@ -112,6 +114,8 @@ export default function Career() {
                       <div className='form-group'>
                         <input type='email' className='form-control' id='Email' placeholder='Email Address' />
                       </div>
+
+                      
                       <p>
                         Tata AIA Life Insurance Company Limited will send you updates on new products, services, insurance solutions, existing policy or related information and/or process your information in accordance with
                       </p>
@@ -133,7 +137,7 @@ export default function Career() {
             </div>
 
             <div className='animatetext'>
-              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Join </span>Us</h4>
+              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Sub  </span>Broker</h4>
               <p>
               At Krishangi Finance, we offer more than just opportunities — we create pathways for growth. Whether you're a financial advisor, insurance consultant, investment expert, or simply passionate about wealth management, our Business Partner Network opens the door to meaningful success.
 Join us to empower more

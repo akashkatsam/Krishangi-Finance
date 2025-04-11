@@ -15,6 +15,11 @@ import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
 import Fiance from '../Fiance';
 import Accordion from './Accordion';
+import s1 from './1.png'
+import s2 from './2.png'
+import s3 from './3.png'
+import s4 from './4.png'
+import s5 from './5.png'
 export default function LifeInsurance() {
 
   const options = {
@@ -128,32 +133,43 @@ export default function LifeInsurance() {
         </div>
       </section>
 
-
       <section id='about-slider'>
         <div className='container-fluidm p-0'>
           <div className='row'>
             <div className='col-12'>
               <div className='headingslider'>
-                <h4>Why Does Financial Planning<br></br> Matters?</h4>
+                <h4>Why is Life Insurance <br></br> Essential?</h4>
                 <p></p>
               </div>
             </div>
        
 
             <div className='separator-20'></div>
-            <OwlCarousel className="owl-theme custom-carousel" {...options}>
+            <OwlCarousel className="owl-theme" {...options}>
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>01</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Build</span>&nbsp;Wealth</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Financial Protection for Your Family in Your Absence</p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s1} className='img-fluid' />
                       </div>
                     </div>
 
@@ -161,48 +177,160 @@ export default function LifeInsurance() {
                   </div>
                 </div>
               </div>
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>02</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Secure</span>&nbsp;Future</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Covers Outstanding Debts & Liabilities
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={img2} className='img-fluid' />
+                        <img src={s2} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>03</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Volatility </span>&nbsp;Control</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Ensures Long-Term Income Stability for Dependents
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s3} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
+
+              <div className='sildercard'>
+                <div className='sliderbox'>
+                  <div className='row'>
+                    <div className='col-md-6'>
+                      <div className='leftslider'>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>04</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Life</span>&nbsp;Goal</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p> Provides Tax Benefits & Wealth Accumulation Opportunities
+
+                        </p>
+                      </div>
+                    </div>
+                    <div className='col-md-6'>
+                      <div className='rightslider'>
+                        <img src={s4} className='img-fluid' />
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div className='sildercard'>
+                <div className='sliderbox'>
+                  <div className='row'>
+                    <div className='col-md-6'>
+                      <div className='leftslider'>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>05</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Optimize  </span>&nbsp;Savings</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Helps with Retirement & Estate Planning
+
+                        </p>
+                      </div>
+                    </div>
+                    <div className='col-md-6'>
+                      <div className='rightslider'>
+                        <img src={s5} className='img-fluid' />
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+             
             </OwlCarousel>
           </div>
         </div>
       </section>
+  
 
       <LifeInsuranceAccordion/>
       <Fiance/>
       <Accordion/>
+      <Footer/>
     </>
   );
 }

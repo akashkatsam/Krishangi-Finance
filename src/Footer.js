@@ -24,7 +24,7 @@ export default function Footer() {
                 <h6>Our Services</h6>
                 <ul>
                 <Link to="/financial-planning">  <li>
-                  Financal Planning </li>
+                  Financial Planning </li>
 </Link>
 
 
@@ -82,11 +82,29 @@ Life Insurnace</li>
               </div>
             </div><div className='col'>
               <div className='footerlist'>
-                <h6>Company</h6>
+                <h6>Quick Links</h6>
                 <ul>
-                  <li>Privacy Us</li>
-                  <li> Security </li>
-                  <li>Terms </li>
+                <Link to="/about">  <li>
+About Us</li>
+</Link>
+
+
+
+
+
+<Link to="/investment-inside">  <li>
+Investing Insights</li>
+</Link>
+
+
+<Link to="/career">  <li>
+Career</li>
+</Link>
+
+<Link to="/contact-us">  <li>
+
+Contact Us</li>
+</Link>
                 </ul>
               </div>
             </div>

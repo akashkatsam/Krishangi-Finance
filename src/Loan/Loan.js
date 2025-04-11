@@ -133,7 +133,7 @@ export default function Loan() {
           <div className='row'>
             <div className='col-12'>
               <div className='headingslider'>
-                <h4>Why Does Financial Planning<br></br> Matters?</h4>
+                <h4>Why Choose Krishangi Finance <br></br> for Loans?</h4>
                 <p></p>
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function Loan() {
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
+                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Personalized Loan:</h4>
                         <p>Grow your assets with a structured investment approach.</p>
                       </div>
                     </div>
@@ -202,6 +202,7 @@ export default function Loan() {
       <LoanAccordian/>
       <Fiance/>
       <Accordion/>
+      <Footer/>
     </>
   );
 }

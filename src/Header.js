@@ -16,6 +16,7 @@ import icon5 from './headericon/5.png'
 import icon6 from './headericon/6.png'
 import icon7 from './headericon/7.png'
 import icon8 from './headericon/8.png'
+import avatar from './avatar.svg'
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
@@ -24,6 +25,30 @@ export default function Header() {
   const [hidden, setHidden] = useState(false);
   const [blur, setBlur] = useState(false);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+
+  const headingRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { ease: 'power2.out' } });
+
+    tl.fromTo(
+      headingRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5 }
+    ).fromTo(
+      buttonRef.current,
+      { y: 30, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8 },
+      "+=0.1"
+    );
+  }, []);
 
 
   const location = useLocation();
@@ -106,7 +131,7 @@ About Us</NavLink>
                         <Link to="/financial-planning"> 
 
                         <div className='megalink'>
-                        <h5>Financal Planning </h5>
+                        <h5>Financial Planning </h5>
                         <p>Krishangi Finance is a financial </p>
 
                         </div>
@@ -312,13 +337,42 @@ Investing Insights
 
         {/* Login Button */}
         <Button >
-          Portfolio Login
+        <img src={avatar}  className='img-fluid avatar'/> Profile login
         </Button>
       </Navbar.Collapse>
     </Container>
   </Navbar>
   {/* <main> */}
+  <nav className="custom-navbar">
+      <div className="custom-navbar-container">
+        <div className="custom-brand">
+          <Link to="/">
+            <img
+              src={logo}
+              alt="Krishangi Logo"
+              className="d-inline-block align-top logoKF"
+            />
+          </Link>
+        </div>
+        <button className="custom-toggler" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <span className="custom-icon close-icon">&#10005;</span>
+          ) : (
+            <span className="custom-icon hamburger-icon">&#9776;</span>
+          )}
+        </button>
+      </div>
 
+      <div className={`custom-menu ${isMenuOpen ? "open" : ""}`}>
+        <NavLink to="/" className="custom-nav-link">Home</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? "custom-nav-link active" : "custom-nav-link"}>About Us</NavLink>
+
+  
+
+        <NavLink to="/career" className={({ isActive }) => isActive ? "custom-nav-link " : "custom-nav-link"}>Career</NavLink>
+        <NavLink to="/contact-us" className={({ isActive }) => isActive ? "custom-nav-link " : "custom-nav-link"}>Contact Us</NavLink>
+      </div>
+    </nav>
 
 
 

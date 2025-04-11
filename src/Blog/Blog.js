@@ -9,6 +9,13 @@ import phone from '../phone.png'
 import consutlant from '../consultant.png'
 import Header1 from '../Header1'
 import icon from '../krishangiicon.png'
+import banner1 from './banner1-2 (1).jpg'
+import banner2 from './banner2-2.jpg'
+import banner4 from './banner4-2 (1).jpg'
+
+import { Link } from 'react-router-dom'
+
+import blog3 from './banner3-2.jpg'
 export default function Blog() {
   const formCardRef = useRef(null)
   const rightContactRef = useRef(null)
@@ -48,7 +55,7 @@ export default function Blog() {
       <div className="breadcrumb breadcrumb1 ">
         <div className="breadcrumb-content">
           <h1 ref={headingRef}>
-            <img src={krishangiicon} className='img-fluid abstracticon' /> News & <span>Media</span>
+            <img src={krishangiicon} className='img-fluid abstracticon' /> Investing <span>Insights</span>
           </h1>
           <p ref={subheadingRef}>
           Everything you need to stay up to date with what’s going on at Krishangi Finance — and <br />
@@ -69,25 +76,62 @@ export default function Blog() {
 <div className="row">
 
 <div className="col-md-6">
+<Link to="/financial-Goal-Planning">
 <div className="insightcardblog">
-<img src="https://dummyimage.com/600x400/000/fff" className="img-fluid"/>
+<img src={banner1} className="img-fluid w-100"/>
 <div className='blogcaption'>
 <h4>Financial Goal Planning: Step-by-Step Guide for Working Professionals
 </h4>
 <p>10 April 2025</p>
 </div>
-</div>
+</div></Link>
 </div>
 
 <div className="col-md-6">
+<Link to="/blog2">
+
 <div className="insightcardblog">
-<img src="https://dummyimage.com/600x400/000/fff" className="img-fluid w-100"/>
+<img src={banner2} className="img-fluid w-100"/>
 <div className='blogcaption'>
 <h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
 </h4>
 <p>10 April 2025</p>
 </div>
 </div>
+</Link>
+</div>
+
+
+
+<div className="col-md-6">
+<Link to="/blog3">
+
+<div className="insightcardblog">
+<img src={blog3} className="img-fluid w-100"/>
+<div className='blogcaption'>
+<h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
+</h4>
+<p>10 April 2025</p>
+</div>
+</div>
+</Link>
+</div>
+
+
+
+
+<div className="col-md-6">
+<Link to="/blog4">
+
+<div className="insightcardblog">
+<img src={banner4} className="img-fluid w-100"/>
+<div className='blogcaption'>
+<h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
+</h4>
+<p>10 April 2025</p>
+</div>
+</div>
+</Link>
 </div>
 
 

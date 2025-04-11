@@ -18,6 +18,7 @@ import icon8 from './headericon/8.png'
 import iconkrishangi from './krishangiicon.png'
 import { NavLink } from 'react-router-dom';
 import logo2 from './logoorange.png'
+import avatar from './avatar.svg'
 export default function Header1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -102,7 +103,7 @@ About Us</NavLink>
                         <Link to="/financial-planning"> 
 
                         <div className='megalink'>
-                        <h5>Financal Planning </h5>
+                        <h5>Financial Planning </h5>
                         <p>Krishangi Finance is a financial </p>
 
                         </div>
@@ -305,7 +306,7 @@ Investing Insights
 
         {/* Login Button */}
         <Button >
-          Portfolio Login
+         <img src={avatar}  className='img-fluid avatar'/> Profile login
         </Button>
       </Navbar.Collapse>
     </Container>

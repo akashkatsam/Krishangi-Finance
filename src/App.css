@@ -12,11 +12,31 @@ a {
   transition: color 0.3s ease;
 }
 
-.sociallink li svg:hover{
-fill: #000;
+
+.sociallink li svg path {
+  transition: fill 0.2s ease;
 }
+
+.sociallink li svg:hover {
+  animation: bounce 0.7s;
+}
+
+.sociallink li svg path:hover {
+  fill: #f26923;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+
 a:hover {
-  color: orange; /* hover color */
+  color: #f26923; /* hover color */
 }
 
 
@@ -49,13 +69,13 @@ html {
 
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff0000; /* Red color */
+  background: #f26923; /* Red color */
   border-radius: 10px;
 }
 
 /* Scrollbar Handle on Hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #cc0000;
+  background: #f26923;
 }
 
 /* Scrollbar Track Background */
@@ -147,7 +167,7 @@ nav button {
 #aboutstats {
   padding: 70px 80px;
   background: linear-gradient(90deg, rgba(229,228,228,1) 0%, rgba(252,251,252,1) 43%, rgba(229,228,228,1) 100%);
-  background-image: url('./greybg.png');
+  background-image: url('./home-page-banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position:bottom;
@@ -502,7 +522,7 @@ main{
           FONT-SIZE: 15PX;
           PADDING: 10PX 80PX 10px 21px;
           FONT-FAMILY: 'Inter';
-          margin:20px 30px 30px 30px;
+          margin:21px 21px 22px 2px;
         }
 
         .accordion-collapse {
@@ -857,9 +877,26 @@ font-weight: 200;
           float: right;
           width: 80px;
           right: -35px;
-          top: 2px;
+          top:4px;
           padding: 8px;
           border-radius: 20px;
+        }
+
+        .careerform h3{
+          text-align: center!important;
+          text-transform: capitalize!important;
+          font-weight: 600!important;
+          font-family: 'Inter'!important;
+          color: #1C3764!important;
+          font-size: 22px !important;
+        }
+        .avatar{
+          width: 22px;
+          margin-top: -2px;
+          margin-right: 3px;
+        }
+        .careerform span{
+          font-weight:700;
         }
         .arrowbtn svg{
           width: 16px;
@@ -975,11 +1012,11 @@ font-weight: 200;
   margin-right: 48px;
   text-align: left;
   position: absolute;
-  width: 56%;
+  width: 50%;
   color: #fff;
   font-family: 'inter';
   font-size: 37px;
-  font-weight: 500;
+  font-weight: 600;
   z-index: 999;
   left: 20px;
   line-height: 43px;
@@ -1109,7 +1146,7 @@ font-weight: 300;
   color: #f26923;
 }
 #accordionservice{
-  padding: 40px 80px; 
+  padding: 40px 100px; 
   background:#EFEEEE;
 }
 #accordionservice h3{
@@ -1139,7 +1176,7 @@ font-weight: 300;
 }
 .contentcard p{
   color: #4B4B4B;
-  font-size: 18px;
+  font-size: 20px;
   text-align: left!important;
   margin-bottom: 0px;
   font-family: 'inter';
@@ -1158,9 +1195,16 @@ font-weight: 300;
 .insightcardblog p{
 font-size: 13px!important;
 font-family: 'inter';
+color: #f26923;
+}
+.insightcardblog img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .insightcardblog{
   background-color: #F7F7F7;
+  margin-bottom: 30px;
+
 }
 .insightcardblog{
   border-radius: 30px;
@@ -1169,14 +1213,58 @@ font-family: 'inter';
   padding: 10px 30px;
 }
 
+#insights .insightcardblog h4{
+  font-size: 19px !important;
+    text-align: left !important;
+    margin-bottom: 5px !important;
+    margin-top: 6px !important;
+    color: #000 !important;
+}
 
+#insights .blogcaption{
+  padding: 10px 18px;
+}
+#insights .insightcardblog p{
+  margin-bottom: 8px;
+}
+.blog-title{
+  font-size: 53px;
+  color: #fff;
+  font-family: 'inter';
+  margin-top: 40px;
+}
+.blogsection .card-img-top{
+border-radius: 20px;
+}
+.table-bordered>:not(caption)>*>*{
+  font-family: 'inter';
+}
+td{
+  font-family: 'inter';
+
+}
+.text-muted{
+  color: #f26923!important;
+}
+.blogdetails h4
+{
+  font-size: 32px;
+  color: #f26923;
+  font-family: 'Inter';
+  margin: 30px auto;
+}
+.blogdetails p{
+  color: #fff;
+    font-family: 'Inter';
+    font-size: 21px;
+}
 .contentcard ul li{
   color: #4B4B4B;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left!important;
   margin-bottom: 0px;
   font-family: 'inter';
-  margin-top: 15px;
+  margin-top: 10px;
   font-weight: 300;
 
 }
@@ -1265,7 +1353,10 @@ font-family: 'inter';
 
 
 #insights{
-  padding: 60px 50px;
+  padding: 60px 50px 30px 50px;
+}
+#form-ui .owl-carousel{
+pointer-events: none;
 }
 #insights h4{
   width: 100%;
@@ -1277,6 +1368,9 @@ font-family: 'inter';
   margin-bottom: 50px;
 }
 #insights span{
+  color: #f26923;
+}
+.highlight{
   color: #f26923;
 }
 #insightcard img{
@@ -1557,9 +1651,17 @@ font-family: 'inter';
 .custom-navbar{
   display: none;
 }
+.abstracticon ,.iconkrishangi{
+  width: 50px;
+  margin-top: -10px;
+}
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 10px;
+          }
+          #about-slider .owl-item img{
+width: 60%;
+margin: auto;
           }
 
           .consultant-text {
@@ -1639,10 +1741,12 @@ font-family: 'inter';
           }
           
           .custom-icon {
-            font-size: 2rem;
-            color: #333;
+            font-size: 18px;
+            color: #fff;
           }
-          
+          .insightcardblog h4{
+            font-size: 19px !important;
+          }
           .custom-menu {
             position: absolute;
             top: 100%;
@@ -1662,12 +1766,12 @@ font-family: 'inter';
           }
           
           .custom-nav-link {
-            padding: 1rem;
+            padding:15px;
             text-decoration: none;
             color: #333;
-            border-top: 1px solid #ccc;
             transition: #fff;
-            font-size: 22px;
+            font-weight: 500;
+            font-size: 20px;
             font-family: 'Inter';
           }
           
@@ -1973,6 +2077,7 @@ font-family: 'inter';
 }
 .headingabout h3 {
   font-size: 32px;
+  line-height: 40px;
 }
 .form-left img{
   width: 100%;
@@ -1985,7 +2090,10 @@ font-family: 'inter';
   margin-bottom: 20px;
 }
 .animatetext h4{
-  font-size: 32px;
+  font-size: 28px;
+}
+.contentcard ul li{
+  font-size: 12px;
 }
 .animatetext p{
     color: #fff;
@@ -2000,7 +2108,7 @@ font-family: 'inter';
 }
 #accordionservice h3{
   width: 100%;
-  font-size: 28px;
+  font-size: 26px;
 }
 #accordionservice .paraaccordian {
   font-size: 12px;
@@ -2025,6 +2133,8 @@ font-family: 'inter';
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 15px;
+  
+font-weight: 400;
 }
 .leftslider h4 {
   margin-top:20px;

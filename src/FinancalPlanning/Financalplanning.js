@@ -21,40 +21,44 @@ import s2 from './2.png'
 import s3 from './3.png'
 import s4 from './4.png'
 import s5 from './5.png'
-export default function Financalplanning() {
+import { startTransition } from 'react';
+export default function Financialplanning() {
+  const owlRef = useRef();
+
 
     const formCardRef = useRef(null)
     const rightContactRef = useRef(null)
     const headingRef = useRef(null)
     const subheadingRef = useRef(null)
 
-  const options = {
-    center: true,
-    items: 2,
-    loop: true,
-    dots: false,
-    margin: 15,
-    autoplay: true,
-    autoplayTimeout:1000,
-    autoplayHoverPause: true,
-    animateOut: '', // remove animation
-    smartSpeed: 1000, // increase this for slower transition
-    responsive: {
-      0: {
-        items: 1.2,
+    const options = {
+      center: true,
+      items: 2,
+      loop: true,
+      dots: false,
+      margin: 15,
+      startTransition: 2,
+      autoplay: true,             // Enables autoplay
+      autoplayTimeout: 3000,      // 3 seconds (in milliseconds)
+      autoplayHoverPause: true,   // Optional: pause on hover
+      responsive: {
+        0: {
+          items: 1.2,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 2,
+        },
       },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 2
-      },
-    },
-  };
+    };
+    
   
-
-
   useEffect(() => {
+
+  
+  
 
      gsap.fromTo(subheadingRef.current,
           { opacity: 0, y: 30 },
@@ -164,7 +168,7 @@ export default function Financalplanning() {
        
 
             <div className='separator-20'></div>
-            <OwlCarousel className="owl-theme custom-carousel" {...options}>
+            <OwlCarousel className="owl-theme" {...options}>
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>

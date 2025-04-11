@@ -99,7 +99,7 @@ export default function Contact() {
               <div className='rightcontact' ref={rightContactRef}>
               <div className='consultant d-flex align-items-center'>
   <div className='consultant-text'>
-    <p>Need guidance? Our experts are here to assist.
+    <p>Let’s Start Planning Your Financial Future
     </p>
   </div>
   <img src={consutlant} className='img-fluid mb-0' />
