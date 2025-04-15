@@ -29,7 +29,7 @@ const Home = () => {
     loop: true,
       margin: 20,
       nav: false,
-      doys:false,
+      dots:false,
       autoplay: true,
       autoplayTimeout: 3000, // 3 seconds
       responsive: {
