@@ -131,8 +131,7 @@ export default function GeneralInsurance() {
             <div className='animatetext'>
             <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> General  <span>Insurance</span></h4>
               <p>
-              Life is unpredictable, but your financial well-being doesn’t have to be. At Krishangi Finance, we provide comprehensive General Insurance solutions to protect your health, assets, business, and lifestyle from unforeseen risks. Whether it’s covering your home, vehicle, or business, our customized insurance plans ensure peace of mind.
-              </p>
+              General insurance provides financial protection against a wide range of non-life-related risks. At Krishangi Finance, we offer tailored solutions to protect your health, car, home, travel plans, and business. Whether it's covering medical expenses, vehicle damage, property loss, travel disruptions, or commercial liabilities, our expert guidance helps you choose the right policy to stay secure against everyday uncertainties.              </p>
             </div>
           </div>
         </div>
