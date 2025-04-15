@@ -57,7 +57,7 @@ const Home = () => {
 <div className='blogcaption'>
 <h4>Financial Goal Planning: Step-by-Step Guide for Working Professionals
 </h4>
-<p>09 April 2025</p>
+<p>10 April 2025</p>
 </div>
 </div></Link>
     </div>
@@ -70,7 +70,7 @@ const Home = () => {
 <div className='blogcaption'>
 <h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
 </h4>
-<p>08 April 2025</p>
+<p>09 April 2025</p>
 </div>
 </div></Link>
   </div>
@@ -86,7 +86,7 @@ const Home = () => {
 <h4>Mutual Funds vs Fixed Deposits: Which One Suits Your Financial Goals?
 
 </h4>
-<p>10 April 2025</p>
+<p>08 April 2025</p>
 </div>
 </div>
 </Link>

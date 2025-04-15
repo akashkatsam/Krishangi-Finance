@@ -43,7 +43,8 @@ import sip from './sip or.png'
 import laon from './loans or.png'
 import emi from './emi or.png'
 import p1 from './birla sun life.png'
-import p2 from './lic.png'
+import p2 from './kgf logo2.jpg'
+
 
 import cal from './calculator.png'
 export default function Header1() {
