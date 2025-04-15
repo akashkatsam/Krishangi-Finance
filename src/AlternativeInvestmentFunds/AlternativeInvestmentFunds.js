@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hold from '../holdmoney.png'
-import about from './aif.png';
+import about from './aif (1).png';
 import img2 from '../Frame 16.png'
 import img5 from '../circledesign.png'
 import Footer from '../Footer';

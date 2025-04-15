@@ -9,7 +9,7 @@ const Blog2 = () => {
     <>
       <Header />
 
-      <div id='form-ui'>
+      <div className='form-ui1' id='form-ui'>
         <div className="blogsection">
           <img src={blogImage} className="card-img-top" alt="Diversified Portfolio" />
           <div className="blogdetails">

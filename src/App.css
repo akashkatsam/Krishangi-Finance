@@ -387,8 +387,17 @@ main{
   width: 80%;
   margin: auto;
   display: block  ;
+  margin-top: 15px;
 }
-
+#form-ui .blogsection li {
+  color: #000;
+  font-family: 'inter'!important;
+  font-weight: 20px;
+}
+.form-ui1 {
+  padding: 40px 30px;
+  background: #fff!important;
+}
         .custom-button {
             display: flex;
             align-items: center;
@@ -1452,7 +1461,7 @@ color: #f26923;
 }
 .blog-title{
   font-size: 53px;
-  color: #fff;
+  color: #000;
   font-family: 'inter';
   margin-top: 40px;
 }
@@ -1477,7 +1486,7 @@ td{
   margin: 30px auto;
 }
 .blogdetails p{
-  color: #fff;
+  color: #000;
     font-family: 'Inter';
     font-size: 21px;
 }
@@ -2019,6 +2028,20 @@ font-family: 'inter';
           #aboutstats {
             padding: 30px 10px;
           }
+          .blogdetails p {
+            font-size: 15px;
+          }
+          .blogdetails h4{
+            font-size: 20px;
+          }
+          .blogdetails h4 {
+            color: #f26923;
+            font-family: 'Inter';
+            margin: 15px auto;
+        }
+        .blog-title {
+          font-size: 22px;
+        }
 
           nav button {
             background-color: #fff!important;
@@ -2413,7 +2436,7 @@ margin: auto;
   transform: scale(1) !important;
 }
 .why-krishangi-section .custom-carousel .owl-stage-outer {
-  height:300px;
+  height:351px;
 
 }
 #form-ui{
