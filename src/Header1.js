@@ -636,13 +636,14 @@ export default function Header1() {
             </button>
             <div className={`nav-dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
               <NavLink to="/financial-planning" className="nav-dropdown-item">Financial Planning</NavLink>
+              <NavLink to="/mutual-fund" className="nav-dropdown-item">Mutual Funds</NavLink>
+              <NavLink to="/life-insurnace" className="nav-dropdown-item">Life Insurance</NavLink>
+
               <NavLink to="/portfolio-management-services" className="nav-dropdown-item">Portfolio Management</NavLink>
               <NavLink to="/alternative-investment-funds" className="nav-dropdown-item">Alternative Investment Funds</NavLink>
-              <NavLink to="/mutual-fund" className="nav-dropdown-item">Mutual Funds</NavLink>
               <NavLink to="/general-insurance" className="nav-dropdown-item">General Insurance</NavLink>
               <NavLink to="/loan" className="nav-dropdown-item">Loan</NavLink>
               <NavLink to="/will-estate-planning" className="nav-dropdown-item">Will & Estate Planning</NavLink>
-              <NavLink to="/life-insurnace" className="nav-dropdown-item">Life Insurance</NavLink>
 
             </div>
 
