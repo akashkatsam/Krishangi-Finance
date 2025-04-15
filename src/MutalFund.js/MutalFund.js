@@ -97,7 +97,8 @@ export default function MutalFund() {
                   </div>
                   <div className='col-md-5 align-self-center'>
                     <div className='form-right'>
-                      <h4>Enter Your Details</h4>
+                      <h4>get expert Mutal Fund guidance today.
+                      </h4>
                       <div className='form-group'>
                         <input type='text' className='form-control' id='Name' placeholder='Name' />
                       </div>
@@ -108,7 +109,8 @@ export default function MutalFund() {
                         <input type='email' className='form-control' id='Email' placeholder='Email Address' />
                       </div>
                       <p>
-                        Tata AIA Life Insurance Company Limited will send you updates on new products, services, insurance solutions, existing policy or related information and/or process your information in accordance with
+                        Krishangi Financial Services Pvt. Ltd. may contact you regarding your existing relationship, important updates, or related information and may process your data in accordance with its privacy policy.
+
                       </p>
                       <button>
                         Submit

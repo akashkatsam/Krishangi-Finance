@@ -126,7 +126,8 @@ export default function Financialplanning() {
                         <input type='email' className='form-control' id='Email' placeholder='Email Address' />
                       </div>
                       <p>
-                        Tata AIA Life Insurance Company Limited will send you updates on new products, services, insurance solutions, existing policy or related information and/or process your information in accordance with
+                        Krishangi Financial Services Pvt. Ltd. may contact you regarding your existing relationship, important updates, or related information and may process your data in accordance with its privacy policy.
+
                       </p>
                       <button>
                         Submit
