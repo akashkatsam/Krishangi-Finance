@@ -4,84 +4,84 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const SIP = () => {
-  const [monthly, setMonthly] = useState(5000);
-  const [years, setYears] = useState(5);
-  const [rate, setRate] = useState(12);
+  const [monthlyInvestment, setMonthlyInvestment] = useState(10000); // ₹10,000 per month
+  const [annualRate, setAnnualRate] = useState(12); // Annual interest rate in %
+  const [investmentPeriod, setInvestmentPeriod] = useState(10); // Investment period in years
 
-  const months = years * 12;
-  const monthlyRate = rate / 12 / 100;
+  const months = investmentPeriod * 12;
+  const monthlyRate = annualRate / 12 / 100;
 
-  let futureValue = 0;
-  for (let i = 1; i <= months; i++) {
-    futureValue = (futureValue + monthly) * (1 + monthlyRate);
-  }
+  // SIP Future Value formula
+  const futureValue = monthlyInvestment *
+                      ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) *
+                      (1 + monthlyRate);
 
-  const investedAmount = monthly * months;
-  const estimatedReturns = futureValue - investedAmount;
+  const totalInvested = monthlyInvestment * months;
+  const estimatedReturns = futureValue - totalInvested;
 
-  const data = {
-    labels: ['Invested Amount', 'Est. Returns'],
-    datasets: [
-      {
-        data: [investedAmount, estimatedReturns],
-        backgroundColor: ['#0f2549', '#dc5611'],
-      },
-    ],
+  const chartData = {
+    labels: ['Invested Amount', 'Estimated Returns'],
+    datasets: [{
+      data: [totalInvested, estimatedReturns],
+      backgroundColor: ['#0f2549', '#dc5611'],
+      hoverOffset: 8,
+    }],
   };
 
   return (
-    <div className="container calcuator  rounded bg-white">
+    <div className="container calcuator rounded">
       <div className="row">
-        {/* Left Side */}
+        {/* Input Section */}
         <div className="col-md-6">
-          <h4 className="mb-4">SIP Returns Estimator</h4>
+          <h4 className="mb-4"><span className="orange">SIP </span>Calculator</h4>
+
           <div className="mb-3">
-            <label className="form-label">Enter Amount (₹)</label>
+            <label className="form-label">Monthly Investment (₹)</label>
             <input
               type="number"
               className="form-control"
-              value={monthly}
-              onChange={(e) => setMonthly(Number(e.target.value))}
+              value={monthlyInvestment}
+              onChange={(e) => setMonthlyInvestment(Number(e.target.value))}
             />
           </div>
+
           <div className="mb-3">
-            <label className="form-label">Select Duration: {years} Years</label>
+            <label className="form-label">Expected Annual Return: {annualRate}%</label>
             <input
               type="range"
-              className="form-range"
+              className="form-range slider"
               min="1"
               max="30"
-              value={years}
-              onChange={(e) => setYears(Number(e.target.value))}
+              step="0.1"
+              value={annualRate}
+              onChange={(e) => setAnnualRate(Number(e.target.value))}
             />
           </div>
+
           <div className="mb-3">
-            <label className="form-label">Expected Rate of Return: {rate}%</label>
+            <label className="form-label">Investment Duration: {investmentPeriod} Years</label>
             <input
               type="range"
-              className="form-range"
-              min="8"
+              className="form-range slider"
+              min="1"
               max="30"
-              value={rate}
-              onChange={(e) => setRate(Number(e.target.value))}
+              value={investmentPeriod}
+              onChange={(e) => setInvestmentPeriod(Number(e.target.value))}
             />
-                      <h5 className="titlecal">The total value of your investment after <strong>{years} Years</strong> will be</h5>
-                      <h2 className="mb-4">₹ {futureValue.toLocaleString()}</h2>
-
           </div>
+
+          <h5 className="mb-2">Estimated Maturity Value</h5>
+          <h2 className="text-primary fw-bold mb-3"><span className='orange'>₹ {futureValue.toFixed(0).toLocaleString()}</span></h2>
+          <p><strong>Total Investment:</strong> ₹ {totalInvested.toLocaleString()}</p>
         </div>
 
-        {/* Right Side */}
-        <div className="col-md-6 align-self-center text-center">
-          <div className="mb-4">
-          </div>
+        {/* Chart Section */}
+        <div className="col-md-6 text-center">
+          <Doughnut data={chartData} />
 
-          <Doughnut data={data} />
-
-  
-          <div className="text-start rightcal px-4">
-            <p><span className="text-warning fw-bold">Invested Amount:</span> ₹ {investedAmount.toLocaleString()}</p>
-            <p><span className="text-primary fw-bold">Est. Returns:</span> ₹ {estimatedReturns.toLocaleString()}</p>
+          <div className="mt-4 text-start px-4">
+            <p><strong>Invested Amount:</strong> ₹ {totalInvested.toLocaleString()}</p>
+            <p><strong>Estimated Returns:</strong> ₹ {estimatedReturns.toFixed(0).toLocaleString()}</p>
           </div>
         </div>
       </div>

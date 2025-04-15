@@ -9,13 +9,13 @@ import phone from '../phone.png'
 import consutlant from '../consultant.png'
 import Header1 from '../Header1'
 import icon from '../krishangiicon.png'
-import banner1 from './banner1-2 (1).jpg'
-import banner2 from './banner2-2.jpg'
-import banner4 from './banner4-2 (1).jpg'
+import banner1 from './banner-1 (1).png'
+import banner2 from './banner-3.png'
+import banner4 from './banner4.1.png'
 
 import { Link } from 'react-router-dom'
 
-import blog3 from './banner3-2.jpg'
+import blog3 from './banner-2.png'
 export default function Blog() {
   const formCardRef = useRef(null)
   const rightContactRef = useRef(null)
@@ -78,7 +78,7 @@ export default function Blog() {
 <div className='blogcaption'>
 <h4>Financial Goal Planning: Step-by-Step Guide for Working Professionals
 </h4>
-<p>08 April 2025</p>
+<p>10 April 2025</p>
 </div>
 </div></Link>
 </div>
@@ -91,7 +91,7 @@ export default function Blog() {
 <div className='blogcaption'>
 <h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
 </h4>
-<p>10 April 2025</p>
+<p>09 April 2025</p>
 </div>
 </div>
 </Link>
@@ -118,7 +118,7 @@ export default function Blog() {
 
 
 <div className="col-md-6">
-<Link to="/blog3">
+<Link to="/blog4">
 
 <div className="insightcardblog">
 <img src={banner4} className="img-fluid w-100"/>

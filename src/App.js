@@ -19,6 +19,7 @@ import Preloader from './Preloader';
 import Blog1 from './Blog/Blog1.js';
 import Blog2 from './Blog/Blog2.js';
 import Blog3 from './Blog/Blog3.js';
+import Blog4 from './Blog/Blog4.js';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -57,7 +58,7 @@ function App() {
         <Route path="/Financial-Goal-Planning" element={<Blog1 />} />
         <Route path="/blog2" element={<Blog2 />} />
         <Route path="/blog3" element={<Blog3 />} />
-        {/* <Route path="/blog4" element={<Blog4 />} /> */}
+        <Route path="/blog4" element={<Blog4 />} />
 
 
 

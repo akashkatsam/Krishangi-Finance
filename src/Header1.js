@@ -23,11 +23,22 @@ import Trade from './Trade';
 import img1 from './images 1.png'
 import img3 from './images (1).png'
 import img2 from './NSE_reverse4x-100.jpg'
-import phonepay from './ONLINE.png'
 import kyc from './kyc (1).png'
 import kyc1 from './krishangi logo2 (1).jpg'
 import kyc2 from './krishangi logo1 (2).jpg'
 import kyc3 from './krishangi logo3 (1).jpg'
+import kyc01 from './kgf logo1.jpg'
+import kyc02 from  './kgfogo4.jpg'
+import kyc03 from './kgflogo3.jpg'
+import lic from './kgfLogo5.jpg'
+
+
+import c1 from './cal1 (1).jpg'
+import c3 from './cal1 (2).jpg'
+import c2 from './cal2.jpg'
+import phonepay from './ONLINE.png'
+import   kgflogo6 from './kgflogo6.jpg'
+
 import sip from './sip or.png'
 import laon from './loans or.png'
 import emi from './emi or.png'
@@ -57,23 +68,23 @@ export default function Header1() {
 
 
   const [activeTab, setActiveTab] = useState("premium");
-
   const renderContent = () => {
     switch (activeTab) {
       case "premium":
         return (
           <>
             <div className='row'>
-              <div className='col-md-4'>
+              <div className='col-md-6'>
                 <div className='toolsimg'>
                 <Link to="https://www.licindia.in/" target='_blank'>
 
-                  <img src={p1} className='img-fluid' />
+                  <img src={lic} className='img-fluid' />
                   </Link>
                 </div>
               </div>
   
-              <div className='col-md-4'>
+           
+              <div className='col-md-6'>
                 <div className='toolsimg'>
                 <Link to="https://insurance.birlasunlife.com/Pages/Secured/Individual/MyAccount/Transactions/PayPremiumOnline.aspx" target='_blank'>
 
@@ -82,14 +93,18 @@ export default function Header1() {
                 </div>
               </div>
 
-              <div className='col-md-4'>
-                <div className='toolsimg'>
-                <Link to="https://insurance.birlasunlife.com/Pages/Secured/Individual/MyAccount/Transactions/PayPremiumOnline.aspx" target='_blank'>
 
-                  <img src={p2} className='img-fluid' />
+
+              <div className='col-md-6'>
+                <div className='toolsimg'>
+                <Link to="https://paytminsurance.co.in/" target='_blank'>
+
+                  <img src={kgflogo6} className='img-fluid' />
                   </Link>
                 </div>
               </div>
+              
+            
   
               
             </div>
@@ -98,35 +113,35 @@ export default function Header1() {
       case "kyc":
         return (
           <>
-            <div className='row'>
-              <div className='col-md-6'>
-                <div className='toolsimg'>
-                  <Link to="https://www.cvlkra.com/kycpaninquiry.aspx/" target='_blank'>
-                  <img src={kyc1} className='img-fluid' />
-
-                  </Link>
-                </div>
-              </div>
-  
+             <div className='row'>
               <div className='col-md-6'>
                 <div className='toolsimg'>
                 <Link to="https://camskra.com/" target='_blank'>
 
-                  <img src={kyc2} className='img-fluid' />
+                  <img src={kyc01} className='img-fluid' />
+                  </Link>
+                </div>
+              </div>
+  
+              <div className='col-md-6'>
+                <div className='toolsimg'>
+                <Link to="https://www.cvlkra.com/kycpaninquiry.aspx/" target='_blank'>
+
+                  <img src={kyc03} className='img-fluid' />
                   </Link>
                 </div>
               </div>
 
-              
-  
               <div className='col-md-6'>
                 <div className='toolsimg'>
                 <Link to="https://www.nsekra.com/" target='_blank'>
 
-                  <img src={kyc3} className='img-fluid' />
+                  <img src={kyc02} className='img-fluid' />
                   </Link>
                 </div>
               </div>
+  
+              
             </div>
           </>
         );
@@ -136,8 +151,8 @@ export default function Header1() {
            <div className='row'>
               <div className='col-md-6'>
                 <div className='toolsimg'>
-                  <Link to="https://www.cvlkra.com/kycpaninquiry.aspx/" target='_blank'>
-                  <img src={laon} className='img-fluid' />
+                  <Link to="#" data-toggle="modal" data-target="#exampleLoan">
+                  <img src={c1} className='img-fluid' />
 
                   </Link>
                 </div>
@@ -145,9 +160,9 @@ export default function Header1() {
   
               <div className='col-md-6'>
                 <div className='toolsimg'>
-                <Link to="https://camskra.com/" target='_blank'>
+                <Link to="#" data-toggle="modal" data-target="#exampleModal">
+                  <img src={c2} className='img-fluid' />
 
-                  <img src={sip} className='img-fluid' />
                   </Link>
                 </div>
               </div>
@@ -156,9 +171,9 @@ export default function Header1() {
   
               <div className='col-md-6'>
                 <div className='toolsimg'>
-                <Link to="https://www.nsekra.com/" target='_blank'>
+                <Link to="#" data-toggle="modal" data-target="#exampleLoan">
+                  <img src={c3} className='img-fluid' />
 
-                  <img src={emi} className='img-fluid' />
                   </Link>
                 </div>
               </div>
@@ -191,6 +206,7 @@ export default function Header1() {
         );
     }
   };
+  
   
 
   useEffect(() => {
@@ -286,7 +302,7 @@ export default function Header1() {
               >
                 About Us</NavLink>
 
-                <li className="nav-item dropdown custom-dropdown">
+              <li className="nav-item dropdown custom-dropdown">
                 <NavLink to="/financial-planning" className={({ isActive }) => isActive ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'}>
                   Services
                   &nbsp;<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -323,25 +339,22 @@ export default function Header1() {
                         <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={icon8} className='img-fluid' />
+                              <img src={icon2} className='img-fluid' />
                             </div>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
-                          <Link to="/life-insurnace">
+                          <Link to="/portfolio-management-services">
 
                             <div className='megalink'>
-                              <h5>Life Insurance </h5>
-                              <p>Protection, dependents, coverage, future, security</p>
+
+                              <h5>Portfolio Management  </h5>
+                              <p> Diversification, strategy, analysis, and balance</p>
                             </div>
                           </Link>
-
                         </div>
                       </div>
 
-
-
-                
 
 
 
@@ -373,34 +386,6 @@ export default function Header1() {
                         <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={icon6} className='img-fluid' />
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9 align-self-center'>
-                          <Link to="/loan">
-
-                            <div className='megalink'>
-                              <h5>Loans </h5>
-                              <p>Credit, funding, repayment, need-based, flexibility </p>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-
-                 
-
-
-
-                    </div>
-
-
-
-                    <div className='col-md-6'>
-                    <div className='row'>
-                        <div className='col-md-3 align-self-center'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
                               <img src={icon4} className='img-fluid' />
                             </div>
                           </div>
@@ -417,33 +402,17 @@ export default function Header1() {
                       </div>
 
 
+
+                    </div>
+
+
+
+                    <div className='col-md-6'>
                       <div className='row'>
                         <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={icon2} className='img-fluid' />
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9 align-self-center'>
-                          <Link to="/portfolio-management-services">
-
-                            <div className='megalink'>
-
-                              <h5>Portfolio Management  </h5>
-                              <p> Diversification, strategy, analysis, and balance</p>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-
-
-
-                      <div className='row'>
-                        <div className='col-md-3 align-self-center'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={icon5} className='img-fluid' />
+                              <img src={icon4} className='img-fluid' />
                             </div>
                           </div>
                         </div>
@@ -458,6 +427,25 @@ export default function Header1() {
                         </div>
                       </div>
 
+
+                      <div className='row'>
+                        <div className='col-md-3 align-self-center'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon6} className='img-fluid' />
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                          <Link to="/loan">
+
+                            <div className='megalink'>
+                              <h5>Loans </h5>
+                              <p>Credit, funding, repayment, need-based, flexibility </p>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
 
 
 
@@ -481,7 +469,26 @@ export default function Header1() {
 
 
 
-                     
+                      <div className='row'>
+                        <div className='col-md-3 align-self-center'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon8} className='img-fluid' />
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                          <Link to="/life-insurnace">
+
+                            <div className='megalink'>
+                              <h5>Life Insurance </h5>
+                              <p>Protection, dependents, coverage, future, security</p>
+                            </div>
+                          </Link>
+
+                        </div>
+                      </div>
+
 
 
 
@@ -498,7 +505,6 @@ export default function Header1() {
                   </div>
                 </div>
               </li>
-
 
 
 
@@ -563,8 +569,6 @@ export default function Header1() {
                   </div>
                 </div>
               </li>
-
-
               <NavLink
                 to="/contact-us"
                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}

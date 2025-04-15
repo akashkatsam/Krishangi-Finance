@@ -9,7 +9,7 @@ import mail from './mail.png'
 import phone from './phone.png'
 import video from './aboutvideo.mp4'
 import ceo from './CEO.png'
-import sign from './sign.png'
+import sign from './logo12.png'
 
 export default function Contact() {
 

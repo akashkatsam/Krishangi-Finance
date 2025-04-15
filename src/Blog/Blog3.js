@@ -1,6 +1,6 @@
 
 import React from 'react';
-import blogImage from './banner3.jpg'; // Replace with your image path
+import blogImage from './banner-2.2.png'; // Replace with your image path
 import Header from '../Header';
 import Footer from '../Footer';
 import icon from '../krishangiicon.png';

@@ -47,7 +47,7 @@ const LoanCalculator = () => {
             <label className="form-label">Interest Rate (% p.a)</label>
             <input
               type="range"
-              className="form-range"
+              className="form-range slider"
               min="5"
               max="20"
               step="0.1"
@@ -61,7 +61,7 @@ const LoanCalculator = () => {
             <label className="form-label">Loan Tenure (Years)</label>
             <input
               type="range"
-              className="form-range"
+              className="form-range slider"
               min="1"
               max="30"
               value={loanTenure}

@@ -1,5 +1,5 @@
 import React from 'react';
-import blogImage from './banner1.jpg'; // Replace with your image path
+import blogImage from './banner1.1.png'; // Replace with your image path
 import Header from '../Header';
 import Footer from '../Footer';
 import icon from '../krishangiicon.png'

@@ -30,7 +30,7 @@ const EMICalculator = () => {
       <div className="row">
         {/* Input Section */}
         <div className="col-md-6">
-          <h4 className="mb-4">EMI Calculator</h4>
+          <h4 className="mb-4"><span className='orange'>EMI</span> Calculator</h4>
 
           <div className="mb-3">
             <label className="form-label">Loan Amount (₹)</label>

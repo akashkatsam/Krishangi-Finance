@@ -13,14 +13,18 @@ import Service from "./Service";
 import Footer from "./Footer";
 import Header1 from "./Header1";
 import { Link } from 'react-router-dom';
-import banner1 from './Blog/banner1-2 (1).jpg'
-import banner2 from './Blog/banner2-2.jpg'
-// import banner4 from './Blog/banner4-2 (1).jpg'
-import blog3 from './Blog/banner3-2.jpg'
+import banner1 from './Blog/banner-1 (1).png'
+import banner2 from './Blog/banner-3.png'
+import banner4 from './Blog/banner4.1.png'
+
+
+import blog3 from './Blog/banner-2.png'
 
 
 import icon from './krishangiicon.png'
 const Home = () => {
+
+  
   return (
 
     <>
