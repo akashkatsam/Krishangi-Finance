@@ -11,7 +11,7 @@ import time from './time.png';
 import ios from './ios.png';
 import play from './play.png';
 import video from './updatephone.mp4';
-
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const Phone = () => {
@@ -48,12 +48,12 @@ const Phone = () => {
             <div className="mb-4">
               <img src={user} alt="User Interface" className="img-fluid iconimage mb-2" />
               <h4>User-Friendly Interface</h4>
-              <p>Each bite delivers energy, making it a guilt-free choice for daily snacking. Balance your diet without sacrificing flavour.</p>
+              <p>Intuitive design that makes navigating your finances simple and stress-free.</p>
             </div>
             <div>
               <img src={secure} alt="Notifications" className="img-fluid iconimage mb-2" />
               <h4>Real-Time Notifications</h4>
-              <p>Enjoy less LDL (bad cholesterol) for a snack that tastes good and does good for your cholesterol levels.</p>
+              <p> Instant alerts to keep you informed of every activity, as it happens.</p>
             </div>
           </div>
 
@@ -78,20 +78,28 @@ const Phone = () => {
             <div className="mb-4">
               <img src={time} alt="Secure Transactions" className="img-fluid iconimage mb-2" />
               <h4>Secure Transactions</h4>
-              <p>Each bite delivers energy, making it a guilt-free choice for daily snacking.</p>
+              <p>Advanced encryption ensures every transaction is protected and private.</p>
             </div>
             <div>
               <img src={panel} alt="Dashboard" className="img-fluid iconimage mb-2" />
               <h4>Personalized Dashboard</h4>
-              <p>Enjoy less LDL (bad cholesterol) for a snack that tastes good and does good.</p>
+              <p> A customized overview that reflects your goals, investments, and progress.</p>
             </div>
           </div>
         </div>
 
         {/* Download Buttons */}
         <div className="androdbtn d-flex justify-content-center gap-3 mt-4 fade-up">
+
+          <Link to="https://apps.apple.com/us/app/krish-finance/id1359577962" target="_blank">
           <img src={ios} alt="iOS" className="img-fluid" style={{ maxWidth: "150px" }} />
+
+          </Link>
+
+          <Link to="https://play.google.com/store/apps/details?id=com.mobileappz.krishfinance&hl=en_IN" target="_blank">
+
           <img src={play} alt="Play Store" className="img-fluid" style={{ maxWidth: "150px" }} />
+          </Link>
         </div>
       </div>
     </section>

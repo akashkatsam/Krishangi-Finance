@@ -5,7 +5,9 @@
 ::-webkit-scrollbar {
   width: 2px;
 }
-
+.calculator{
+  width: 50px;
+}
 
 a {
   
@@ -129,7 +131,9 @@ nav{
 .navbar-toggler-icon{
   background-image: url('./hambugur.png');
   width: 100%;
+  float: right;
 }
+
 
 
 
@@ -144,8 +148,8 @@ nav{
 
 .navbar-nav a {
   color: #2d2d2d;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left:16px;
+  margin-right: 16px;
 
   font-family: 'inter';
   font-size: 16px;
@@ -292,7 +296,7 @@ margin-bottom: 20px;
 
 .navbar-nav a {
 
-  padding: 10px 0px!important;
+  padding: 5px 0px!important;
 }
 nav .active::after {
   content: "";
@@ -366,7 +370,8 @@ main{
   background-image: url('./website-bg (2).jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  /* height: 90vh; */
+  padding-bottom:50px;
 }
 
 .left-content-banner h5{
@@ -512,6 +517,180 @@ main{
         }
 
 
+
+
+        
+.floatingButtonWrap {
+  display: block;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  z-index: 999999999;
+}
+
+.floatingButtonInner {
+  position: relative;
+}
+
+.floatingButton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #8769a9, #507cb3);
+  background: -o-linear-gradient(45deg, #8769a9, #507cb3);
+  background: linear-gradient(45deg, #8769a9, #507cb3);
+  color: #fff;
+  line-height: 50px;
+  position: absolute;
+  border-radius: 50% 50%;
+  bottom: 0px;
+  right: 0px;
+  border: 5px solid #b2bedc;
+  /* opacity: 0.3; */
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.floatingButton .fa {
+  font-size: 15px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+  opacity: 1;
+  color: #fff;
+}
+
+
+.floatingButton .fa {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+  transform: rotate(270deg);
+}
+
+.floatingMenu {
+  position: absolute;
+  bottom: 60px;
+  right: 0px;
+  /* width: 200px; */
+  display: none;
+}
+
+.floatingMenu li {
+  width: 100%;
+  float: right;
+  list-style: none;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.floatingMenu li a {
+  padding: 8px 15px;
+  display: inline-block;
+  background: #ccd7f5;
+  color: #6077b0;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.4s;
+  /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
+  -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+  box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+}
+
+.floatingMenu li a:hover {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+
+.calculator-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.main-btn {
+  background:linear-gradient(180deg, rgba(243,106,36,1) 23%, rgba(220,86,17,1) 68%);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.toolsgrid H4{
+  font-size: 16px;
+  font-family: 'inter';
+}
+.dropdown-menu1 {
+margin-left: -400PX;
+}
+
+.main-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+/* Tooltip container above button */
+.tooltip-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+}
+
+/* Tooltip buttons */
+.tooltip {
+  color: black;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: none;
+  margin-right: 45px;
+  width: 120px;
+}
+
+.tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+
+
+
         .boxform button{
           background-color: transparent;
           position: relative;
@@ -524,7 +703,27 @@ main{
           FONT-FAMILY: 'Inter';
           margin:21px 21px 22px 2px;
         }
+        .rightcal{
+          font-size: 18px;
+        }
+        .form-range{
+          border: 0px!important;
+        }
+        .rightcal{
+          margin-top: 10px;
+        }
+        .titlecal{
+          margin-top: 20px;
+        }
+        .rightcal p{
+          margin-bottom: 0px;
+          font-weight:600! important;
+        }
 
+        .titlecal{
+          font-size: 16px;
+          font-weight: 400;
+        }
         .accordion-collapse {
           transition: max-height 1s ease-in-out;
         }
@@ -540,7 +739,8 @@ main{
         }
 
 .orangebox{
-  width: 30px!important;
+  width: 60px!important;
+  height: 100%;
   margin-bottom: 20px;
 }
         #accordian{
@@ -554,7 +754,7 @@ main{
           font-weight: 700;
         }
         .accordion-body{
-          font-size: 16px;
+          font-size: 14px;
           font-family: 'inter';
           font-weight: 400;
           background-color: #dfdfdf52;
@@ -577,17 +777,29 @@ main{
         }
         /* slide */
 
+        .modaldesign{
+          padding: 20px;
+        }
+        .calcuator{
+          font-family: 'inter';
+        }
+        .modaldesign #formcard h3 {
+          font-size: 32px!important;
+        }
         .why-krishangi-section {
           background: linear-gradient(180deg, rgba(243,106,36,1) 0%, rgba(220,86,17,1) 100%);
 
           padding: 40px 20px;
         }
        .why-krishangi-section .owl-carousel.owl-drag .owl-item {
-          margin-top: 25px;
+          margin-top: 50px;
         }
         
+        .footertop img{
+          width: 160px;
+        }
        .why-krishangi-section .custom-carousel .owl-stage-outer {
-          height:330px;
+          height:350px;
           overflow-y: visible !important; /* Ensures active item is not cut off */
         }
         
@@ -753,7 +965,7 @@ main{
         .servicecard1 h2{
           font-family: 'inter';
           color: #434343;
-          font-size: 32px;
+          font-size: 31px;
           font-weight: 600;        }
         .servicecard1 p{
           margin-top: 20px;
@@ -877,10 +1089,21 @@ font-weight: 200;
           float: right;
           width: 80px;
           right: -35px;
-          top:4px;
-          padding: 8px;
+          top:6px;
+          padding: 5px;
           border-radius: 20px;
         }
+        .table-bordered>:not(caption)>*>*{
+          background: #f16822;
+          color: #fff;
+        }
+        
+        .blogdetails .date {
+font-size: 15px;
+color: #f16822;
+
+        }
+
 
         .careerform h3{
           text-align: center!important;
@@ -975,7 +1198,7 @@ font-weight: 200;
 
 
 #about-slider{
-  padding:40px 0px 40px 0px;
+  padding:40px 0px 28px 0px;
   background: linear-gradient(180deg, rgba(243,106,36,1) 0%, rgba(220,86,17,1) 100%);
 
 }
@@ -1108,7 +1331,7 @@ font-weight: 300;
   height: 100%;
 }
 .megamenu{
-  width: 720px;
+  width: 670px;
 }
 
 .megamenu img{
@@ -1122,7 +1345,7 @@ font-weight: 300;
   left: 81px;
 }
 .dropdown-menu{
-  margin-left: -115px;
+  margin-left: -107px;
     margin-top: 4px;
     border-top: 4px solid #f26923;
     border-radius: 0px!important;
@@ -1132,7 +1355,7 @@ font-weight: 300;
 }
 
 .megalink h5{
-  font-size: 15px;
+  font-size: 14px;
   color: #434343;
   font-weight: 600;
   margin-bottom: 0px;
@@ -1488,13 +1711,18 @@ pointer-events: none;
   margin-top: -5px;
 }
 
+.calcuator .mb-4{
+  color: #000;
+}
 
 .consultant img{
   position: relative;
-  margin-top: -38px;
-  margin-bottom: 20px;
+  border-radius: 10px;
 }
-
+.cross{
+  width: 30px;
+    float: right;
+}
 
 .custom-dropdown {
   position: relative;
@@ -1526,7 +1754,7 @@ font-family: 'inter';
   position: absolute;
   top: 100%;
   left: 0;
-  width: 710px;
+  width: 700px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -1536,6 +1764,15 @@ font-family: 'inter';
   z-index: 999;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+.megamenu1 {
+  width: 689px !important;
+  margin-left: -480px !important;
+}
+
+.custom-menu::after{
+  display: none!important;
+}
+
 
 .custom-dropdown:hover .megamenu {
   opacity: 1;
@@ -1561,6 +1798,56 @@ font-family: 'inter';
   font-family: 'inter';
   margin-bottom: 0px;
 }
+
+
+.tab-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-family: 'inter';
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.tab-item.active{
+  background-color:#fff!important;
+  color: #000!important;
+}
+.tab-item  img{
+  width: 45px;
+}
+.tab-item h6{
+  margin-bottom: 0px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  margin-left: -19px;
+}
+.toolsimg img{
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1px;
+  border: 1px solid #d3d0cecc;
+}
+.modaldesign {
+  padding: 20px 40px 20px 40px;
+}
+.toolsimg a{
+  margin: 0px!important;
+}
+.tab-item:hover {
+  background-color: #fff;
+}
+.tab-item::after{
+  display: none!important;
+}
+
+.tab-item.active {
+  background-color: #eceaea52!important;
+  color: white;
+}
+
 
 .foundertext p{
 
@@ -1610,6 +1897,7 @@ font-family: 'inter';
   position: relative;
 }
 
+
 .video-on-frame {
   position: absolute;
   top: 12px;
@@ -1642,6 +1930,9 @@ font-family: 'inter';
 .blur .logoKF{
   display: none!important;
 }
+#about-slider .owl-dots{
+  margin-top: 30px!important;
+}
 #blogsection{
   padding: 20px 40px;
 }
@@ -1655,20 +1946,138 @@ font-family: 'inter';
   width: 50px;
   margin-top: -10px;
 }
+
+/* Plain CSS if not using Tailwind */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.-translate-y-full {
+  transform: translateY(-100%);
+}
+
+.tab-content-wrapper {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.tab-content-wrapper.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
         @media only screen and (max-width: 600px) {
           #aboutstats {
             padding: 30px 10px;
+          }
+
+          nav button {
+            background-color: #fff!important;
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+            transition: #fff;
+            font-weight: 500;
+            font-size: 16px!important;
+            font-family: 'Inter';
+
+          }
+          .footertop img {
+            width: 100px;
+          }
+          .footerlist h6 {
+font-size: 15px;
+          }
+          .footerlist li {
+            font-size: 11px;
+          }
+          /* Dropdown wrapper */
+.nav-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+
+.nav-dropdown-toggle:hover {
+  background-color: #f5f5f5;
+}
+
+/* Arrow icon */
+.nav-arrow {
+  transition: transform 0.3s ease;
+}
+.nav-arrow.down::before {
+  content: '▼';
+}
+.nav-arrow.up::before {
+  content: '▲';
+}
+
+/* Dropdown menu */
+.nav-dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 16px;
+}
+
+.nav-dropdown-menu.open {
+  max-height: 500px;
+  padding: 10px 16px;
+
+}
+
+/* Dropdown links */
+.nav-dropdown-item {
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter';
+}
+
+.nav-dropdown-item:hover {
+  color: #007bff;
+}
+
+
+           nav .active::after{
+            display: none!important;
+          }
+          .dropdown-menu{
+            margin-left: auto;
+          }
+          .dropdown-menu{
+            border-top: 0px;
           }
           #about-slider .owl-item img{
 width: 60%;
 margin: auto;
           }
+          
 
           .consultant-text {
             margin-right: 47px;
             text-align: left;
             position: absolute;
-            width: 56%;
+            width: 46%;
             color: #fff;
             font-family: 'inter';
             font-size: 20px;
@@ -1732,7 +2141,7 @@ margin: auto;
           }
           
           .custom-toggler {
-            background: none;
+            background: #F26923!important;
             border: none;
             cursor: pointer;
             z-index: 3;height: 47px;
@@ -1741,8 +2150,11 @@ margin: auto;
           }
           
           .custom-icon {
-            font-size: 18px;
+            font-size: 24px;
             color: #fff;
+            top: -11px;
+            position: relative;
+            left: -3px;
           }
           .insightcardblog h4{
             font-size: 19px !important;
@@ -1762,16 +2174,17 @@ margin: auto;
           }
           
           .custom-menu.open {
-            max-height: 400px; /* adjust based on content */
+            max-height: 700px; /* adjust based on content */
+            overflow-y: scroll;
           }
           
           .custom-nav-link {
-            padding:15px;
+            padding: 14px;
             text-decoration: none;
             color: #333;
             transition: #fff;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 16px;
             font-family: 'Inter';
           }
           
@@ -1855,7 +2268,7 @@ margin: auto;
           }
 
           .why-krishangi-section .custom-carousel .owl-stage-outer {
-            height: 240px;
+            height: 365px;
           }
           .card{
             padding: 20px 10px;
@@ -1965,9 +2378,12 @@ margin: auto;
 
 }
 #form-ui{
-  padding: 30px 15px;
+  padding: 30px 10px;
 }
 
+.separator-20{
+  display: none;
+}
 #contactpage
 {
   padding: 20px 5px;
@@ -2004,7 +2420,7 @@ margin: auto;
 }
 .breadcrumb{
   height: 260px;
-  padding: 15px;
+  padding: 5px;
 }
 #aboutpage{
   padding: 30px 10px;
@@ -2021,9 +2437,12 @@ margin: auto;
   line-height: 25px;
 }
 .headingabout h4{
-  font-size: 28px;
-  text-align: left;
-  margin-bottom: 15px;
+  font-size: 18px!important;
+  text-align: left!;
+  margin-bottom: 15px!important;
+}
+.boxform button{
+  margin: 10px auto;
 }
 
 #bgblue1 button {
@@ -2041,7 +2460,13 @@ margin: auto;
 
 .footerlinkstop
 {
-  padding: 10px 15px
+  padding: 10px;
+}
+.sociallink li {
+  margin-right: 15px;
+}
+.sep-30{
+  margin: 20px;
 }
 .footertop h2{
   font-size: 16px;
@@ -2062,7 +2487,7 @@ margin: auto;
 }
 .rightside-banner img{
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .mb-c-30{
   margin-bottom: 20px;
@@ -2076,8 +2501,8 @@ margin: auto;
   padding: 30px 0px 30px 15px;
 }
 .headingabout h3 {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 32px;
 }
 .form-left img{
   width: 100%;
@@ -2091,20 +2516,25 @@ margin: auto;
 }
 .animatetext h4{
   font-size: 28px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 .contentcard ul li{
   font-size: 12px;
 }
 .animatetext p{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 34px;
 }
+#accordian button{
+  border-radius: 15px!important;
+}
 .headingslider h4{
-  font-size: 28px;
+  font-size: 26px;
 }
 #accordionservice{
-  padding: 30px 15px;
+  padding: 30px 10px;
 }
 #accordionservice h3{
   width: 100%;
@@ -2122,11 +2552,14 @@ margin: auto;
 
 
 .contentcard h4 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .contentcard p{
   font-size: 12px;
   margin-top: 15px;
+}
+.leftslider h6 {
+font-size: 16px;
 }
 
 .leftslider p{
@@ -2137,7 +2570,7 @@ margin: auto;
 font-weight: 400;
 }
 .leftslider h4 {
-  margin-top:20px;
+  margin-top:10px!important;
   margin-bottom:20px;
 
 }

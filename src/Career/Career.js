@@ -92,7 +92,7 @@ export default function Career() {
         <div className='formcaption'>
           <div className='container'>
             <div className='headingabout'>
-              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Become Our <span>Sub Broker</span></h3>
+              <h3 ref={subheadingRef}><img src={krishangiicon}  className='img-fluid' /> Become Our <span>Sub Distributor</span></h3>
               <div className='boxform'>
                 <div className='row'>
                   <div className='col-md-7'>
@@ -137,7 +137,7 @@ export default function Career() {
             </div>
 
             <div className='animatetext'>
-              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Sub  </span>Broker</h4>
+              <h4><img src={krishangiicon} className='img-fluid iconkrishangi'/>   <span className='orange'>Sub </span>Distributor</h4>
               <p>
               At Krishangi Finance, we offer more than just opportunities — we create pathways for growth. Whether you're a financial advisor, insurance consultant, investment expert, or simply passionate about wealth management, our Business Partner Network opens the door to meaningful success.
 Join us to empower more

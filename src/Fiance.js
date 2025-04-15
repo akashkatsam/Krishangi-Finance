@@ -6,7 +6,7 @@ export default function Fiance() {
 <div className='container-fluid'>
   <div className='caption-text'>
     <h4>Take the first step to financial success</h4>
-    <button>talk to an expert <div className='arrowbtn'>
+    <button data-bs-toggle="modal" data-bs-target="#myModal">talk to an expert <div className='arrowbtn'>
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.5 2C23.5 1.17157 22.8284 0.5 22 0.5H8.5C7.67157 0.5 7 1.17157 7 2C7 2.82843 7.67157 3.5 8.5 3.5L20.5 3.5L20.5 15.5C20.5 16.3284 21.1716 17 22 17C22.8284 17 23.5 16.3284 23.5 15.5V2ZM3.06066 23.0607L23.0607 3.06066L20.9393 0.93934L0.93934 20.9393L3.06066 23.0607Z" fill="white"/>
 </svg>

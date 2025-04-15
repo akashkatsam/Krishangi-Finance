@@ -6,7 +6,7 @@ import Footer from './Footer'
 import map from './map.png'
 import mail from './mail.png'
 import phone from './bxs_phone-call (1).png'
-import consutlant from './consultant.png'
+import consutlant from './con-page-1 (2).png'
 import Header1 from './Header1'
 
 export default function Contact() {

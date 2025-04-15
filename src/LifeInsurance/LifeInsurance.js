@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hold from '../holdmoney.png'
-import about from '../aboutimg.png';
+import about from './life.png';
 import img2 from '../Frame 16.png'
 import img5 from '../circledesign.png'
 import Footer from '../Footer';
@@ -26,7 +26,7 @@ export default function LifeInsurance() {
     center: true,
     items:2,
     loop:true,
-    dots:false,
+    dots:true,
     margin:30,
     responsive: {
       0: {
@@ -93,7 +93,8 @@ export default function LifeInsurance() {
                   </div>
                   <div className='col-md-5 align-self-center'>
                     <div className='form-right'>
-                      <h4>Enter Your Details</h4>
+                      <h4>get expert Life Insurance guidance today.
+                      </h4>
                       <div className='form-group'>
                         <input type='text' className='form-control' id='Name' placeholder='Name' />
                       </div>

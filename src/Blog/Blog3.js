@@ -15,7 +15,7 @@ const Blog3 = () => {
           <img src={blogImage} className="card-img-top" alt="Mutual Funds vs Fixed Deposits" />
           <div className="blogdetails">
             <h1 className="blog-title"><img src={icon} className='img-fluid abstracticon' /> Mutual Funds vs Fixed Deposits: Which One Suits Your Financial Goals?</h1>
-            <p className="text-muted">Published on April 10, 2025</p>
+            <p className="date">Published on April 10, 2025</p>
 
             <p className="blogpara">
               When it comes to growing your savings, two of the most popular options are mutual funds and fixed deposits. Both cater to different financial needs and investor profiles, and understanding their strengths can help you make informed decisions aligned with your financial goals.

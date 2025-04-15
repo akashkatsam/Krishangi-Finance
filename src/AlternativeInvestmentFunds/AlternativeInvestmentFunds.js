@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hold from '../holdmoney.png'
-import about from './banner.png';
+import about from './aif.png';
 import img2 from '../Frame 16.png'
 import img5 from '../circledesign.png'
 import Footer from '../Footer';
@@ -25,7 +25,7 @@ export default function AlternativeInvestmentFunds() {
     center: true,
     items: 2,
     loop: true,
-    dots: false,
+    dots: true,
     margin: 18,
     autoplay: true,
     autoplayTimeout: 3000,
@@ -95,7 +95,8 @@ export default function AlternativeInvestmentFunds() {
                   </div>
                   <div className='col-md-5 align-self-center'>
                     <div className='form-right'>
-                      <h4>Enter Your Details</h4>
+                      <h4>get expert AIF guidance today.
+                      </h4>
                       <div className='form-group'>
                         <input type='text' className='form-control' id='Name' placeholder='Name' />
                       </div>
@@ -128,8 +129,7 @@ export default function AlternativeInvestmentFunds() {
             <div className='animatetext'>
             <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> Alternative Investment<br/><span>Funds</span></h4>
               <p>
-                At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
-                Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
+              Traditional investments are not the only path to financial success. At Krishangi, we offer Alternative Investment Funds, whether you're looking to invest in private equity, venture capital, real estate, hedge funds, or structured debt, our expert-driven AIF solutions help you explore unique opportunities as per your goals.
               </p>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function AlternativeInvestmentFunds() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Higher</span>&nbsp; Potential</h4>
+                       <h4><span>Higher Return</span>&nbsp; Potential</h4>
                        </div>
 
                           </div>

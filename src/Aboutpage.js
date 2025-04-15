@@ -7,7 +7,7 @@ import Footer from './Footer'
 import map from './map.png'
 import mail from './mail.png'
 import phone from './phone.png'
-import video from './video.mp4'
+import video from './aboutvideo.mp4'
 import ceo from './CEO.png'
 import sign from './sign.png'
 
@@ -65,7 +65,7 @@ export default function Contact() {
     <div className='row'>
       <div className='col-md-6'>
         <div className='aboutcontent'>
-          <p>At Krishangi Finance, we believe that financial success begins with a clear plan. Our expertise lies in financial goal planning and wealth management, helping individuals and businesses create structured, long-term strategies tailored to their unique aspirations. Whether you're planning for future security, growing your investments, or managing risks, we provide personalized financial solutions that align with your goals and lifestyle.</p>
+          <p>At Krishangi Finance, we believe that financial success begins with a clear plan. Our expertise lies in financial goal planning and wealth management, helping individuals and businesses create structured, long-term strategies tailored to their unique aspirations. Whether you're planning for future security, growing your investments, or navigating uncertainties, we provide personalized financial solutions that align with your goals and lifestyle.</p>
         </div>
       </div>
       <div className='col-md-6'>

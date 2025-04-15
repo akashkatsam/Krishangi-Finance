@@ -55,7 +55,7 @@ export default function Blog() {
       <div className="breadcrumb breadcrumb1 ">
         <div className="breadcrumb-content">
           <h1 ref={headingRef}>
-            <img src={krishangiicon} className='img-fluid abstracticon' /> Investing <span>Insights</span>
+            <img src={krishangiicon} className='img-fluid abstracticon' /> Investment <span>Insights</span>
           </h1>
           <p ref={subheadingRef}>
           Everything you need to stay up to date with what’s going on at Krishangi Finance — and <br />
@@ -68,10 +68,6 @@ export default function Blog() {
 
       <section id="insights">
 
-
-<h4> <img src={icon} className="img-fluid abstracticon" /> <span>Insights
-</span>  for our clients
-</h4>
 <div className="container">
 <div className="row">
 
@@ -82,7 +78,7 @@ export default function Blog() {
 <div className='blogcaption'>
 <h4>Financial Goal Planning: Step-by-Step Guide for Working Professionals
 </h4>
-<p>10 April 2025</p>
+<p>08 April 2025</p>
 </div>
 </div></Link>
 </div>
@@ -109,9 +105,10 @@ export default function Blog() {
 <div className="insightcardblog">
 <img src={blog3} className="img-fluid w-100"/>
 <div className='blogcaption'>
-<h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
+<h4>Mutual Funds vs Fixed Deposits: Which One Suits Your Financial Goals?
+
 </h4>
-<p>10 April 2025</p>
+<p>08 April 2025</p>
 </div>
 </div>
 </Link>
@@ -121,12 +118,13 @@ export default function Blog() {
 
 
 <div className="col-md-6">
-<Link to="/blog4">
+<Link to="/blog3">
 
 <div className="insightcardblog">
 <img src={banner4} className="img-fluid w-100"/>
 <div className='blogcaption'>
-<h4>How to Build a Diversified Portfolio That Matches Your Financial Goals
+<h4>Investment Planning for Professionals: Building a Balanced Portfolio
+
 </h4>
 <p>10 April 2025</p>
 </div>

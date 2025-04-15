@@ -13,7 +13,7 @@ const Blog1 = () => {
         <img src={blogImage} className="card-img-top" alt="Financial Goal Planning" />
         <div className="blogdetails">
           <h1 className="blog-title"><img src={icon}  className='img-fluid abstracticon'/> Financial Goal Planning: Step-by-Step Guide for Working Professionals</h1>
-          <p className="text-muted">Published on April 10, 2025</p>
+          <p className="date">Published on April 10, 2025</p>
 
           <p className="blogpara">
             In an era of fast-paced careers and rising lifestyle expenses, financial stability requires more than just earning—it demands smart planning. For working professionals, financial goal planning is the key to converting dreams into tangible milestones while staying prepared for life’s uncertainties. Here's a step-by-step approach to planning your financial goals effectively.

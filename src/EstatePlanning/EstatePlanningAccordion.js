@@ -94,9 +94,7 @@ Protect business continuity and family interests.
           </p>
         </div>
 
-        
-      </div>
-    <div className="contentcard">
+        <div className="contentcard">
           <h4>5. Power of Attorney & Guardianship
 
           </h4>
@@ -106,6 +104,8 @@ Ensure the well-being of dependents and minors.
           </p>
         </div>
 
+      </div>
+  
         
       </section>
   );

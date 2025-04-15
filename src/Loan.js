@@ -1,0 +1,94 @@
+import React, { useState } from 'react';
+import { Doughnut } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+const LoanCalculator = () => {
+  const [loanAmount, setLoanAmount] = useState(500000); // ₹5L
+  const [interestRate, setInterestRate] = useState(8);  // %
+  const [loanTenure, setLoanTenure] = useState(5);      // years
+
+  const monthlyRate = interestRate / 12 / 100;
+  const months = loanTenure * 12;
+
+  // EMI Formula
+  const emi = loanAmount * monthlyRate * Math.pow(1 + monthlyRate, months) / (Math.pow(1 + monthlyRate, months) - 1);
+  const totalPayment = emi * months;
+  const totalInterest = totalPayment - loanAmount;
+
+  const data = {
+    labels: ['Principal Amount', 'Total Interest'],
+    datasets: [
+      {
+        data: [loanAmount, totalInterest],
+        backgroundColor: ['#0f2549', '#dc5611'],
+        hoverOffset: 10,
+      },
+    ],
+  };
+
+  return (
+    <div className="container calcuator rounded">
+      <div className="row">
+        {/* Left side - Inputs */}
+        <div className="col-md-6">
+          <h4 className="mb-4">Loan EMI Calculator</h4>
+          <div className="mb-3">
+            <label className="form-label">Loan Amount (₹)</label>
+            <input
+              type="number"
+              className="form-control"
+              value={loanAmount}
+              onChange={(e) => setLoanAmount(Number(e.target.value))}
+            />
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Interest Rate (% p.a)</label>
+            <input
+              type="range"
+              className="form-range"
+              min="5"
+              max="20"
+              step="0.1"
+              value={interestRate}
+              onChange={(e) => setInterestRate(Number(e.target.value))}
+            />
+            <div>{interestRate}%</div>
+          </div>
+
+          <div className="mb-3">
+            <label className="form-label">Loan Tenure (Years)</label>
+            <input
+              type="range"
+              className="form-range"
+              min="1"
+              max="30"
+              value={loanTenure}
+              onChange={(e) => setLoanTenure(Number(e.target.value))}
+            />
+            <div>{loanTenure} Years</div>
+
+            <div className="mt-4 text-start px-4">
+            <p><strong>Loan Amount:</strong> ₹ {loanAmount.toLocaleString()}</p>
+          
+          </div>
+          </div>
+        </div>
+
+        {/* Right side - Result */}
+        <div className="col-md-6 text-center">
+          <h5>Your Monthly EMI</h5>
+          <h2 className="mb-3 text-primary fw-bold">₹ {emi.toFixed(0).toLocaleString()}</h2>
+
+          <Doughnut data={data} />
+
+          <p><strong>Total Interest:</strong> ₹ {totalInterest.toFixed(0).toLocaleString()}</p>
+          <p><strong>Total Payment:</strong> ₹ {totalPayment.toFixed(0).toLocaleString()}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LoanCalculator;

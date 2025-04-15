@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hold from '../holdmoney.png'
-import about from './banner.png';
+import about from './mutual.png';
 import img2 from '../Frame 16.png'
 import img5 from '../circledesign.png'
 import Footer from '../Footer';
@@ -27,7 +27,7 @@ export default function MutalFund() {
     center: true,
     items: 2,
     loop: true,
-    dots: false,
+    dots: true,
     margin: 10,
     startTransition: 2,
     autoplay: true,             // Enables autoplay
@@ -130,8 +130,8 @@ export default function MutalFund() {
             <div className='animatetext'>
               <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> Mutual <span>Funds</span></h4>
               <p>
-                At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result of careful planning and strategic decisions.
-                Our financial planning services are designed to provide a clear roadmap to help you achieve your short-term and long-term financial goals with confidence.
+              Mutual funds are one of the most effective ways to grow wealth while ensuring diversification and professional management. At Krishangi Finance, we help you navigate the world of mutual fund investments with personalized strategies tailored to your financial goals, risk appetite, and investment horizon.
+
               </p>
             </div>
           </div>

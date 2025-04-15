@@ -14,7 +14,7 @@ const Blog2 = () => {
           <img src={blogImage} className="card-img-top" alt="Diversified Portfolio" />
           <div className="blogdetails">
             <h1 className="blog-title"><img src={icon} className='img-fluid abstracticon' /> How to Build a Diversified Portfolio That Matches Your Financial Goals</h1>
-            <p className="text-muted">Published on April 10, 2025</p>
+            <p className="date">Published on April 10, 2025</p>
 
             <p className="blogpara">
               In investing, there’s a golden rule: don’t put all your eggs in one basket. That’s the essence of diversification—a strategy that spreads investments across different asset classes to reduce risk and improve your chances of achieving financial goals. But diversification isn’t just about owning many assets—it’s about owning the right mix based on your objectives.

@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hold from '../holdmoney.png'
-import about from '../aboutimg.png';
+import about from '../loans (1).png';
 import Footer from '../Footer';
 import img2 from '../Frame 16.png'
 import img5 from '../circledesign.png'
@@ -15,6 +15,11 @@ import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
 import Fiance from '../Fiance';
 import Accordion from './Accordion';
+import s1 from './1.png'
+import s2 from './2.png'
+import s3 from './3.png'
+import s5 from './4.png'
+import s4 from './5.png'
 export default function Loan() {
 
   const options = {
@@ -87,7 +92,8 @@ export default function Loan() {
                   </div>
                   <div className='col-md-5 align-self-center'>
                     <div className='form-right'>
-                      <h4>Enter Your Details</h4>
+                      <h4>get expert Loan guidance today.
+</h4>
                       <div className='form-group'>
                         <input type='text' className='form-control' id='Name' placeholder='Name' />
                       </div>
@@ -152,7 +158,7 @@ export default function Loan() {
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s1} className='img-fluid' />
                       </div>
                     </div>
 
@@ -165,13 +171,13 @@ export default function Loan() {
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
+                        <h4><h6>02.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
                         <p>Grow your assets with a structured investment approach.</p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={img2} className='img-fluid' />
+                        <img src={s2} className='img-fluid' />
                       </div>
                     </div>
                   </div>
@@ -182,13 +188,13 @@ export default function Loan() {
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
+                        <h4><h6>03.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
                         <p>Grow your assets with a structured investment approach.</p>
                       </div>
                     </div>
                     <div className='col-md-6'>
                       <div className='rightslider'>
-                        <img src={hold} className='img-fluid' />
+                        <img src={s3} className='img-fluid' />
                       </div>
                     </div>
                   </div>

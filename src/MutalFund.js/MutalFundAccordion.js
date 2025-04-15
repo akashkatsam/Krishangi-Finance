@@ -46,50 +46,56 @@ const MutalFundAccordion = () => {
       <div className="container">
       <h3><img src={icon} className="img-fluid abstracticon"/> Our <span className="highlight">Mutual Fund</span>  Investment Approach </h3>
 
-        <p className="paraaccordian">At Krishangi Finance, we offer a range of tailored insurance solutions<br></br></p>
+        <p className="paraaccordian">At Krishangi Finance, we provide personalized mutual fund solutions based on your needs:<br></br></p>
 
 
 
 
         <div className="contentcard">
-          <h4>1.  Health Insurance
-          </h4>
-          <ul>
-            <li>Coverage for medical expenses, hospitalization, and critical illness.</li>
-            <li>Individual, family, and corporate health insurance plans.</li>
+          <h4>1.   Understanding Your Financial Goals
 
-          </ul>
+          </h4>
+          <p>We assess your investment objectives, risk profile, and time horizon to recommend the best mutual fund options.
+          </p>
 
 
 
 
 
         </div><div className="contentcard">
-          <h4>2.  Motor Insurance
+          <h4>2.  Selecting the Right Mutual Funds
+
 
           </h4>
-          <p>Protection for cars, bikes, and commercial vehicles against accidents, theft, and damage.
-            Third-party and comprehensive coverage options.
+          <p>We curate a mix of:
+
           </p>
+          <ul>
+            <li>Equity Mutual Funds – For high-growth, long-term wealth accumulation.
+            </li>
+            <li>Debt Mutual Funds – For stable, low-risk returns.</li>
+            <li>Hybrid/Balanced Funds – For a combination of security and growth.</li>
+            <li>Tax-Saving ELSS Funds – For wealth creation with tax benefits.
+            </li>
+            </ul>
         </div>
 
 
         <div className="contentcard">
-          <h4> 3. Home Insurance
+          <h4> 3.  Strategic Investment Planning
 
           </h4>
-          <p>Covers damages due to fire, theft, floods, and natural calamities.
-            Protection for structure and valuable belongings inside the home
+          <p>We design customized SIP (Systematic Investment Plan) and lump sum strategies, ensuring consistent growth and volatility control.
+
           </p>
         </div>
 
 
 
         <div className="contentcard">
-          <h4>4. Business & Commercial Insurance
+          <h4>4. Continuous Monitoring & Portfolio Review
           </h4>
-          <p>Protection against operational risks, property damage, and liabilities.
-            Tailored coverage for SMEs, large enterprises, and professionals.
+          <p>We provide regular performance tracking and portfolio adjustments to align your investments with evolving financial goals.
 
           </p>
         </div>

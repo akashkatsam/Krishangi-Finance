@@ -3,33 +3,33 @@ import icon from '../krishangiicon.png'
 const faqs = [
   {
     id: 1,
-    question: "What is the main goal of financial management?",
+    question: " Why is financial planning important?",
     answer:
-      "The main goal of financial management is to maximize shareholder wealth by ensuring efficient allocation of resources, managing risks, and making profitable investments.",
+      "It helps you manage money wisely, set goals, reduce risks, and secure your future.",
   },
   {
     id: 2,
-    question: "Why should I consider investing in mutual funds?",
+    question: "When should I start financial planning?",
     answer:
-      "Mutual funds offer diversification, professional management, and liquidity, making them a great investment option for individuals who want exposure to different asset classes with minimal effort.",
+      "The sooner, the better! Early planning helps build wealth, manage risks, and achieve long-term financial stability.",
   },
   {
     id: 3,
-    question: "How can I effectively manage my investment portfolio?",
+    question: "Do I need to have a high income to start financial planning?",
     answer:
-      "To effectively manage your investment portfolio, regularly assess your risk tolerance, diversify investments, stay informed about market trends, and periodically rebalance your portfolio to align with your financial goals.",
+      "Not at all. Financial planning is for everyone, regardless of income. The earlier you start, the   better your chances of long-term financial success.",
   },
   {
     id: 4,
-    question: "Should I take an active or passive approach to investing?",
+    question: "What kind of goals can financial planning help me with?",
     answer:
-      "An active approach involves frequent trading to outperform the market, while a passive approach focuses on long-term growth using index funds. The choice depends on your risk tolerance, investment knowledge, and time commitment.",
+      " Our plans help you prepare for: Buying a home, Funding education, Retirement planning, Emergency savings and Building long-term wealth",
   },
   {
     id: 5,
-    question: "What factors should I consider when choosing a loan?",
+    question: "What’s included in your financial planning service?",
     answer:
-      "When choosing a loan, consider factors such as interest rates, repayment terms, loan fees, credit score requirements, and flexibility in case of financial difficulties.",
+      " We cover: Budgeting & expense control, Investment & savings strategy, Debt management, Insurance & risk coverage, Tax planning, and Ongoing reviews",
   },
 ];
 
