@@ -2042,7 +2042,19 @@ font-family: 'inter';
         .blog-title {
           font-size: 22px;
         }
+        #myModal img{
+          display: none;
+        }
 
+        .modaldesign #formcard h3{
+          font-size: 20px!important;
+        }
+        .modaldesign{
+          padding: 30px 15px!important;
+        }
+        .table-bordered>:not(caption)>*>* {
+          font-size: 11px!important;
+        }
           nav button {
             background-color: #fff!important;
             padding: 15px;
@@ -2216,7 +2228,7 @@ margin: auto;
             color: #fff;
             top: -11px;
             position: relative;
-            left: -3px;
+            left: -1px;
           }
           .insightcardblog h4{
             font-size: 19px !important;
