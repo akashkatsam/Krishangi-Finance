@@ -2629,8 +2629,9 @@ margin: auto;
   font-size: 18px;
 }
 .contentcard p{
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 15px;
+  font-weight: 400;
 }
 .leftslider h6 {
 font-size: 16px;
