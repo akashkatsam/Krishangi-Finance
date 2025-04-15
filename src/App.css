@@ -1774,8 +1774,8 @@ font-family: 'inter';
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 .megamenu1 {
-  width: 689px !important;
-  margin-left: -480px !important;
+  width: 690px !important;
+  margin-left: -400px !important;
 }
 
 .custom-menu::after{

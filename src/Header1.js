@@ -515,12 +515,7 @@ export default function Header1() {
               >
                 Investment Insights
               </NavLink>
-              <NavLink
-                to="/career"
-                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-              >
-                Career
-              </NavLink>
+          
 
               <li className="nav-item dropdown custom-dropdown">
                 <NavLink to="/tools" className={({ isActive }) => isActive ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'}>
@@ -570,6 +565,13 @@ export default function Header1() {
                   </div>
                 </div>
               </li>
+
+              <NavLink
+                to="/career"
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+              >
+                Career
+              </NavLink>
               <NavLink
                 to="/contact-us"
                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
@@ -639,7 +641,7 @@ export default function Header1() {
               <NavLink to="/mutual-fund" className="nav-dropdown-item">Mutual Funds</NavLink>
               <NavLink to="/life-insurnace" className="nav-dropdown-item">Life Insurance</NavLink>
 
-              <NavLink to="/portfolio-management-services" className="nav-dropdown-item">Portfolio Management</NavLink>
+              <NavLink to="/portfolio-management-services" className="nav-dropdown-item">Portfolio Management Services</NavLink>
               <NavLink to="/alternative-investment-funds" className="nav-dropdown-item">Alternative Investment Funds</NavLink>
               <NavLink to="/general-insurance" className="nav-dropdown-item">General Insurance</NavLink>
               <NavLink to="/loan" className="nav-dropdown-item">Loan</NavLink>
