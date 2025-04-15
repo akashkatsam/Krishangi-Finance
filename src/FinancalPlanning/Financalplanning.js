@@ -57,7 +57,8 @@ export default function Financialplanning() {
   
   useEffect(() => {
 
-  
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
   
 
      gsap.fromTo(subheadingRef.current,

@@ -45,6 +45,8 @@ export default function EstatePlanning() {
 
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     gsap.registerPlugin(ScrollTrigger);
     const paragraphs = document.querySelectorAll('.animatetext p');
     paragraphs.forEach((p) => {
@@ -162,7 +164,7 @@ export default function EstatePlanning() {
                                   </div>
                                   <div className='col-8'>
                                <div className='sliderorange'>
-                               <h4><span>Diversified  </span>&nbsp;Portfolio</h4>
+                               <h4><span>Asset   </span>&nbsp;Distribution</h4>
                                </div>
         
                                   </div>
@@ -196,7 +198,7 @@ export default function EstatePlanning() {
                                   </div>
                                   <div className='col-8'>
                                <div className='sliderorange'>
-                               <h4><span>Professional</span>&nbsp;Fund Management</h4>
+                               <h4><span>Legal  </span>&nbsp;Clarity</h4>
                                </div>
         
                                   </div>
@@ -232,7 +234,7 @@ export default function EstatePlanning() {
                                   </div>
                                   <div className='col-8'>
                                <div className='sliderorange'>
-                               <h4><span>Flexible  </span>&nbsp;Investment</h4>
+                               <h4><span>Tax   </span>&nbsp;Efficiency </h4>
                                </div>
         
                                   </div>
@@ -268,7 +270,7 @@ export default function EstatePlanning() {
                                   </div>
                                   <div className='col-8'>
                                <div className='sliderorange'>
-                               <h4><span>Liquidity</span>&nbsp;Goal</h4>
+                               <h4><span>Wealth </span>&nbsp;Protection </h4>
                                </div>
         
                                   </div>

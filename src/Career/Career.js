@@ -44,6 +44,8 @@ export default function Career() {
 
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
   gsap.fromTo(subheadingRef.current,
       { opacity: 0, y: 30 },
       { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 0.2 }
@@ -113,6 +115,10 @@ export default function Career() {
                       </div>
                       <div className='form-group'>
                         <input type='email' className='form-control' id='Email' placeholder='Email Address' />
+                      </div>
+
+                      <div className='row'>
+
                       </div>
 
                       

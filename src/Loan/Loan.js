@@ -44,6 +44,8 @@ export default function Loan() {
 
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     gsap.registerPlugin(ScrollTrigger);
     const paragraphs = document.querySelectorAll('.animatetext p');
     paragraphs.forEach((p) => {

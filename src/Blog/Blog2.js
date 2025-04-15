@@ -1,10 +1,13 @@
-import React from 'react';
+import { useEffect } from 'react';
 import blogImage from './banner3.1 (1).png'; // Replace with your image path
 import Header from '../Header';
 import Footer from '../Footer';
 import icon from '../krishangiicon.png';
 
 const Blog2 = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <>
       <Header />

@@ -44,6 +44,8 @@ export default function LifeInsurance() {
 
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     gsap.registerPlugin(ScrollTrigger);
     const paragraphs = document.querySelectorAll('.animatetext p');
     paragraphs.forEach((p) => {
@@ -160,7 +162,7 @@ export default function LifeInsurance() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Build</span>&nbsp;Wealth</h4>
+                       <h4><span>Family </span>&nbsp;Security </h4>
                        </div>
 
                           </div>
@@ -193,7 +195,7 @@ export default function LifeInsurance() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Secure</span>&nbsp;Future</h4>
+                       <h4><span>Debt </span>&nbsp;Coverage </h4>
                        </div>
 
                           </div>
@@ -228,7 +230,7 @@ export default function LifeInsurance() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Volatility </span>&nbsp;Control</h4>
+                       <h4><span>Income  </span>&nbsp;Assurance </h4>
                        </div>
 
                           </div>
@@ -264,7 +266,7 @@ export default function LifeInsurance() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Life</span>&nbsp;Goal</h4>
+                       <h4><span>Wealth </span>&nbsp;Growth </h4>
                        </div>
 
                           </div>
@@ -301,7 +303,7 @@ export default function LifeInsurance() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Optimize  </span>&nbsp;Savings</h4>
+                       <h4><span>Retirement   </span>&nbsp;Planning </h4>
                        </div>
 
                           </div>

@@ -22,6 +22,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import blog3 from './Blog/banner-2.png'
 
+import {Helmet} from "react-helmet";
 
 import icon from './krishangiicon.png'
 const Home = () => {
@@ -49,6 +50,11 @@ const Home = () => {
   return (
 
     <>
+
+<Helmet>
+        <title>Krishangi Finance</title>
+        <meta name="description" content="Creating Wealth Through Financial Goal Planning" />
+    </Helmet>
     <Header1/>
 
 <About/>

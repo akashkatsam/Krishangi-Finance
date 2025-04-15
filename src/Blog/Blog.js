@@ -24,6 +24,8 @@ export default function Blog() {
 
   useEffect(() => {
     // Heading animation
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     gsap.fromTo(headingRef.current,
       { opacity: 0, y: 30 },
       { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }

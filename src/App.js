@@ -25,6 +25,8 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000); // show preloader for 3 seconds

@@ -8,6 +8,7 @@ import mail from './mail.png'
 import phone from './bxs_phone-call (1).png'
 import consutlant from './con-page-1 (2).png'
 import Header1 from './Header1'
+import {Helmet} from "react-helmet";
 
 export default function Contact() {
   const formCardRef = useRef(null)
@@ -17,6 +18,7 @@ export default function Contact() {
 
   useEffect(() => {
 
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // Heading animation
     gsap.fromTo(headingRef.current,
@@ -45,6 +47,11 @@ export default function Contact() {
 
   return (
     <>
+   <Helmet>
+          <title> Get in touch with us          </title>
+          <meta name="description" content="At Krishangi Finance, we understand that financial stability doesn’t happen by chance, it’s the result
+of careful planning and strategic decisions." />
+      </Helmet>
       <Header />
       <div className="breadcrumb">
         <div className="breadcrumb-content">
