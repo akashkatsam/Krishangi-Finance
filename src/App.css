@@ -915,7 +915,7 @@ margin-left: -400PX;
     font-size: 24px;
         }
         .box1{
-          width: 60px;
+          width: 40px;
           margin-bottom: 20px;
         }
         .servicecard svg{
@@ -933,11 +933,11 @@ margin-left: -400PX;
           background-image: url('./Mask group (1).png');          background-size: contain;
           border-radius: 10px;
           background-repeat: no-repeat;
-          height: 420px!important;
-          padding: 40px;
+          height:260px!important;
+          padding:20px;
           background-color: #ef6620;
           background-position: right;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
               }
 
               .servicecard1:hover{
@@ -974,22 +974,22 @@ margin-left: -400PX;
         .servicecard1 h2{
           font-family: 'inter';
           color: #434343;
-          font-size: 31px;
+          font-size: 20px;
           font-weight: 600;        }
         .servicecard1 p{
-          margin-top: 20px;
+          margin-top:5px;
           color: #434343;
           width: 95%;
           font-family: 'inter';
-          font-size: 20px;
+          font-size: 18px;
         }
         .box2{
-          width: 60px;
+          width:40px;
           margin-bottom: 20px;
         }
         .servicecard1 svg {
           position: absolute;
-          bottom: 30px;
+          bottom: 40px;
           right: 40px;
           fill: #000;
           color: #000;
@@ -1016,12 +1016,12 @@ margin-left: -400PX;
           padding: 20px;
         }
         .serviceheading h4{
-          width: 80%;
-          color: #1C3764;
-          font-family: 'inter';
-          font-size: 55px;
-          font-weight: 700;
-          margin-bottom: 30px;
+          width: 100%;
+    color: #1C3764;
+    font-family: 'inter';
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 30px;
         }
         .serviceheading p{
           color: #000000;

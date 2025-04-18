@@ -17,19 +17,19 @@ const faqs = [
     id: 3,
     question: "Do I need to have a high income to start financial planning?",
     answer:
-      "Not at all. Financial planning is for everyone, regardless of income. The earlier you start, the better your chances of long-term financial success.",
+      "Not at all. Financial planning is for everyone, regardless of income. The earlier you start, the   better your chances of long-term financial success.",
   },
   {
     id: 4,
     question: "What kind of goals can financial planning help me with?",
     answer:
-      "Our plans help you prepare for: Buying a home, Funding education, Retirement planning, Emergency savings and Building long-term wealth.",
+      " Our plans help you prepare for: Buying a home, Funding education, Retirement planning, Emergency savings and Building long-term wealth",
   },
   {
     id: 5,
     question: "What’s included in your financial planning service?",
     answer:
-      "We cover: Budgeting & expense control, Investment & savings strategy, Debt management, Insurance & risk coverage, Tax planning, and Ongoing reviews.",
+      " We cover: Budgeting & expense control, Investment & savings strategy, Debt management, Insurance & risk coverage, Tax planning, and Ongoing reviews",
   },
 ];
 
