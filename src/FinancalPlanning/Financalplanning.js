@@ -14,7 +14,7 @@ import FinancialAccordion from './FinancialAccordion';
 import Header from '../Header';
 import krishangiicon from '../krishangiicon.png';
 import Fiance from '../Fiance';
-import Accordion from '../Accordion';
+import Accordion from './Accordion';
 import icon from '../krishangiicon.png'
 import s1 from './1.png'
 import s2 from './2.png'
@@ -217,7 +217,7 @@ export default function Financialplanning() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Secure</span>&nbsp;Future</h4>
+                       <h4><span>Secure Your</span>&nbsp;Future</h4>
                        </div>
 
                           </div>
@@ -286,13 +286,13 @@ export default function Financialplanning() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Life</span>&nbsp;Goal</h4>
+                       <h4><span>Plan Major </span>&nbsp;Life Goals</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p> Be prepared for homeownership, education, retirement, and more.
+                        <p>Homeownership, education, retirement, and more.
                         </p>
                       </div>
                     </div>

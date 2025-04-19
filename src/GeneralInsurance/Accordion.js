@@ -17,19 +17,19 @@ const faqs = [
     id: 3,
     question: " What’s the difference between General Insurance and Life Insurance?",
     answer:
-      "Life insurance covers death or life-related events, offering payouts to beneficiaries.General insurance covers non-life risks—like health, property damage, travel, and liability.",
+      "Life insurance covers death or life-related events, offering payouts to beneficiaries. General insurance covers non-life risks—like health, property damage, travel, and liability",
   },
   {
     id: 4,
     question: "Can I hold multiple general insurance policies?",
     answer:
-      "Yes! You can have separate policies for health, motor, home, and travel.Each covers a different risk and offers specific benefits.",
+      "Yes! You can have separate policies for health, motor, home, and travel. Each covers a different risk and offers specific benefits.",
   },
   {
     id: 5,
     question: "What is a deductible in general insurance?",
     answer:
-      "A deductible is the amount you pay out of pocket before the insurance kicks in.Higher deductibles = Lower premiums (and vice versa).",
+      "A deductible is the amount you pay out of pocket before the insurance kicks in. Higher deductibles = Lower premiums (and vice versa).",
   },
 ];
 

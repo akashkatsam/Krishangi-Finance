@@ -73,7 +73,11 @@ Financial Growth" />
     <div className='row'>
       <div className='col-md-6'>
         <div className='aboutcontent'>
-          <p>At Krishangi Finance, we believe that financial success begins with a clear plan. Our expertise lies in financial goal planning and wealth management, helping individuals and businesses create structured, long-term strategies tailored to their unique aspirations. Whether you're planning for future security, growing your investments, or navigating uncertainties, we provide personalized financial solutions that align with your goals and lifestyle.</p>
+          <p>At Krishangi Finance, we believe that financial success begins with a clear plan. Our
+expertise lies in financial goal planning and wealth management, helping individuals and
+businesses create long-term strategies tailored to their unique aspirations. Whether you're
+planning for future security, growing your investments, or navigating uncertainties, we
+provide personalized financial solutions that align with your goals and lifestyle.</p>
         </div>
       </div>
       <div className='col-md-6'>
@@ -91,8 +95,11 @@ Financial Growth" />
       <div className='col-md-12'>
 
         <div className='aboutcontent'>
-        <p className='bottomcontent'>With a deep commitment to transparency and trust, we simplify complex financial decisions, ensuring your wealth works for you. Our approach blends expert insights with customized strategies, empowering you to achieve financial stability, growth, and peace of mind at every stage of life.
-        </p>
+        <p className='bottomcontent'>With a deep commitment to transparency and trust, we simplify complex financial decisions,
+ensuring your wealth works for you. Our approach blends expert insights with customized
+strategies, empowering you to achieve financial stability, growth, and peace of mind at every
+stage of life.
+</p>
       </div>
       </div>
 
@@ -120,7 +127,9 @@ Financial Growth" />
               <div className="foundertext">
                 <h4>Sachin Agrawal</h4>
                 <p className='designation'>CEO, Krishangi Finance</p>
-                <p>Sachin Agrawal, a chartered financial goal planner with over 20 years of expertise in financial planning and wealth management. With a deep passion for guiding individuals toward financial security, he specializes in investment management, retirement planning, tax strategies, and volatility control. His approach is rooted in understanding each client’s unique financial landscape and crafting personalized, strategic plans that ensure long-term growth and stability.</p>
+                <p>Sachin Agrawal, a chartered financial goal planner with 20 years of expertise in financial
+planning and wealth management. With a deep passion for guiding individuals toward
+financial security</p>
                 <p> Sachin Agrawal believes that financial planning isn’t just about numbers, but it’s about empowering lives. By working closely with clients from diverse backgrounds, he provides clear, customized financial roadmaps that help them achieve their goals with confidence. His unwavering commitment to transparency, trust, and client success defines the foundation of Krishangi Finance.</p>
 
                 <div className='sign'>

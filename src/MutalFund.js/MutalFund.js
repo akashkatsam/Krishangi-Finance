@@ -215,6 +215,7 @@ export default function MutalFund() {
                         </div>
                         <p>Managed by expert fund managers.
 
+
                         </p>
                       </div>
                     </div>
@@ -243,13 +244,13 @@ export default function MutalFund() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Flexible  </span>&nbsp;Investment</h4>
+                       <h4><span>Flexible  </span>&nbsp;Investment Options</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p> Choose from SIPs, lump sum, and goal-based funds.
+                        <p> Choose from SIPs, lump sum.
                         </p>
                       </div>
                     </div>
@@ -279,14 +280,13 @@ export default function MutalFund() {
                           </div>
                           <div className='col-8'>
                        <div className='sliderorange'>
-                       <h4><span>Liquidity</span>&nbsp;Goal</h4>
+                       <h4><span>Liquidity &</span>&nbsp;Transparency</h4>
                        </div>
 
                           </div>
 
                         </div>
                         <p> Easy withdrawals and clear performance tracking.
-
                         </p>
                       </div>
                     </div>
@@ -322,8 +322,7 @@ export default function MutalFund() {
                           </div>
 
                         </div>
-                        <p> Optimized investments for long-term financial growth.
-
+                        <p> Optimized investments for low tax rates.
 
                         </p>
                       </div>

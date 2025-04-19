@@ -89,14 +89,7 @@ export default function Header() {
 
 
 
-              <div className='col-md-6'>
-                <div className='toolsimg'>
-                <Link to="https://paytminsurance.co.in/" target='_blank'>
-
-                  <img src={kgflogo6} className='img-fluid' />
-                  </Link>
-                </div>
-              </div>
+            
               
             
   

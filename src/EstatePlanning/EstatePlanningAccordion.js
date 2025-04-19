@@ -47,8 +47,8 @@ const FinancialAccordion = () => {
         <h3> </h3>
         <h3><img src={icon} className="img-fluid abstracticon"/> Our <span className="highlight"> Will & Estate Planning </span> Services</h3>
 
-        <p className="paraaccordian">At Krishangi Finance, we offer holistic solutions 
-   <br></br> to maintain your wealth and facilitate a smooth transition of assets.</p>
+        <p className="paraaccordian">At Krishangi Finance, we offer holistic solutions to maintain your wealth and facilitate a
+        smooth transition of assets.</p>
         
 
         

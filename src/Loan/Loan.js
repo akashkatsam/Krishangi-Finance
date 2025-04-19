@@ -149,14 +149,27 @@ export default function Loan() {
        
 
             <div className='separator-20'></div>
-            <OwlCarousel className="owl-theme custom-carousel" {...options}>
+            <OwlCarousel className="owl-theme" {...options}>
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>01.</h6>&nbsp;&nbsp;&nbsp;Personalized Loan:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>01</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Loan</span>&nbsp;Solutions</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Financing options based on your needs.
+                        </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
@@ -169,13 +182,27 @@ export default function Loan() {
                   </div>
                 </div>
               </div>
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>02.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>02</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Expert Financial</span>&nbsp; Guidance</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Helping you choose the best loan for your goals.                       </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
@@ -183,16 +210,34 @@ export default function Loan() {
                         <img src={s2} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
               <div className='sildercard'>
                 <div className='sliderbox'>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='leftslider'>
-                        <h4><h6>03.</h6>&nbsp;&nbsp;&nbsp;Build Wealth:</h4>
-                        <p>Grow your assets with a structured investment approach.</p>
+
+                        <div className='row'>
+                          <div className='col-3'>
+                            <h6>03</h6>
+                          </div>
+                          <div className='col-8'>
+                       <div className='sliderorange'>
+                       <h4><span>Loan Against  </span>&nbsp;Shares</h4>
+                       </div>
+
+                          </div>
+
+                        </div>
+                        <p>Unlock the value of your investments
+                        without selling them.                     </p>
                       </div>
                     </div>
                     <div className='col-md-6'>
@@ -200,9 +245,17 @@ export default function Loan() {
                         <img src={s3} className='img-fluid' />
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+
+
+
+
+           
+             
             </OwlCarousel>
           </div>
         </div>

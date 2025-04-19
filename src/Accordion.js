@@ -3,33 +3,32 @@ import React, { useState } from "react";
 const faqs = [
   {
     id: 1,
-    question: "What is the main goal of financial management?",
+    question: "Who can benefit from Krishangi Finance’s services?",
     answer:
-      "The main goal is to maximize wealth, ensure financial stability, and optimize resources for long-term growth and profitability.",
+      "Our services are ideal for individuals, families, professionals, and business owners looking to manage, protect, or transfer their wealth efficiently",
   },
   {
     id: 2,
-    question: "Why should I consider investing in mutual funds?",
+    question: "Is Krishangi Finance regulated?",
     answer:
-      "Mutual funds offer diversification, professional management, and flexibility, helping optimise returns with lower risk and effort",
+      "Yes. We operate within a well-defined regulatory framework, ensuring that all recommendations and services are fully compliant with Indian financial regulations.",
   },
   {
     id: 3,
-    question: "How can I effectively manage my investment portfolio?",
+    question: "What is the first step to getting started?",
     answer:
-      "Effective portfolio management involves selecting a balanced mix of assets, diversifying investments to manage risk, and regularly reviewing performance to align with financial goals.",
+      "Simply reach out to us. Our team will understand your goals and guide you through a personalized financial roadmap.",
   },
   {
     id: 4,
-    question: "Should I take an active or passive approach to investing?",
-    answer:
-      "Active investing aims to beat the market through frequent trades, while passive investing follows a steady, low-cost strategy like index funds.",
+    question: "Can I get help with estate and will planning?",
+    answer:"Absolutely. We assist in creating structured estate plans that ensure your legacy is preserved and passed on according to your wishes.",
   },
   {
     id: 5,
-    question: "What factors should I consider when choosing a loan?",
+    question: "Is your consultation customized or one-size-fits-all?",
     answer:
-      "Key factors include interest rates, repayment terms, loan tenure, and additional costs. Comparing options ensures the best choice based on financial needs and repayment capacity.",
+      "Every client receives a personalized financial strategy. We believe every financial journey is unique and treat it with the care, expertise, and attention it deserves.",
   },
 ];
 

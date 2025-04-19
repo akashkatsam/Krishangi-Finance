@@ -96,15 +96,7 @@ export default function Header1() {
 
 
 
-              <div className='col-md-6'>
-                <div className='toolsimg'>
-                <Link to="https://paytminsurance.co.in/" target='_blank'>
-
-                  <img src={kgflogo6} className='img-fluid' />
-                  </Link>
-                </div>
-              </div>
-              
+      
             
   
               
@@ -340,22 +332,25 @@ export default function Header1() {
                         <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={icon2} className='img-fluid' />
+                              <img src={icon8} className='img-fluid' />
                             </div>
                           </div>
                         </div>
                         <div className='col-md-9 align-self-center'>
-                          <Link to="/portfolio-management-services">
+                          <Link to="/life-insurnace">
 
                             <div className='megalink'>
-
-                              <h5>Portfolio Management  </h5>
-                              <p> Diversification, strategy, analysis, and balance</p>
+                              <h5>Life Insurance </h5>
+                              <p>Protection, dependents, coverage, future, security</p>
                             </div>
                           </Link>
+
                         </div>
                       </div>
 
+
+
+                
 
 
 
@@ -387,6 +382,34 @@ export default function Header1() {
                         <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
+                              <img src={icon6} className='img-fluid' />
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                          <Link to="/loan">
+
+                            <div className='megalink'>
+                              <h5>Loans </h5>
+                              <p>Credit, funding, repayment, need-based, flexibility </p>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
+
+                 
+
+
+
+                    </div>
+
+
+
+                    <div className='col-md-6'>
+                    <div className='row'>
+                        <div className='col-md-3 align-self-center'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
                               <img src={icon4} className='img-fluid' />
                             </div>
                           </div>
@@ -403,17 +426,31 @@ export default function Header1() {
                       </div>
 
 
-
-                    </div>
-
-
-
-                    <div className='col-md-6'>
                       <div className='row'>
                         <div className='col-md-3 align-self-center'>
                           <div className='menuicon'>
                             <div className='boxcolor'>
-                              <img src={icon4} className='img-fluid' />
+                              <img src={icon2} className='img-fluid' />
+                            </div>
+                          </div>
+                        </div>
+                        <div className='col-md-9 align-self-center'>
+                          <Link to="/portfolio-management-services">
+
+                            <div className='megalink'>
+
+                              <h5>Portfolio Management  </h5>
+                              <p> Diversification, strategy, analysis, and balance</p>
+                            </div>
+                          </Link>
+                        </div>
+                      </div>
+
+                      <div className='row'>
+                        <div className='col-md-3 align-self-center'>
+                          <div className='menuicon'>
+                            <div className='boxcolor'>
+                              <img src={icon5} className='img-fluid' />
                             </div>
                           </div>
                         </div>
@@ -428,25 +465,6 @@ export default function Header1() {
                         </div>
                       </div>
 
-
-                      <div className='row'>
-                        <div className='col-md-3 align-self-center'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={icon6} className='img-fluid' />
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9 align-self-center'>
-                          <Link to="/loan">
-
-                            <div className='megalink'>
-                              <h5>Loans </h5>
-                              <p>Credit, funding, repayment, need-based, flexibility </p>
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
 
 
 
@@ -470,26 +488,7 @@ export default function Header1() {
 
 
 
-                      <div className='row'>
-                        <div className='col-md-3 align-self-center'>
-                          <div className='menuicon'>
-                            <div className='boxcolor'>
-                              <img src={icon8} className='img-fluid' />
-                            </div>
-                          </div>
-                        </div>
-                        <div className='col-md-9 align-self-center'>
-                          <Link to="/life-insurnace">
-
-                            <div className='megalink'>
-                              <h5>Life Insurance </h5>
-                              <p>Protection, dependents, coverage, future, security</p>
-                            </div>
-                          </Link>
-
-                        </div>
-                      </div>
-
+                     
 
 
 
@@ -515,8 +514,7 @@ export default function Header1() {
               >
                 Investment Insights
               </NavLink>
-          
-
+      
               <li className="nav-item dropdown custom-dropdown">
                 <NavLink to="/tools" className={({ isActive }) => isActive ? 'nav-link dropdown-toggle active' : 'nav-link dropdown-toggle'}>
                   Tools
@@ -557,7 +555,7 @@ export default function Header1() {
       </div>
 
       {/* Content */}
-      <div style={{ flex: 1, padding: "20px" }}>
+      <div style={{ flex: 1, paddingTop: "0px", paddingLeft:"15px" }}>
         {renderContent()}
       </div>
     </div>
@@ -572,6 +570,9 @@ export default function Header1() {
               >
                 Career
               </NavLink>
+
+
+              
               <NavLink
                 to="/contact-us"
                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
@@ -591,7 +592,6 @@ export default function Header1() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
 
       <nav className="custom-navbar">
         <div className="custom-navbar-container">

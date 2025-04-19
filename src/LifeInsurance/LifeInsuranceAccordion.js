@@ -46,9 +46,9 @@ const LifeInsuranceAccordion = () => {
     <div className="container">
     <h3><img src={icon} className="img-fluid abstracticon"/> Our Life Insurance  <span className="highlight"> Solutions </span> </h3>
 
-      <p className="paraaccordian">At Krishangi Finance, we offer a range of tailored life insurance plans 
-
- <br></br> to fit your unique needs:</p>
+      <p className="paraaccordian">At Krishangi Finance, we help you access a range of tailored life insurance plans <br></br>suited to
+your unique needs.
+</p>
       
 
       
@@ -56,9 +56,10 @@ const LifeInsuranceAccordion = () => {
       <div className="contentcard">
         <h4>1.  Term Life Insurance
         </h4>
-        <p>High coverage at an affordable premium.
-Ensures your family’s financial well-being during unforeseen events.
-</p>
+        <p>
+        Extensive protection at an affordable premium.
+        Ensures your family’s financial well-being during unforeseen events.
+        </p>
 
 
 

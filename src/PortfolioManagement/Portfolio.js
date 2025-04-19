@@ -146,9 +146,9 @@ export default function Portfolio() {
             <div className='animatetext'>
               <h4> <img src={krishangiicon}  className='img-fluid' /> Portfolio <span>Service</span></h4>
               <p>
-             In today’s dynamic financial landscape, managing your investments strategically is key to long-term wealth creation. Whether you're an experienced investor or just starting, we offer personalized portfolio strategies to help you grow and preserve your wealth.
-
-
+              In today’s dynamic financial landscape, managing your investments strategically is key to
+long-term wealth creation. Whether you're an experienced investor or just starting, we
+suggest PMS according to your needs.
               </p>
             </div>
           </div>
@@ -181,13 +181,15 @@ export default function Portfolio() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Diversified </span>&nbsp; Investments</h4>
+                       <h4><span>Risk-Spreading </span>&nbsp; Strategy</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p>Reduce volatility by balancing asset allocation.
+                        <p>Tackle market volatility with a well-balanced investment
+mix.
+
                         </p>
                       </div>
                     </div>
@@ -215,13 +217,14 @@ export default function Portfolio() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Consistent</span>&nbsp;Growth</h4>
+                       <h4><span>Goal</span>&nbsp;Alignment</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p> Strategic investments tailored for long-term wealth creation.
+                        <p>Keeps your investments aligned with your financial goals and
+                        timelines.
                         </p>
                       </div>
                     </div>
@@ -250,13 +253,15 @@ export default function Portfolio() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Risk </span>&nbsp;Optimization</h4>
+                       <h4><span>Informed </span>&nbsp;Decision-Making</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p>Active monitoring to mitigate the impact of market volatility.s
+                        <p>Leverages expert insights and real-time data for smarter
+investment moves.
+
                         </p>
                       </div>
                     </div>

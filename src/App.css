@@ -1031,6 +1031,16 @@ margin-left: -400PX;
           font-weight:300;
 
         }
+        .footermark{
+          background-color: #f2692342;
+          color: #000;
+          padding: 10px;
+          font-family: 'inter';
+          text-align: center;
+          font-size: 14px;
+          border-radius: 10px;
+        }
+
 
 
         #footer{
@@ -1271,7 +1281,7 @@ color: #f16822;
   font-weight: 600;
   white-space: nowrap;
   ALIGN-ITEMS: CENTER;
-  font-size: 22px;
+  font-size: 18px;
 
 }
 .sliderorange span{

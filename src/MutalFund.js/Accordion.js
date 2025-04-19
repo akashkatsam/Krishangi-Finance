@@ -17,13 +17,13 @@ const faqs = [
     id: 3,
     question: "Are mutual funds safe to invest in?",
     answer:
-      "While no investment is risk-free, mutual funds offer diversification and professional management to manage risks better than direct market exposure.",
+      "While most investments are not risk-free, mutual funds offer diversification and professional management to manage risks better than direct market exposure.",
   },
   {
     id: 4,
     question: "What’s the minimum amount needed to start investing in mutual funds?",
     answer:
-      "You can start with as low as ₹500/month via SIPs. We structure investments based on your budget and long-term financial vision.",
+      "You can start with as low as ₹500/month via SIPs. We suggest investments based on your budget and long-term financial vision.",
   },
   {
     id: 5,

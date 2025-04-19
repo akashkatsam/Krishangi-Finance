@@ -130,7 +130,10 @@ export default function AlternativeInvestmentFunds() {
             <div className='animatetext'>
             <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> Alternative Investment<br/><span>Funds</span></h4>
               <p>
-              Traditional investments are not the only path to financial success. At Krishangi, we offer Alternative Investment Funds, whether you're looking to invest in private equity, venture capital, real estate, hedge funds, or structured debt, our expert-driven AIF solutions help you explore unique opportunities as per your goals.
+              Traditional investments are not the only path to financial success. At Krishangi, we enable
+access to Alternative Investment Funds, whether you're looking to invest in private equity,
+venture capital, REITs, hedge funds, or structured debt, our expert-driven AIF solutions help
+you explore unique opportunities as per your goals.
               </p>
             </div>
           </div>
@@ -169,13 +172,15 @@ export default function AlternativeInvestmentFunds() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Higher Return</span>&nbsp; Potential</h4>
+                       <h4><span>Return </span>&nbsp; Potential</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p> Access to exclusive investment avenues with higher growth possibilities.
+                        <p>Access to exclusive investment avenues with strategic growth
+possibilities.
+
                         </p>
                       </div>
                     </div>
@@ -203,13 +208,14 @@ export default function AlternativeInvestmentFunds() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Portfolio </span>&nbsp;Diversification</h4>
+                       <h4><span>Strategic </span>&nbsp;Portfolio Mix</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p> Reducing risks by investing beyond traditional asset classes.
+                        <p>Limiting market swings by exploring investments beyond
+                        conventional assets.
                         </p>
                       </div>
                     </div>
@@ -238,13 +244,14 @@ export default function AlternativeInvestmentFunds() {
                           </div>
                           <div className='col-8 p-0'>
                        <div className='sliderorange'>
-                       <h4><span>Expert</span>&nbsp;Managed</h4>
+                       <h4><span>Expert-Managed</span>&nbsp;Investments</h4>
                        </div>
 
                           </div>
 
                         </div>
-                        <p>Professionally curated strategies for maximum efficiency.
+                        <p>Professionally curated strategies for maximum
+                        efficiency.
                         </p>
                       </div>
                     </div>

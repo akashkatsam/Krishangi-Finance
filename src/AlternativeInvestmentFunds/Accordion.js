@@ -4,7 +4,7 @@ const faqs = [
     id: 1,
     question: "What are Alternative Investment Funds (AIFs)?",
     answer:
-      "AIFs are privately pooled investment funds that invest in non-traditional assets like private equity, venture capital, hedge funds, and real estate.",
+      "AIFs are privately pooled investment funds that invest in non-traditional assets like private equity, venture capital, hedge funds, and REITs .",
   },
   {
     id: 2,
@@ -20,9 +20,9 @@ const faqs = [
   },
   {
     id: 4,
-    question: "Are AIFs safe to invest in?",
+    question: "What makes AIFs a compelling investment option?",
     answer:
-      "AIFs involve higher risk than traditional instruments, but with strategic selection, risk management, and professional oversight, they offer balanced exposure and optimized outcomes.",
+      "AIFs offer access to unique asset classes, expert fund management, and tailored strategies that go beyond conventional investment avenues, making them ideal for portfolio diversification",
   },
   {
     id: 5,

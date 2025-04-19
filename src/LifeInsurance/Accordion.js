@@ -23,7 +23,7 @@ const faqs = [
     id: 4,
     question: "Do I get any returns from a term plan?",
     answer:
-      "Standard-term plans don’t offer maturity returns. However, return-of-premium options are available at higher premiums.",
+      "Standard-term plans don’t offer maturity returns. However, return-of-premium options are also available",
   },
   {
     id: 5,

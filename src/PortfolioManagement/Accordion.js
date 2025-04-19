@@ -29,7 +29,7 @@ const faqs = [
     id: 5,
     question: "What’s the difference between PMS and regular investing?",
     answer:
-      "With Portfolio Management Services, you get: Professional expertise, Personalized strategies, Risk optimization, and  Active rebalancing, unlike regular investing, it’s a hands-on, tailored experience.",
+      "With Portfolio Management Services, you get: Professional expertise, Personalized strategies, Active rebalancing, unlike regular investing, it’s a hands-on, tailored experience.",
   },
 ];
 

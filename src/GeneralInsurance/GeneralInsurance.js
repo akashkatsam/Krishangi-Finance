@@ -131,7 +131,12 @@ export default function GeneralInsurance() {
             <div className='animatetext'>
             <h4><img src={krishangiicon}  className='img-fluid abstracticon' /> General  <span>Insurance</span></h4>
               <p>
-              General insurance provides financial protection against a wide range of non-life-related risks. At Krishangi Finance, we offer tailored solutions to protect your health, car, home, travel plans, and business. Whether it's covering medical expenses, vehicle damage, property loss, travel disruptions, or commercial liabilities, our expert guidance helps you choose the right policy to stay secure against everyday uncertainties.              </p>
+              General insurance provides financial protection against a wide range of non-life-related risks.
+At Krishangi Finance, we help you access solutions to protect your health, car, home, travel
+plans, and business. Whether it's covering medical expenses, vehicle damage, property
+loss, travel disruptions, or commercial liabilities, our expert guidance helps you choose the
+right policy to stay secure against everyday uncertainties.
+ </p>
             </div>
           </div>
         </div>
@@ -145,7 +150,7 @@ export default function GeneralInsurance() {
              <div className='row'>
                <div className='col-12'>
                  <div className='headingslider'>
-                   <h4>Why General Insurance <br></br> Essential?</h4>
+                   <h4>Why is General Insurance <br></br> Essential?</h4>
                    <p></p>
                  </div>
                </div>
@@ -199,13 +204,14 @@ export default function GeneralInsurance() {
                              </div>
                              <div className='col-8'>
                           <div className='sliderorange'>
-                          <h4><span>Risk </span>&nbsp;Mitigation</h4>
+                          <h4><span>Asset </span>&nbsp;Protection</h4>
                           </div>
    
                              </div>
    
                            </div>
-                           <p> Protects assets against natural disasters, theft, and liability claims.
+                           <p>Covers unforeseen events like natural disasters, theft, and liability
+                           claims to ensure financial continuity.
                            </p>
                          </div>
                        </div>
@@ -234,13 +240,15 @@ export default function GeneralInsurance() {
                              </div>
                              <div className='col-8'>
                           <div className='sliderorange'>
-                          <h4><span>Protection  </span>&nbsp;Health</h4>
+                          <h4><span>Protection For </span>&nbsp;Health</h4>
                           </div>
    
                              </div>
    
                            </div>
-                           <p>Covers medical emergencies and hospitalization costs.
+                           <p> Covers medical emergencies and hospitalization
+costs.
+
                            </p>
                          </div>
                        </div>
@@ -276,7 +284,7 @@ export default function GeneralInsurance() {
                              </div>
    
                            </div>
-                           <p> Prrotects businesses from unforeseen operational risks.
+                           <p>Protects businesses from unforeseen operational risks.
    
                            </p>
                          </div>

@@ -85,8 +85,9 @@ const MutalFundAccordion = () => {
           <h4> 3.  Strategic Investment Planning
 
           </h4>
-          <p>We design customized SIP (Systematic Investment Plan) and lump sum strategies, ensuring consistent growth and volatility control.
-
+          <p>
+          We suggest SIP (Systematic Investment Plan) and lump sum strategies, ensuring consistent
+          growth and volatility control.
           </p>
         </div>
 
@@ -95,22 +96,15 @@ const MutalFundAccordion = () => {
         <div className="contentcard">
           <h4>4. Continuous Monitoring & Portfolio Review
           </h4>
-          <p>We provide regular performance tracking and portfolio adjustments to align your investments with evolving financial goals.
-
+          <p>We provide regular performance tracking and portfolio adjustments to align your investments
+          with evolving financial goals.
           </p>
         </div>
 
 
       
       
-        <div className="contentcard">
-        <h4>5. Travel Insurance
-        </h4>
-        <p>Coverage for trip cancellations, medical emergencies, and lost baggage.
-          Secure your travels with global coverage options.
-
-        </p>
-      </div>
+        
       </div>
       
 

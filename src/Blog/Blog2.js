@@ -93,6 +93,11 @@ const Blog2 = () => {
             </p>
           </div>
         </div>
+        <p className='footermark'>
+    Mutual Fund investments are subject to market risks, read all scheme-related documents carefully. Past performance is not an indicator of future returns.
+
+
+    </p>
       </div>
 
       <Footer />
