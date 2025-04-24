@@ -8,7 +8,7 @@ import map from './map.png'
 import mail from './mail.png'
 import phone from './phone.png'
 import video from './aboutvideo.mp4'
-import ceo from './CEO.png'
+import ceo from './krffounder.jpg'
 import sign from './logo12.png'
 import {Helmet} from "react-helmet";
 
@@ -129,7 +129,11 @@ stage of life.
                 <p className='designation'>CEO, Krishangi Finance</p>
                 <p>Sachin Agrawal, a chartered financial goal planner with 20 years of expertise in financial
 planning and wealth management. With a deep passion for guiding individuals toward
-financial security</p>
+financial security, he specializes in investment management, retirement planning, tax
+strategies, and volatility control. His approach is rooted in understanding each client’s unique
+financial landscape and crafting personalized, strategic plans that ensure long-term growth
+and stability.
+</p>
                 <p> Sachin Agrawal believes that financial planning isn’t just about numbers, but it’s about empowering lives. By working closely with clients from diverse backgrounds, he provides clear, customized financial roadmaps that help them achieve their goals with confidence. His unwavering commitment to transparency, trust, and client success defines the foundation of Krishangi Finance.</p>
 
                 <div className='sign'>

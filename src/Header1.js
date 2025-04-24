@@ -189,11 +189,11 @@ export default function Header1() {
                 </div>
               </div>
   
-              <div className='col-md-6'>
+              {/* <div className='col-md-6'>
                 <div className='toolsimg'>
                   <img src={emi} className='img-fluid' />
                 </div>
-              </div>
+              </div> */}
             </div>
           </>
         );

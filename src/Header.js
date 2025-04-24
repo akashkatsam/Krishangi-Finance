@@ -183,11 +183,11 @@ export default function Header() {
                 </div>
               </div>
   
-              <div className='col-md-6'>
+              {/* <div className='col-md-6'>
                 <div className='toolsimg'>
                   <img src={emi} className='img-fluid' />
                 </div>
-              </div>
+              </div> */}
             </div>
           </>
         );
