@@ -116,15 +116,15 @@ of careful planning and strategic decisions." />
                   <img src={phone} className='img-fluid' />
                   <p>+91 91115-77221, +91 98260-72100</p>
                 </div>
-                <div className='detailcard'>
+                {/* <div className='detailcard'>
                   <img src={map} className='img-fluid' />
                   <p>Workie Tower, 2nd and 3rd Floor,
                     Sajan Prabha Complex (SP 365),
                     22/3, New Palasiya, Indore(M.P.)</p>
-                </div>
+                </div> */}
                 <div className='detailcard'>
                   <img src={mail} className='img-fluid' />
-                  <p>sachin@krishangifinancial.com</p>
+                  <p>info@krishangifinance.com</p>
                 </div>
               </div>
             </div>
